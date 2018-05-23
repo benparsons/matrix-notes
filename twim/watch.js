@@ -5,22 +5,23 @@ var fs = require('fs');
 var showdown  = require('showdown'),
     converter = new showdown.Converter();
 
-var filepath = "../blog/twim/twim-2018-05-25.md";
+var filepath = ".";//"../blog/twim/twim-2018-05-25.md";
 
 fs.watch(filepath, (eventType, filename) => {
   console.log(`event type is: ${eventType}`);
-  if (filename) {
+  if (filename && filename.indexOf('twim') !== -1) {
     console.log(`filename provided: ${filename}`);
-    var file = fs.readFileSync(filepath, 'utf-8');
-    var html = converter.makeHtml(file);
-    writeHtmlFile("<body>\n" + html + "\n</body>\n")
+    var file = fs.readFileSync(filename, 'utf-8');
+    var urls = fs.readFileSync("_url-directory.md", 'utf-8');
+    var html = converter.makeHtml(file + "\n\n" + urls);
+    writeHtmlFile("<body>\n" + html + "\n</body>\n", filename)
   } else {
-    console.log('filename not provided');
+    console.log('filename not provided or not twim');
   }
 });
 
-function writeHtmlFile(html) {
-  fs.writeFile("./twim-2018-05-25.html", html, function (err) {
+function writeHtmlFile(html, filename) {
+  fs.writeFile("./html/" + filename, html, function (err) {
     if (err) throw err;
     console.log('Saved!');
   });

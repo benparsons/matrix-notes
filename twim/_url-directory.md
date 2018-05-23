@@ -28,3 +28,5 @@
 [nheko]:    https://github.com/mujx/nheko
 [#TWIM:matrix.org]: https://matrix.to/#/#TWIM:matrix.org
 [mxhsd]:    https://github.com/kamax-io/mxhsd
+[betz]: https://matrix.to/#/@betz:hackerspaces.be
+[matrixboard]: https://github.com/betz/matrixboard
