@@ -30,3 +30,4 @@
 [mxhsd]:    https://github.com/kamax-io/mxhsd
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
 [matrixboard]: https://github.com/betz/matrixboard
+[Fractal]: https://wiki.gnome.org/Apps/Fractal

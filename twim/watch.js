@@ -21,7 +21,7 @@ fs.watch(filepath, (eventType, filename) => {
 });
 
 function writeHtmlFile(html, filename) {
-  fs.writeFile("./html/" + filename, html, function (err) {
+  fs.writeFile("./html/" + filename.replace('md', 'html'), html, function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
