@@ -3,6 +3,7 @@
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
 [#test-doge-bot-crom:matrix.org]:   https://matrix.to/#/#test-doge-bot-crom:matrix.org
 [#TWIM:matrix.org]: https://matrix.to/#/#TWIM:matrix.org
+[&Adam]: https://matrix.to/#/@adam:thebeckmeyers.xyz
 [anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
 [brendan]:  https://brendan.abolivier.bzh/
@@ -17,6 +18,7 @@
 [kamax]:    https://kamax.io
 [martinkrafft]: https://twitter.com/martinkrafft
 [matrix-appservice-discord]:    https://github.com/Half-Shot/matrix-appservice-discord
+[matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrixboard]: https://github.com/betz/matrixboard
 [Max]:  https://matrix.to/#/@max:kamax.io
 [mujx]: https://matrix.to/#/@mujx:matrix.org
@@ -26,6 +28,7 @@
 [nheko]:    https://github.com/mujx/nheko
 [NixOS]:    https://nixos.org/
 [opsdriod]: https://opsdroid.github.io/
+[pik]: https://github.com/pik
 [ruma-api-macros]:  https://github.com/ruma/ruma-api-macros/releases
 [ruma-client-api]:  https://github.com/ruma/ruma-client-api
 [ruma-client]:  https://github.com/ruma/ruma-client
@@ -33,3 +36,4 @@
 [The Construct]:    https://github.com/jevolk/charybdis
 [TravisR]:  https://github.com/turt2live
 [wossat]:   https://wossat.nz/
+[Zil0]: https://matrix.to/#/@Zil0:matrix.org
