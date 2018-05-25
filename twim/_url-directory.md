@@ -1,46 +1,57 @@
-[#matrix-clients:lain.haus]:    https://matrix.to/#/#matrix-clients:lain.haus
+[#dsn-traveller:dsn-traveller.dsn.scc.kit.edu]: https://matrix.to/#/#dsn-traveller:dsn-traveller.dsn.scc.kit.edu
+[#matrix-clients:lain.haus]: https://matrix.to/#/#matrix-clients:lain.haus
 [#matrix-dev]: https://matrix.to/#/#matrix-dev:matrix.org
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
 [#synapse-py3:matrix.org]: https://matrix.to/#/#synapse-py3:matrix.org
-[#test-doge-bot-crom:matrix.org]:   https://matrix.to/#/#test-doge-bot-crom:matrix.org
+[#test-doge-bot-crom:matrix.org]: https://matrix.to/#/#test-doge-bot-crom:matrix.org
 [#TWIM:matrix.org]: https://matrix.to/#/#TWIM:matrix.org
 [&Adam]: https://matrix.to/#/@adam:thebeckmeyers.xyz
+[andrewsh]: https://matrix.to/#/@andrew:shadura.me
 [anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
-[brendan]:  https://brendan.abolivier.bzh/
+[Brendan]:  https://brendan.abolivier.bzh/
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
-[CromFr]:   https://matrix.to/#/@CromFr:matrix.org
-[Dimension]:    https://dimension.t2bot.io/
+[CromFr]: https://matrix.to/#/@CromFr:matrix.org
+[Dimension]:  https://dimension.t2bot.io/
+[eta]: https://matrix.to/#/@eta:theta.eu.org
+[Evidlo]: https://matrix.to/#/@Evidlo:matrix.org
 [f0x]:  https://matrix.to/#/@f0x:lain.haus
-[Fractal Hackfest 2018]:    https://wiki.gnome.org/Hackfests/Fractal2018
+[Fractal Hackfest 2018]:  https://wiki.gnome.org/Hackfests/Fractal2018
 [Fractal]: https://wiki.gnome.org/Apps/Fractal
-[gomuks]:   https://github.com/tulir/gomuks
-[GSOC 2018]:    https://summerofcode.withgoogle.com/projects/?sp-search=matrix
-[Half-Shot]:    https://matrix.to/#/@Half-Shot:half-shot.uk
+[gomuks]: https://github.com/tulir/gomuks
+[GSOC 2018]:  https://summerofcode.withgoogle.com/projects/?sp-search=matrix
+[Half-Shot]:  https://matrix.to/#/@Half-Shot:half-shot.uk
+[jcgruenhage]: https://matrix.to/#/@jan.christian:gruenhage.xyz
 [JonTheNiceGuy]: https://matrix.to/#/@JonTheNiceGuy:matrix.org
-[kamax]:    https://kamax.io
+[kamax]:  https://kamax.io
 [martinkrafft]: https://twitter.com/martinkrafft
 [Matrix Spec Change Proposals]: https://matrix.org/docs/spec/proposals
-[matrix-appservice-discord]:    https://github.com/Half-Shot/matrix-appservice-discord
+[matrix-appservice-discord]:  https://github.com/Half-Shot/matrix-appservice-discord
+[matrix-appservice-sms]: https://github.com/eeeeeta/matrix-appservice-sms/
+[matrix-puppet-facebook]: https://github.com/matrix-hacks/matrix-puppet-facebook
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrixboard]: https://github.com/betz/matrixboard
+[mautrix-telegram]: https://github.com/tulir/mautrix-telegram
 [Max]:  https://matrix.to/#/@max:kamax.io
+[MSC1256]: https://github.com/matrix-org/matrix-doc/issues/1256
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
-[mxhsd]:    https://github.com/kamax-io/mxhsd
-[mxisd]:    https://github.com/kamax-io/mxisd
+[mxhsd]: https://github.com/kamax-io/mxhsd
+[mxisd]: https://github.com/kamax-io/mxisd
 [neo]:  https://github.com/f0x52/neo
-[nheko]:    https://github.com/mujx/nheko
-[NixOS]:    https://nixos.org/
+[nheko]: https://github.com/mujx/nheko
+[NixOS]: https://nixos.org/
 [notafile]: https://matrix.to/#/@notafile:matrix.org
 [opsdroid]: https://opsdroid.github.io/
 [pik]: https://github.com/pik
-[ruma-api-macros]:  https://github.com/ruma/ruma-api-macros/releases
-[ruma-client-api]:  https://github.com/ruma/ruma-client-api
+[ruma-api-macros]: https://github.com/ruma/ruma-api-macros
+[ruma-client-api]: https://github.com/ruma/ruma-client-api
 [ruma-client]:  https://github.com/ruma/ruma-client
+[ruma-events]: https://github.com/ruma/ruma-events
 [Ruma]: https://github.com/ruma/ruma
 [SolarDrew]: https://matrix.to/#/@SolarDrew:matrix.org
-[The Construct]:    https://github.com/jevolk/charybdis
+[The Construct]: https://github.com/jevolk/charybdis
 [TravisR]:  https://github.com/turt2live
-[wossat]:   https://wossat.nz/
+[tulir]: @tulir:maunium.net
+[wossat]: https://wossat.nz/
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
