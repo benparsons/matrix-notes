@@ -1,12 +1,14 @@
 [#matrix-clients:lain.haus]:    https://matrix.to/#/#matrix-clients:lain.haus
 [#matrix-dev]: https://matrix.to/#/#matrix-dev:matrix.org
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
+[#synapse-py3:matrix.org]: https://matrix.to/#/#synapse-py3:matrix.org
 [#test-doge-bot-crom:matrix.org]:   https://matrix.to/#/#test-doge-bot-crom:matrix.org
 [#TWIM:matrix.org]: https://matrix.to/#/#TWIM:matrix.org
 [&Adam]: https://matrix.to/#/@adam:thebeckmeyers.xyz
 [anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
 [brendan]:  https://brendan.abolivier.bzh/
+[Cadair]: https://matrix.to/#/@cadair:cadair.com
 [CromFr]:   https://matrix.to/#/@CromFr:matrix.org
 [Dimension]:    https://dimension.t2bot.io/
 [f0x]:  https://matrix.to/#/@f0x:lain.haus
@@ -15,24 +17,29 @@
 [gomuks]:   https://github.com/tulir/gomuks
 [GSOC 2018]:    https://summerofcode.withgoogle.com/projects/?sp-search=matrix
 [Half-Shot]:    https://matrix.to/#/@Half-Shot:half-shot.uk
+[JonTheNiceGuy]: https://matrix.to/#/@JonTheNiceGuy:matrix.org
 [kamax]:    https://kamax.io
 [martinkrafft]: https://twitter.com/martinkrafft
+[Matrix Spec Change Proposals]: https://matrix.org/docs/spec/proposals
 [matrix-appservice-discord]:    https://github.com/Half-Shot/matrix-appservice-discord
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrixboard]: https://github.com/betz/matrixboard
 [Max]:  https://matrix.to/#/@max:kamax.io
+[mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
 [mxhsd]:    https://github.com/kamax-io/mxhsd
 [mxisd]:    https://github.com/kamax-io/mxisd
 [neo]:  https://github.com/f0x52/neo
 [nheko]:    https://github.com/mujx/nheko
 [NixOS]:    https://nixos.org/
-[opsdriod]: https://opsdroid.github.io/
+[notafile]: https://matrix.to/#/@notafile:matrix.org
+[opsdroid]: https://opsdroid.github.io/
 [pik]: https://github.com/pik
 [ruma-api-macros]:  https://github.com/ruma/ruma-api-macros/releases
 [ruma-client-api]:  https://github.com/ruma/ruma-client-api
 [ruma-client]:  https://github.com/ruma/ruma-client
 [Ruma]: https://github.com/ruma/ruma
+[SolarDrew]: https://matrix.to/#/@SolarDrew:matrix.org
 [The Construct]:    https://github.com/jevolk/charybdis
 [TravisR]:  https://github.com/turt2live
 [wossat]:   https://wossat.nz/
