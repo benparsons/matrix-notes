@@ -1,4 +1,6 @@
+[#book-talk:disroot.org]: https://matrix.to/#/#book-talk:disroot.org
 [#dsn-traveller:dsn-traveller.dsn.scc.kit.edu]: https://matrix.to/#/#dsn-traveller:dsn-traveller.dsn.scc.kit.edu
+[#lebistrot:matrix.org]: https://matrix.to/#/#lebistrot:matrix.org
 [#matrix-clients:lain.haus]: https://matrix.to/#/#matrix-clients:lain.haus
 [#matrix-dev]: https://matrix.to/#/#matrix-dev:matrix.org
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
@@ -9,6 +11,7 @@
 [andrewsh]: https://matrix.to/#/@andrew:shadura.me
 [anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
+[brainblasted]: https://matrix.to/#/@brainblasted:disroot.org
 [Brendan]:  https://brendan.abolivier.bzh/
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
 [CromFr]: https://matrix.to/#/@CromFr:matrix.org
