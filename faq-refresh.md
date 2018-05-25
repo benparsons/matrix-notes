@@ -84,3 +84,7 @@
  * How can I use Matrix to talk on Freenode or other IRC networks?
  * Where can I learn more about Matrix?  (link to PDFs of other presentations etc)
  * Why is synapse so resource intensive immediately after federating for the first time?
+
+
+# New Questions
+What are communities? (What are groups? == communities)
