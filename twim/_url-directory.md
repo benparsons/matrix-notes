@@ -1,13 +1,16 @@
+
 [#book-talk:disroot.org]: https://matrix.to/#/#book-talk:disroot.org
 [#dsn-traveller:dsn-traveller.dsn.scc.kit.edu]: https://matrix.to/#/#dsn-traveller:dsn-traveller.dsn.scc.kit.edu
 [#lebistrot:matrix.org]: https://matrix.to/#/#lebistrot:matrix.org
 [#matrix-clients:lain.haus]: https://matrix.to/#/#matrix-clients:lain.haus
 [#matrix-dev]: https://matrix.to/#/#matrix-dev:matrix.org
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
+[#riot-themes:matrix.ffslfl.net]: https://matrix.to/#/#riot-themes:matrix.ffslfl.net
 [#synapse-py3:matrix.org]: https://matrix.to/#/#synapse-py3:matrix.org
 [#test-doge-bot-crom:matrix.org]: https://matrix.to/#/#test-doge-bot-crom:matrix.org
 [#TWIM:matrix.org]: https://matrix.to/#/#TWIM:matrix.org
 [&Adam]: https://matrix.to/#/@adam:thebeckmeyers.xyz
+[@slavi:devture.com]: https://matrix.to/#/@slavi:devture.com
 [andrewsh]: https://matrix.to/#/@andrew:shadura.me
 [anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
@@ -29,14 +32,17 @@
 [kamax]:  https://kamax.io
 [martinkrafft]: https://twitter.com/martinkrafft
 [Matrix Spec Change Proposals]: https://matrix.org/docs/spec/proposals
+[Matrix Synapse Docker]: https://hub.docker.com/r/matrixdotorg/synapse/
 [matrix-appservice-discord]:  https://github.com/Half-Shot/matrix-appservice-discord
 [matrix-appservice-sms]: https://github.com/eeeeeta/matrix-appservice-sms/
+[matrix-docker-ansible-deploy]: https://github.com/spantaleev/matrix-docker-ansible-deploy
 [matrix-puppet-facebook]: https://github.com/matrix-hacks/matrix-puppet-facebook
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrixboard]: https://github.com/betz/matrixboard
 [mautrix-telegram]: https://github.com/tulir/mautrix-telegram
 [Max]:  https://matrix.to/#/@max:kamax.io
 [MSC1256]: https://github.com/matrix-org/matrix-doc/issues/1256
+[MTRNord]: https://matrix.to/#/@MTRNord:matrix.ffslfl.net
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
 [mxhsd]: https://github.com/kamax-io/mxhsd
@@ -56,5 +62,6 @@
 [The Construct]: https://github.com/jevolk/charybdis
 [TravisR]:  https://github.com/turt2live
 [tulir]: @tulir:maunium.net
+[uhoreg]: https://matrix.to/#/@uhoreg:matrix.org
 [wossat]: https://wossat.nz/
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
