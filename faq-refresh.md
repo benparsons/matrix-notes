@@ -88,3 +88,5 @@
 
 # New Questions
 What are communities? (What are groups? == communities)
+Hello, how can I get rooms list from matrix.org?
+
