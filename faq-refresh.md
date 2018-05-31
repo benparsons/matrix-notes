@@ -1,31 +1,83 @@
+# New sections, headings TBD
+1. Concept
+2. Concrete intro to the tech
+3. How it is built and by whom
+
+should s2 and s3 be swapped?
+
+4. concept part 2
+
 # FAQ
 ## General
 ### What is Matrix?
+(s1) Existing is good.
 ### What is Matrix's Mission?
-### What does Matrix provide?
+(s1) This is very good.
 ### What does this mean for users?
-### What kind of company is Matrix.org?
-### Who is funding Matrix.org?
-### Who is building Matrix?
+(s1) This is fine, partly duplicates the Mission.
+
 ### Why are you called Matrix?
+(s1) This is great, maybe a link out to explain "matrixed".
+
+The four questions above are ideal for a top section. Top section is "concept", the next section will be "concrete intro to the tech", the section after will be how is it built.
+
+### What does Matrix provide?
+(s2) This is ok, the text itself can be improved, but there needs to be a question above to introduce the "concrete intro" section.
+
+
+### What kind of company is Matrix.org?
+(s3) Can this have a date attached?
+
+### Who is funding Matrix.org?
+(s3) This needs to be completely re-worked. How much do we want to talk about New Vector?
+
+### Who is building Matrix?
+(s3) Good but can be refreshed.
+
+
 ### Why have you released this as open source?
+(s4) Perfect.
+
 ### What do you mean by open?
+(s4)
+
 ### What does federated mean?
+(s4)
+
 ### How is this like e-mail?
+(s4)
+
 ### Why has no one done this before?
+(s4)
+
+
 ### What is the difference between Matrix and IRC?
 ### What is the difference between Matrix and XMPP?
 ### What is the difference between Matrix and PSYC?
 ### What is the difference between Matrix and Tox?
 ### How does Matrix compare with something like Trillian or Pidgin?
 ### What Matrix compliant apps are there?
+(s6)
+
 ### What bridges to other networks are available?
+(s6)
+
 ### Why do you think existing apps will ever join this officially?
+(s7)
+
 ### Why aren't you doing this through the IETF? or W3C? or 3GPP?
+(s7)
+
 ## Quick Start
 ### How do I get an account and get started?
+(s6)
+
 ### What can I actually do with this?
+(s6) This needs to be reworked.
+
 ### How do I connect my homeserver to the public Matrix network?
+Orphan question - what homeserver?
+
 ### How do I Matrix-enable my existing app?
 ### How can I write a client on Matrix?
 ### How can I help out with this?
