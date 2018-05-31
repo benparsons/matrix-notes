@@ -89,4 +89,6 @@
 # New Questions
 What are communities? (What are groups? == communities)
 Hello, how can I get rooms list from matrix.org?
-
+What are some examples of clients?
+What does End-to-End (E2E) encryption mean?
+Need a quick and understandable way to explain federation in a practical way. Like the guy who did not understand why he could not see the Arch linux room on disroot.
