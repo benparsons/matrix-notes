@@ -42,6 +42,8 @@
 [mautrix-telegram]: https://github.com/tulir/mautrix-telegram
 [Max]:  https://matrix.to/#/@max:kamax.io
 [MSC1256]: https://github.com/matrix-org/matrix-doc/issues/1256
+[MSC1267]: https://github.com/matrix-org/matrix-doc/issues/1267
+[MSC1270]: https://github.com/matrix-org/matrix-doc/issues/1270
 [MTRNord]: https://matrix.to/#/@MTRNord:matrix.ffslfl.net
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
@@ -64,4 +66,5 @@
 [tulir]: @tulir:maunium.net
 [uhoreg]: https://matrix.to/#/@uhoreg:matrix.org
 [wossat]: https://wossat.nz/
+[Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
