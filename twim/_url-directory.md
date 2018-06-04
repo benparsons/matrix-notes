@@ -68,3 +68,10 @@
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[hawkowl]: https://twitter.com/hawkieowl
+[Riot]: http://riot.im/
+[Alexandre Franke]: @afranke:matrix.org
+[dendrite]: https://github.com/matrix-org/dendrite
+[#matrix-docker-ansible-deploy:devture.com]: https://matrix.to/#/#matrix-docker-ansible-deploy:devture.com
+[#chatrpg-dev:matrix.org]: https://matrix.to/#/#chatrpg-dev:matrix.org
+[anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
