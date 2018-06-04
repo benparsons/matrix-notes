@@ -12,6 +12,7 @@ fs.readdirSync(".").forEach(filename => {
     //console.log(filename);
     var file = fs.readFileSync(filename, 'utf-8');
     console.log("<div>");
+    file = "# " + filename + "\n\n" + file
     console.log(md.render(file));
     console.log("</div>");
   }
