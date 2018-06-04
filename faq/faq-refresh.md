@@ -52,10 +52,16 @@ The four questions above are ideal for a top section. Top section is "concept", 
 
 
 ### What is the difference between Matrix and IRC?
+(c-d)(s7)
 ### What is the difference between Matrix and XMPP?
+(c-d)(s7)
 ### What is the difference between Matrix and PSYC?
+(c-d)(s7)
 ### What is the difference between Matrix and Tox?
+(c-d)(s7)
 ### How does Matrix compare with something like Trillian or Pidgin?
+(c-d)(s7)
+
 ### What Matrix compliant apps are there?
 (s6)
 
@@ -75,8 +81,6 @@ The four questions above are ideal for a top section. Top section is "concept", 
 ### What can I actually do with this?
 (s6) This needs to be reworked.
 
-### How do I connect my homeserver to the public Matrix network?
-Orphan question - what homeserver?
 
 ### How do I Matrix-enable my existing app?
 (s5)
@@ -101,40 +105,77 @@ Orphan question - what homeserver?
 
 ## Standard
 ### What is a client?
+definition. This question must be easily answerd by the top section
 ### Can I use Matrix without installing a Matrix client?
+c Needs rework.
 ### What is a home server?
+definition.
 ### What is a MXID?
+definition. needs rework
 ### What is a 3PID?
+definition, needs rework, and the question must be easily answered elsewhere.
 ### What is an identity server?
+c
 ### Where do my conversations get stored?
+c
 ### What are redactions?
+definition
 ### How do you do VoIP calls on Matrix?
+c-v voip can have a separate section
 ### Are VoIP calls encrypted?
+c-v
 ### Do I need a TURN server?
+c-v
 ### Can I log into other homeservers with my username and password?
+c
 ### Why Apache Licence?
+(s7)
 ### Can I write a Matrix homeserver?
+(s5)
 ### How secure is this?
+c
 ### What is Perspectives?
+c
 ### Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc?
+(s5), but maybe something positive/explanatory above this
 ## Servers
 ### What is Synapse?
+c
 ### How do I join the global Matrix federation?
-### What ports do I have to open up to join the global Matrix federation?
 ### How do I run my own homeserver?
+(s6), these two are the same
+### What ports do I have to open up to join the global Matrix federation?
+(s6)
+### How do I connect my homeserver to the public Matrix network?
+Orphan question - what homeserver?
+Is this the same as above?
+
 ### Can I run my own identity server?
+need rewrite, how to include 3rd party? what is the state of sydent?
+
 ### What are Synapse's platform requirements?
+might not be an FAQ topic
+
 ### Why is Synapse in Python/Twisted?
+^ unless synapse gets a section of its own
+
 ### Why aren't you using an ORM layer like SqlAlchemy in Synapse?
 ### Will Synapse share my chat data with other servers in the federation?
 ### Why can't I rename my homeserver?
+(s6)
 ## Clients
 ### Where can I find a mobile app?
+(s6)
 ### I installed Riot via F-Droid, why is it draining my battery?
+(s6)
 ### Where can I find a web app?
+(s6)
 ### Where can I find a desktop client?
+(s6)
 ### Why can't end-to-end encryption be turned off?
+c-e
 ### Why isn't end-to-end encryption enabled by default?
+c-e
 ## QUESTIONS TO BE ANSWERED!
  * How do I change the TLS key of my server?
  * How do I maintain my synapse's DB (e.g. prune old conversations)?
