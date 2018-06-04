@@ -79,10 +79,10 @@ The four questions above are ideal for a top section. Top section is "concept", 
 Orphan question - what homeserver?
 
 ### How do I Matrix-enable my existing app?
-(s8)
+(s5)
 
 ### How can I write a client on Matrix?
-(s8)
+(s5)
 
 ### How can I help out with this?
 (s6)
@@ -91,7 +91,7 @@ Orphan question - what homeserver?
 (s6) Expand with personas.
 
 ### How do I register custom matrix event types?
-(s8)
+(s5)
 
 ### How mature is this?
 (s7)
