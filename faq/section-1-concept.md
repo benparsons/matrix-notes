@@ -1,5 +1,5 @@
-## 1
-
+# intro
+## intro
 ### What is Matrix?
 (s1) Existing is good.
 ### What is Matrix's Mission?
@@ -10,7 +10,6 @@
 ### Why are you called Matrix?
 (s1) This is great, maybe a link out to explain "matrixed".
 
-## 2
 
 ### What does Matrix provide?
 (s2) This is ok, the text itself can be improved, but there needs to be a question above to introduce the "concrete intro" section.

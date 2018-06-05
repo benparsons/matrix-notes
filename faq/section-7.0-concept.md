@@ -1,3 +1,7 @@
+# detail
+
+## position in the world
+
 ### Why do you think existing apps will ever join this officially?
 (s7)
 

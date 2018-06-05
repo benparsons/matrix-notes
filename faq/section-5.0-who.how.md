@@ -1,3 +1,5 @@
+# Real use
+
 ## how as a user
 ### What Matrix compliant apps are there?
 (s6)
@@ -8,7 +10,6 @@
 ### How do I get an account and get started?
 (s6)
 
-## clients
 
 ### Where can I find a mobile app?
 (s6)

@@ -1,16 +1,6 @@
-<style>
-div {
-    float: left;
-    border: black 1px solid;
-    margin: 2px;
-}
-body {
-    width: 8000px;
-}
-</style>
-<div>
-<h1>section-1-concept.md</h1>
-<h2>1</h2>
+<p><div class="table-of-contents"><ul><li><a href="#intro">intro</a><ul><li><a href="#intro">intro</a><ul><li><a href="#what-is-matrix">What is Matrix?</a></li><li><a href="#what-is-matrixs-mission">What is Matrix's Mission?</a></li><li><a href="#what-does-this-mean-for-users">What does this mean for users?</a></li><li><a href="#why-are-you-called-matrix">Why are you called Matrix?</a></li><li><a href="#what-does-matrix-provide">What does Matrix provide?</a></li></ul></li><li><a href="#who-how">who how</a><ul><li><a href="#what-kind-of-company-is-matrixorg">What kind of company is Matrix.org?</a></li><li><a href="#who-is-funding-matrixorg">Who is funding Matrix.org?</a></li><li><a href="#who-is-building-matrix">Who is building Matrix?</a></li></ul></li><li><a href="#concept">concept</a><ul><li><a href="#why-have-you-released-this-as-open-source">Why have you released this as open source?</a></li><li><a href="#what-do-you-mean-by-open">What do you mean by open?</a></li><li><a href="#what-does-federated-mean">What does federated mean?</a></li><li><a href="#how-is-this-like-e-mail">How is this like e-mail?</a></li><li><a href="#why-has-no-one-done-this-before">Why has no one done this before?</a></li></ul></li><li><a href="#what-help">what, help</a><ul><li><a href="#what-can-i-actually-do-with-this">What can I actually do with this?</a></li><li><a href="#how-can-i-help-out-with-this">How can I help out with this?</a></li><li><a href="#where-can-i-get-support">Where can I get support?</a></li></ul></li></ul></li><li><a href="#real-use">Real use</a><ul><li><a href="#how-as-a-user">how as a user</a><ul><li><a href="#what-matrix-compliant-apps-are-there">What Matrix compliant apps are there?</a></li><li><a href="#what-bridges-to-other-networks-are-available">What bridges to other networks are available?</a></li><li><a href="#how-do-i-get-an-account-and-get-started">How do I get an account and get started?</a></li><li><a href="#where-can-i-find-a-mobile-app">Where can I find a mobile app?</a></li><li><a href="#i-installed-riot-via-f-droid-why-is-it-draining-my-battery">I installed Riot via F-Droid, why is it draining my battery?</a></li><li><a href="#where-can-i-find-a-web-app">Where can I find a web app?</a></li><li><a href="#where-can-i-find-a-desktop-client">Where can I find a desktop client?</a></li><li><a href="#how-do-i-matrix-enable-my-existing-app">How do I Matrix-enable my existing app?</a></li><li><a href="#how-can-i-write-a-client-on-matrix">How can I write a client on Matrix?</a></li><li><a href="#how-do-i-register-custom-matrix-event-types">How do I register custom matrix event types?</a></li><li><a href="#can-i-write-a-matrix-homeserver">Can I write a Matrix homeserver?</a></li><li><a href="#why-http-doesnt-http-suck-why-dont-you-use-websocketscoaphttp2etc">Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc?</a></li></ul></li><li><a href="#how-host-own-hs">how host own HS</a><ul><li><a href="#how-do-i-join-the-global-matrix-federation">How do I join the global Matrix federation?</a></li><li><a href="#how-do-i-run-my-own-homeserver">How do I run my own homeserver?</a></li><li><a href="#what-ports-do-i-have-to-open-up-to-join-the-global-matrix-federation">What ports do I have to open up to join the global Matrix federation?</a></li><li><a href="#how-do-i-connect-my-homeserver-to-the-public-matrix-network">How do I connect my homeserver to the public Matrix network?</a></li><li><a href="#can-i-run-my-own-identity-server">Can I run my own identity server?</a></li><li><a href="#why-cant-i-rename-my-homeserver">Why can't I rename my homeserver?</a></li></ul></li></ul></li><li><a href="#detail">detail</a><ul><li><a href="#position-in-the-world">position in the world</a><ul><li><a href="#why-do-you-think-existing-apps-will-ever-join-this-officially">Why do you think existing apps will ever join this officially?</a></li><li><a href="#why-arent-you-doing-this-through-the-ietf-or-w3c-or-3gpp">Why aren't you doing this through the IETF? or W3C? or 3GPP?</a></li><li><a href="#how-mature-is-this">How mature is this?</a></li><li><a href="#why-apache-licence">Why Apache Licence?</a></li></ul></li><li><a href="#differences">differences</a><ul><li><a href="#what-is-the-difference-between-matrix-and-irc">What is the difference between Matrix and IRC?</a></li><li><a href="#what-is-the-difference-between-matrix-and-xmpp">What is the difference between Matrix and XMPP?</a></li><li><a href="#what-is-the-difference-between-matrix-and-psyc">What is the difference between Matrix and PSYC?</a></li><li><a href="#what-is-the-difference-between-matrix-and-tox">What is the difference between Matrix and Tox?</a></li><li><a href="#how-does-matrix-compare-with-something-like-trillian-or-pidgin">How does Matrix compare with something like Trillian or Pidgin?</a></li></ul></li><li><a href="#more-detail">more detail</a><ul><li><a href="#what-is-a-client">What is a client?</a></li><li><a href="#can-i-use-matrix-without-installing-a-matrix-client">Can I use Matrix without installing a Matrix client?</a></li><li><a href="#what-is-a-home-server">What is a home server?</a></li><li><a href="#what-is-a-mxid">What is a MXID?</a></li><li><a href="#what-is-a-3pid">What is a 3PID?</a></li><li><a href="#what-is-an-identity-server">What is an identity server?</a></li><li><a href="#where-do-my-conversations-get-stored">Where do my conversations get stored?</a></li><li><a href="#what-are-redactions">What are redactions?</a></li><li><a href="#can-i-log-into-other-homeservers-with-my-username-and-password">Can I log into other homeservers with my username and password?</a></li></ul></li><li><a href="#voip">voip</a><ul><li><a href="#how-do-you-do-voip-calls-on-matrix">How do you do VoIP calls on Matrix?</a></li><li><a href="#are-voip-calls-encrypted">Are VoIP calls encrypted?</a></li><li><a href="#do-i-need-a-turn-server">Do I need a TURN server?</a></li></ul></li><li><a href="#synapse">synapse</a><ul><li><a href="#what-is-synapse">What is Synapse?</a></li><li><a href="#what-are-synapses-platform-requirements">What are Synapse's platform requirements?</a></li><li><a href="#why-is-synapse-in-pythontwisted">Why is Synapse in Python/Twisted?</a></li><li><a href="#why-arent-you-using-an-orm-layer-like-sqlalchemy-in-synapse">Why aren't you using an ORM layer like SqlAlchemy in Synapse?</a></li><li><a href="#will-synapse-share-my-chat-data-with-other-servers-in-the-federation">Will Synapse share my chat data with other servers in the federation?</a></li></ul></li></ul></li></ul></div></p>
+<h1>intro</h1>
+<h2>intro</h2>
 <h3>What is Matrix?</h3>
 <p>(s1) Existing is good.</p>
 <h3>What is Matrix's Mission?</h3>
@@ -19,23 +9,16 @@ body {
 <p>(s1) This is fine, partly duplicates the Mission.</p>
 <h3>Why are you called Matrix?</h3>
 <p>(s1) This is great, maybe a link out to explain &quot;matrixed&quot;.</p>
-<h2>2</h2>
 <h3>What does Matrix provide?</h3>
 <p>(s2) This is ok, the text itself can be improved, but there needs to be a question above to introduce the &quot;concrete intro&quot; section.</p>
-
-</div>
-<div>
-<h1>section-3-who.how.md</h1>
+<h2>who how</h2>
 <h3>What kind of company is Matrix.org?</h3>
 <p>(s3) Can this have a date attached?</p>
 <h3>Who is funding Matrix.org?</h3>
 <p>(s3) This needs to be completely re-worked. How much do we want to talk about New Vector?</p>
 <h3>Who is building Matrix?</h3>
 <p>(s3) Good but can be refreshed.</p>
-
-</div>
-<div>
-<h1>section-4-concept.md</h1>
+<h2>concept</h2>
 <h3>Why have you released this as open source?</h3>
 <p>(s4) Perfect.</p>
 <h3>What do you mean by open?</h3>
@@ -46,20 +29,14 @@ body {
 <p>(s4)</p>
 <h3>Why has no one done this before?</h3>
 <p>(s4)</p>
-
-</div>
-<div>
-<h1>section-4.5-help.md</h1>
+<h2>what, help</h2>
 <h3>What can I actually do with this?</h3>
 <p>(s6) This needs to be reworked. could move to bottom of section 4</p>
 <h3>How can I help out with this?</h3>
 <p>(s6)</p>
 <h3>Where can I get support?</h3>
 <p>(s6) Expand with personas.</p>
-
-</div>
-<div>
-<h1>section-5.0-who.how.md</h1>
+<h1>Real use</h1>
 <h2>how as a user</h2>
 <h3>What Matrix compliant apps are there?</h3>
 <p>(s6)</p>
@@ -67,7 +44,6 @@ body {
 <p>(s6)</p>
 <h3>How do I get an account and get started?</h3>
 <p>(s6)</p>
-<h2>clients</h2>
 <h3>Where can I find a mobile app?</h3>
 <p>(s6)</p>
 <h3>I installed Riot via F-Droid, why is it draining my battery?</h3>
@@ -76,10 +52,6 @@ body {
 <p>(s6)</p>
 <h3>Where can I find a desktop client?</h3>
 <p>(s6)</p>
-
-</div>
-<div>
-<h1>section-5.1-tech.md</h1>
 <h3>How do I Matrix-enable my existing app?</h3>
 <p>(s5)</p>
 <h3>How can I write a client on Matrix?</h3>
@@ -90,10 +62,6 @@ body {
 <p>(s5)</p>
 <h3>Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc?</h3>
 <p>(s5), but maybe something positive/explanatory above this</p>
-
-</div>
-<div>
-<h1>section-6.2-selfhost.md</h1>
 <h2>how host own HS</h2>
 <h3>How do I join the global Matrix federation?</h3>
 <h3>How do I run my own homeserver?</h3>
@@ -107,10 +75,8 @@ Is this the same as above?</p>
 <p>need rewrite, how to include 3rd party? what is the state of sydent?</p>
 <h3>Why can't I rename my homeserver?</h3>
 <p>(s6)</p>
-
-</div>
-<div>
-<h1>section-7.0-concept.md</h1>
+<h1>detail</h1>
+<h2>position in the world</h2>
 <h3>Why do you think existing apps will ever join this officially?</h3>
 <p>(s7)</p>
 <h3>Why aren't you doing this through the IETF? or W3C? or 3GPP?</h3>
@@ -119,10 +85,6 @@ Is this the same as above?</p>
 <p>(s7)</p>
 <h3>Why Apache Licence?</h3>
 <p>(s7)</p>
-
-</div>
-<div>
-<h1>section-7.1-differences.md</h1>
 <h2>differences</h2>
 <h3>What is the difference between Matrix and IRC?</h3>
 <p>(c-d)(s7)</p>
@@ -134,10 +96,6 @@ Is this the same as above?</p>
 <p>(c-d)(s7)</p>
 <h3>How does Matrix compare with something like Trillian or Pidgin?</h3>
 <p>(c-d)(s7)</p>
-
-</div>
-<div>
-<h1>section-7.2-detail.md</h1>
 <h2>more detail</h2>
 <h3>What is a client?</h3>
 <p>definition. This question must be easily answerd by the top section</p>
@@ -157,10 +115,6 @@ Is this the same as above?</p>
 <p>definition</p>
 <h3>Can I log into other homeservers with my username and password?</h3>
 <p>c</p>
-
-</div>
-<div>
-<h1>section-7.3-voip.md</h1>
 <h2>voip</h2>
 <h3>How do you do VoIP calls on Matrix?</h3>
 <p>c-v voip can have a separate section</p>
@@ -168,10 +122,6 @@ Is this the same as above?</p>
 <p>c-v</p>
 <h3>Do I need a TURN server?</h3>
 <p>c-v</p>
-
-</div>
-<div>
-<h1>section-8-tech.md</h1>
 <h2>synapse</h2>
 <h3>What is Synapse?</h3>
 <p>c</p>
@@ -182,4 +132,3 @@ Is this the same as above?</p>
 <h3>Why aren't you using an ORM layer like SqlAlchemy in Synapse?</h3>
 <h3>Will Synapse share my chat data with other servers in the federation?</h3>
 
-</div>
