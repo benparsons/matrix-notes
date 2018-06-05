@@ -10,5 +10,5 @@
 ### Can I write a Matrix homeserver?
 (s5)
 
-### Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc?
+### Why HTTP? Doesn't HTTP suck?<br />Why don't you use websockets/CoAP/HTTP2/etc?
 (s5), but maybe something positive/explanatory above this
