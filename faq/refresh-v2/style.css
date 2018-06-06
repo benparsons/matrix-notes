@@ -1,0 +1,17 @@
+div.top-menu-row {
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+    border: black 1px solid;
+    margin: 2px;
+}
+div.top-menu-row-inner { /*outer*/
+    display: inline-block;
+    background-color: red;
+}
+div.top-menu-item {
+    float:left;
+    padding: 5px;
+    margin: 5px;
+    border: black 1px solid;
+}

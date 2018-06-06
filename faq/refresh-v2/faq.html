@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(event){
+                //if ($(event.target).hasClass("definition")) {
+                    console.log("show definitions");
+                    var element = $(event.target);
+                    while (! element.hasClass("question")) {
+                        element = element.parent();
+                    }
+                    console.log(element);
+                    element.find(".definition-list").toggle();
+                    return false;
+                //}
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--div class="top-menu-row">
+        <div class="top-menu-row-inner">
+            <input type="text" />
+            <button>Search</button>
+        </div>
+    </div-->
+
+    <div class="top-menu-row">
+        <div class="top-menu-row-inner">
+            <div class="top-menu-item">Intro</div>
+            <div class="top-menu-item">Usage</div>
+            <div class="top-menu-item">Detail</div>
+            <div class="top-menu-item">Definitions</div>
+        </div>
+    </div>
+
+    <div class="top-menu-row">
+        <div class="top-menu-row-inner">
+            <div class="top-menu-item">Guides</div>
+            <div class="top-menu-item">Spec</div>
+            <div class="top-menu-item">Try Matrix Now</div>
+        </div>
+    </div>
+
+    {{QUESTIONS}}
+</body>
