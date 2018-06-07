@@ -1,0 +1,97 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(event){
+                //if ($(event.target).hasClass("definition")) {
+                    console.log("show definitions");
+                    var element = $(event.target);
+                    while (! element.hasClass("question")) {
+                        element = element.parent();
+                    }
+                    console.log(element);
+                    element.find(".definition-list").toggle();
+                    return false;
+                //}
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--div class="top-menu-row">
+        <div class="top-menu-row-inner">
+            <input type="text" />
+            <button>Search</button>
+        </div>
+    </div-->
+
+    <div class="top-menu-row">
+        <div class="top-menu-row-inner">
+            <div class="top-menu-item">Intro</div>
+            <div class="top-menu-item">Usage</div>
+            <div class="top-menu-item">Detail</div>
+            <div class="top-menu-item">Definitions</div>
+        </div>
+    </div>
+
+    <div class="top-menu-row">
+        <div class="top-menu-row-inner">
+            <div class="top-menu-item">Guides</div>
+            <div class="top-menu-item">Spec</div>
+            <div class="top-menu-item">Try Matrix Now</div>
+        </div>
+    </div>
+
+    <h1>Intro</h1>
+<h2>Basics</h2>
+<div class='question'>
+<h3>What is Matrix?</h3>
+<p>Matrix is an open standard for interoperable, decentralised, real-time communication over IP. It can be used to power Instant Messaging, VoIP/WebRTC signalling, Internet of Things communication - or anywhere you need a standard HTTP API for publishing and subscribing to data whilst tracking the conversation history.</p>
+<p>Matrix defines the standard, and provides open source reference implementations of Matrix-compatible Servers, <a href="#definition-client" class="definition">Client</a>s, Client SDKs and Application Services to help you create new communication solutions or extend the capabilities and reach of existing ones.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client</td>
+<td>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='question'>
+<h4>What is Matrix's Mission?</h4>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h4>What does Matrix provide?</h4>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+</body>
