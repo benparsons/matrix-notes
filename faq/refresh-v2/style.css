@@ -15,3 +15,6 @@ div.top-menu-item {
     margin: 5px;
     border: black 1px solid;
 }
+.definition-list {
+    display: none;
+}

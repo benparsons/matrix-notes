@@ -15,7 +15,7 @@
                         element = element.parent();
                     }
                     console.log(element);
-                    element.find(".definition-list").toggle();
+                    element.find(".definition-list").toggle(200);
                     return false;
                 //}
                 
@@ -70,7 +70,9 @@
 </table>
 </div>
 <div class='question'>
-<h4>What is Matrix's Mission?</h4>
+<h3>What is Matrix's Mission?</h3>
+<p>Matrix’s initial goal is to fix the problem of fragmented IP communications: letting users message and call each other without having to care what app the other user is on - making it as easy as sending an email.</p>
+<p>The longer term goal is for Matrix to act as a generic HTTP messaging and data synchronisation system for the whole web - allowing people, services and devices to easily communicate with each other, empowering users to own and control their data and select the services and vendors they want to use.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -82,7 +84,252 @@
 </table>
 </div>
 <div class='question'>
-<h4>What does Matrix provide?</h4>
+<h3>What does this mean for users?</h3>
+<p>The aim is to provide an analogous ecosystem to email - one where you can communicate with pretty much anyone, without caring what app or server they are using, using whichever <a href="#definition-client" class="definition">client</a> app &amp; server you chose, and use a neutral identity system like an e-mail address or phone number to discover people to talk to.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client</td>
+<td>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why are you called Matrix?</h3>
+<p>We are called Matrix because we provide a structure in which all communication can be <a href="#definition-matrixedtogether" class="definition">matrixed together</a>.</p>
+<p>No, it’s nothing to do with the film (although you could go and build virtual worlds on top of Matrix if you wanted :)</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>matrixed together</td>
+<td>In mathematics, a matrix is a...</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What does Matrix provide?</h3>
+<ul>
+<li><a href="/docs/spec">Open Standard</a> HTTP APIs for transferring JSON messages (e.g. instant messages, WebRTC signalling), including:</li>
+<li><a href="/docs/spec#client-server-api-v1">Client&lt;-&gt;Server API</a> - defines how Matrix compatible clients communicate with Matrix homeservers.</li>
+<li><a href="/docs/spec#federation-api">Server&lt;-&gt;Server API</a> - defines how Matrix homeservers exchange messages and synchronise history with each other.</li>
+<li><a href="/docs/spec/#application-service-api">Application Service API</a> - defines how to extend the functionality of Matrix with 'integrations' and bridge to other networks.</li>
+<li><a href="/docs/spec/#modules">Modules</a> - specifies features that must be implemented by particular classes of clients.</li>
+<li>Open source reference implementations of:</li>
+<li>Clients (Web (React), iOS, Android)</li>
+<li>Client SDKs (Javascript, Web (React), iOS, Android)</li>
+<li>Homeservers (Synapse)</li>
+<li>Application Services (bridges to IRC, Slack, Skype, Lync and more...)</li>
+<li>The actual ecosystem and community of everyone running Matrix servers and services</li>
+<li>Loads of 3rd party contributions of clients, SDKs, servers and services.</li>
+</ul>
+<p>You can find the full list of Matrix enabled projects at <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a>.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<h2>Who and How</h2>
+<div class='question'>
+<h3>What kind of company is Matrix.org?</h3>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Who is funding Matrix.org?</h3>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Who is building Matrix?</h3>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<h2>Concept</h2>
+<div class='question'>
+<h3>Why have you released this as open source?</h3>
+<p>We believe that any open standard defining interoperable communication needs to be justified, demonstrated and validated with transparent open source implementations. For Matrix to achieve its mission of making all communications services [interoperable]{.definition} we believe it needs to be truly open, giving people access to take all the code we produce and to use and build on top of it.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What do you mean by open?</h3>
+<p>Matrix is an open standard, meaning that we have freely published the
+details for how to communicate [interoperably][interoperable]{.definition} using the Matrix set of
+HTTP APIs.  We encourage anyone and everyone to use the APIs and build
+their own projects which implement them and so benefit from
+interoperability with the rest of the Matrix ecosystem.  We also
+ensure the standard is not encumbered by any known patent licensing
+requirements.</p>
+<p>Matrix is also open source, meaning that we have released the source
+code of the reference servers, clients and services to the public domain
+under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Licence v2</a>, to
+encourage anyone and everyone to run their own servers and clients, and
+enhance them and contribute their enhancements as they see fit.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What does federated mean?</h3>
+<p>Federation allows separate deployments of a communication service to
+communicate with each other - for instance a mail server run by Google
+federates with a mail server run by Microsoft when you send email from
+@gmail.com to @hotmail.com.</p>
+<p>[Federation]{.definition} is different to interoperability, as [interoperable]{.definition} clients
+may simply be running on the same deployment - whereas in federation the
+deployments themselves are exchanging data in a compatible manner.</p>
+<p>Matrix provides open federation - meaning that anyone on the internet
+can join into the Matrix ecosystem by deploying their own server.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How is this like e-mail?</h3>
+<p>When email was first set up in the early ‘80s, companies like Compuserve
+and AT&amp;T and Sprint set up isolated email communities which only allowed
+you to exchange mail with users on the same system.  If you got your
+email from one service and your friend from another, then you couldn't
+message each other.  This is basically the situation we're in today with
+VoIP and IM.</p>
+<p>TODO : how was the problem solved for email? how does this relate to federation?</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why has no one done this before?</h3>
+<p>There have been several attempts before including [SIP]{.definition}, [XMPP]{.definition} and [RCS]{.definition}.</p>
+<p>All of these have had some level of success, but many different
+technological/usability/economic factors have ended up limiting their
+success.  Unfortunately, we've not ended up in a world where everyone
+has a SIP URI or Jabber ID on their business card, or a phone that
+actually uses RCS.</p>
+<p>TODO: second paragraph rework</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<h2>Practical</h2>
+<div class='question'>
+<h3>What can I actually do with this?</h3>
+<p>A typical <a href="#definition-client" class="definition">client</a> provides a simple chatroom interface to Matrix -
+letting the user interact with users and rooms anywhere within the
+Matrix [federation]{.definition}.  Text and image messages are supported, and basic
+voice-only VoIP calling via WebRTC is supported in one-to-one rooms.
+(As of October 2015, experimental multi-way calling is also available
+on Riot.im).</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client</td>
+<td>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How can I get involved?</h3>
+<p>Come say hi on <a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a>!  Install [synapse]{.defintion} and tell us how you get on. Critique [the spec].  Write <a href="#definition-client" class="defintion">clients</a>.  Write bridges!  Run bridges!  Nose around in the repositories in our
+<a href="https://github.com/matrix-org">GitHub organization</a> and send us some pull requests
+to fix some bugs or add some features!  You could even try to write a homeserver
+(but be warned, Matrix's architecture makes homeservers orders of magnitude harder
+than clients or bridges.)</p>
+<p>See <a href="http://github.com/matrix-org/synapse/tree/master/CONTRIBUTING.rst">CONTRIBUTING.rst</a> for
+full details on how to contribute to the project.  All are welcome!</p>
+<p>TODO: total re-work.
+TODO: there needs to be a separate page for just this</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Where can I get support?</h3>
+<p><a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a> aka #matrix on irc.freenode.is your best bet.</p>
+<p>TODO: expand with personas</p>
 <table class="definition-list">
 <thead>
 <tr>

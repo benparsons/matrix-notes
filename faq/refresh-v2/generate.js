@@ -12,8 +12,8 @@ var config = require("./questions-config.json");
 
 var definitionLinks = "";
 config.definitions.forEach((definition) => {
-    definitionLinks += "[" + definition.name + "]: ";
-    definitionLinks += "#definition-" + definition.name.toLowerCase();
+    definitionLinks += "[" + definition.name.toLowerCase() + "]: ";
+    definitionLinks += "#definition-" + definition.name.toLowerCase().replace(' ', '');
     definitionLinks += "\n";
 });
 
@@ -51,7 +51,7 @@ config.sections.forEach((section) => {
             questionmarkdown += "\n\n|Term|Definition|\n|---|---|\n";
             questionDefinitions.forEach(term => {
                 questionmarkdown += "|" + term + "|";
-                questionmarkdown += config.definitions.find(d => {return d.name == term}).definition;
+                questionmarkdown += config.definitions.find(d => {return d.name.toLowerCase() == term.toLowerCase()}).definition;
                 questionmarkdown += "|\n";
             });
             questionmarkdown += "{.definition-list}";
