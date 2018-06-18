@@ -13,13 +13,4 @@ fs.watch(filepath, {recursive: true}, (eventType, filename) => {
       if (err) console.log(err);
       else console.log("Saved");
   })
-//   if (filename && filename.indexOf('twim') !== -1) {
-//     console.log(`filename provided: ${filename}`);
-//     var file = fs.readFileSync(filename, 'utf-8');
-//     var urls = fs.readFileSync("_url-directory.md", 'utf-8');
-//     var html = converter.makeHtml(file + "\n\n" + urls);
-//     writeHtmlFile("<body>\n" + html + "\n</body>\n", filename)
-//   } else {
-//     console.log('filename not provided or not twim');
-//   }
 });
