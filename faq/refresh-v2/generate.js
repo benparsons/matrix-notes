@@ -9,7 +9,7 @@ function html() {
 
     var markdownSource = "";
 
-    var config = require("./questions-config.json");
+    var config = JSON.parse(fs.readFileSync("./questions-config.json", 'utf8'));
 
     var definitionLinks = "";
     config.definitions.forEach((definition) => {
