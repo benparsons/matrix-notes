@@ -8,7 +8,7 @@
     <script>
         $(document).ready(function() {
             $("a").click(function(event){
-                //if ($(event.target).hasClass("definition")) {
+                if ($(event.target).hasClass("definition")) {
                     console.log("show definitions");
                     var element = $(event.target);
                     while (! element.hasClass("question")) {
@@ -17,7 +17,7 @@
                     console.log(element);
                     element.find(".definition-list").toggle(200);
                     return false;
-                //}
+                }
                 
             });
         });
@@ -150,6 +150,8 @@
 <h2>Who and How</h2>
 <div class='question'>
 <h3>What kind of company is Matrix.org?</h3>
+<p>Matrix.org is an open initiative which acts as a neutral and independent custodian of the Matrix standard. As of Sept 2017 we are finally in the process of incorporating it as a dedicated non-profit entity (most likely a limited by guarantee UK private company called the Matrix.org Foundation).</p>
+<p>TODO rewrite</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -161,7 +163,34 @@
 </table>
 </div>
 <div class='question'>
-<h3>Who is funding Matrix.org?</h3>
+<h3>How is Matrix.org funded?</h3>
+<p>TODO: rewrite to include Status.im.</p>
+<p>Matrix.org is currently (Sept 2017) funded by the community, through a
+combination of community support (via
+<a href="https://patreon.com/matrixdotorg">Patreon</a>,
+<a href="https://liberapay.com/matrixdotorg">Liberapay</a>, Bitcoin and Ethereum),
+corporate sponsorship, and grant funding.</p>
+<p>Below is ok.</p>
+<p>Current Elliptic-level supporters on
+Patreon and corporate sponsors can be found on our <a href="https://matrix.org/blog/supporters">supporters
+page</a>.</p>
+<p>If you would like to support the core Matrix team as a member of the community, you can do so via:</p>
+<ul>
+<li><a href="https://patreon.com/matrixdotorg">Patreon</a></li>
+<li><a href="https://liberapay.com/matrixdotorg">Liberapay</a></li>
+<li>Bitcoin (address: 1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAE)</li>
+<li>Ethereum (address: 0xA5f9a4f9E024F6D727f7afdA9257e22329A97485)</li>
+</ul>
+<p>If you would like to sponsor the
+team as a corporation, or are interested in paying for prioritised or custom
+development, please <a href="mailto:matthew@matrix.org">get in touch</a>.</p>
+<p>For the first three years of Matrix's development (2014-2017), most of the core
+contributors worked for <a href="https://www.amdocs.com">Amdocs</a>, who paid for them to
+work fulltime on Matrix.  In July 2017, Amdocs considered the project to be
+sufficiently successful that it could now self-support and so stopped funding.
+The majority of the core team is now employed by [New Vector]{.definition}, an independent company
+set up to hire the team and support Matrix's development.  Other contributors
+are funded by their own employers or donate their own time to the project.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -174,6 +203,11 @@
 </div>
 <div class='question'>
 <h3>Who is building Matrix?</h3>
+<p>The core team is ~12 people with extensive experience in building custom
+VoIP and Messaging apps for mobile network operators. Most of us work for [New Vector]{.definition},
+but there are an increasing number of contributors from other companies and
+folks all over the internet.</p>
+<p>TODO: good opportunity to mention Matrix vs NV</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -340,5 +374,135 @@ TODO: there needs to be a separate page for just this</p>
 <tbody></tbody>
 </table>
 </div>
+<h1>Real Use</h1>
+<h2>how as a user</h2>
+<div class='question'>
+<h3>What Matrix compliant apps are there?</h3>
+<p>Quite a few, ranging from the glossy mass-market to the geeky command-line.  There's even an emacs macro.</p>
+<p>Check out <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a> for the current
+list of Matrix enabled projects.</p>
+<p>TODO: Give some examples</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What bridges to other networks are available?</h3>
+<p>There are a large number of '[bridges]{.definition}' which integrate existing communication networks into
+Matrix. This list is growing rapidly, and you can find bridges both written by the Matrix core team
+and contributed by the wider community.  The full list can be seen at
+<a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a>, but the core ones as of Oct 2015 include:</p>
+<p>TODO update list, talk to Half-Shot</p>
+<ul>
+<li><a href="https://github.com/matrix-org/matrix-appservice-irc">matrix-appservice-irc</a> - an increasinglycomprehensive Matrix&lt;-&gt;IRC bridge</li>
+<li><a href="https://github.com/matrix-org/matrix-appservice-verto">matrix-appservice-verto</a> - links from Matrix toFreeSWITCH via the Verto protocol</li>
+<li><a href="https://github.com/matrix-org/matrix-appservice-slack">matrix-appservice-slack</a> - a basic bridge toSlack</li>
+<li><a href="https://github.com/matrix-org/node-purple">node-purple</a> - lets you access any of the 20+ protocolssupported by <a href="https://developer.pidgin.im/wiki/WhatIsLibpurple">libpurple</a>, including Skype, Lync, XMPP,etc)</li>
+<li><a href="https://github.com/matrix-org/matrix-appservice-bridge">matrix-appservice-bridge</a> - a general NodeJS framework for writing bridges</li>
+</ul>
+<p>TODO: this tutorial should be hosted on Matrix.org</p>
+<p>Writing new bridges is incredibly fun and easy - see the <a href="https://github.com/matrix-org/matrix-appservice-bridge/blob/master/HOWTO.md">matrix-appservice-bridge HOWTO</a>
+for an example of how to write a fully functional Slack bridge in less than 100 lines of code!</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How do I get an account and get started?</h3>
+<p>The quickest way is to pick a client from <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a> and sign up.</p>
+<p>Clients can access any [homeserver]{.definition} - you don't have to use matrix.org, though as of July 2018 matrix.org is the largest public homeserver.</p>
+<p>TODO: mention hello-matrix.net?</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Where can I find a mobile app?</h3>
+<p>[Riot]{.definition} is available for Android and iOS.</p>
+<p>The iOS version can be downloaded from the <a href="https://itunes.apple.com/us/app/vector.im/id1083446067">Apple store</a>.</p>
+<p>The Android version can be downloaded from the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a> or <a href="https://f-droid.org/repository/browse/?fdid=im.vector.alpha">F-Droid</a>. If you are not sure which one to choose, install Riot from the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a>.</p>
+<p>For the Android app, you can also install the latest development version
+built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a>. Use it at your own risk and only if you know what you are doing.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>I installed Riot via F-Droid, why is it draining my battery?</h3>
+<p>The [F-Droid]{.definition} release of Riot does not use <a href="https://developers.google.com/cloud-messaging/">Google Cloud Messaging</a>. This allows users that do not have or want Google Services installed to use Riot.</p>
+<p>The drawback is that Riot has to pull for new messages, which can drain your battery. To counter this, you can change the delay between polls in the settings. Higher delay means better battery life (but may delay receiving messages). You can also disable the background sync entirely (which means that you won't get any notifications at all).</p>
+<p>If you don't mind using Google Services, you might be better off installing the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a> version.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Where can I find a web app?</h3>
+<p>You can use <a href="https://riot.im/app/">Riot.im</a> - a glossy web client written on top of <a href="https://github.com/matrix-org/matrix-react-sdk">matrix-react-sdk</a>.</p>
+<p>You can also host Riot on your own server. It's a static web application, just download the <a href="https://github.com/vector-im/riot-web/">last release</a> and unpack it.</p>
+<p>TODO: Mention neo?</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Where can I find a desktop client?</h3>
+<p>You can use the desktop build of <a href="https://riot.im/desktop.html">Riot.im</a>.</p>
+<p>There are also other desktop clients - check the list of clients on <a href="http://matrix.org/docs/projects/try-matrix-now.html#clients">matrix.org</a>.</p>
+<p>TODO: update this list with concrete examples</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<h2>Tech</h2>
+<h2>Self-hosting</h2>
+<h1>Detail</h1>
+<h2>position in the world</h2>
+<h2>Comparisons</h2>
+<h2>more detail</h2>
+<h2>Voip</h2>
+<h2>Synapse</h2>
 
 </body>

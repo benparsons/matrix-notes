@@ -8,7 +8,7 @@
     <script>
         $(document).ready(function() {
             $("a").click(function(event){
-                //if ($(event.target).hasClass("definition")) {
+                if ($(event.target).hasClass("definition")) {
                     console.log("show definitions");
                     var element = $(event.target);
                     while (! element.hasClass("question")) {
@@ -17,7 +17,7 @@
                     console.log(element);
                     element.find(".definition-list").toggle(200);
                     return false;
-                //}
+                }
                 
             });
         });

@@ -12,7 +12,7 @@
         {   
             "name": "Real Use",
             "parts": [
-                { "name": "how as a user", "questions": [19] },
+                { "name": "how as a user", "questions": [19, 20, 23, 59, 60, 61, 62] },
                 { "name": "Tech", "questions": [] },
                 { "name": "Self-hosting", "questions": [] }
             ]
@@ -26,7 +26,6 @@
                 { "name": "Voip", "questions": [] },
                 { "name": "Synapse", "questions": [] }
             ]
-            
         }
     ],
     "definitions": [
