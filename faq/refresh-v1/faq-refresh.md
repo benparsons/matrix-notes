@@ -207,3 +207,7 @@ servers are owned by whoever sets them up
 so yes, most belong to other users
 just like gmail.com belongs to google and hotmail.com to microsoft
 but you can send messages from one to the other
+
+Spec related points
+
+Make a list of things to compare to, then make a separate page?

@@ -497,11 +497,582 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 </table>
 </div>
 <h2>Tech</h2>
+<div class='question'>
+<h3>How do I Matrix-enable my existing app?</h3>
+<p>If your app doesn't have any communication capability already, you'll want
+to use one of the Matrix [client SDK]{.definition}s to add it in.  These come in different
+levels of sophistication - ranging from a simple HTTP API wrapper (like matrix-js-sdk, matrix-ios-sdk or matrix-android-sdk)
+through to reusable UI components (like matrix-react-sdk and matrix-ios-kit).
+TODO: update this list
+Pick the one for your platform, or a 3rd party one if none of the above work for you,
+and get plugging it in.  You'll probably also want to read the <a href="http://matrix.org/docs/howtos/client-server.html">Client-Server API
+HOWTO</a> too.</p>
+<p>If you already have communication infrastructure set up (XMPP, custom HTTP, or whatever),
+then you'll want to run a bridge to expose it to the wider Matrix ecosystem.
+See <a href="https://github.com/matrix-org/matrix-appservice-bridge/blob/master/HOWTO.md">matrix-appservice-bridge HOWTO</a> for a
+guide of how to write bridges using the matrix-appservice-bridge framework, or co-opt one
+from the list at <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a>.
+<a href="/docs/spec/#application-service-api">Application Service API</a> gives the details of the API
+that bridges have to implement.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How can I write a client on Matrix?</h3>
+<p>See the <a href="http://matrix.org/docs/howtos/client-server.html">Client-Server API
+HOWTO</a> and the <a href="/docs/api">API
+docs</a> and <a href="/docs/spec">the Spec</a> for all the details you need
+to write a client.</p>
+<p>TODO: mention other guides here</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How do I register custom matrix event types?</h3>
+<p>We're not yet managing a registry of custom matrix event types.  If you
+have any particularly good ones you want to tell the world about, please
+let us know on [#matrix-dev:matrix.org].</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Can I write a Matrix homeserver?</h3>
+<p>Yes. Matrix is just a spec, and implementations of the spec are very welcome!</p>
+<p>The most well-distributed [homeserver] in the wild today is [Synapse], but other projects aiming to implement the server component include:</p>
+<ul>
+<li>Dendrite</li>
+<li>Ruma</li>
+<li>The Construct</li>
+<li>mxhsd (still wants to be included?)</li>
+<li>Plasma</li>
+<li>ma1uta?</li>
+</ul>
+<p>The [S2S] spec is still being finalised for r0, so if you are planning on doing work in this area, come chat to us in [#matrix-dev:matrix.org]. You can also read about the <a href="https://matrix.org/docs/spec/server_server/unstable.html">Federation API here</a>.</p>
+<p>TODO: everything</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h4>Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc?</h4>
+<p>HTTP may not be the most efficient transport, but it is ubiquitous, very well understood and has numerous implementations on almost every platform and language. It also has a simple upgrade path to HTTP/2, which is relatively bandwidth and round-trip efficient.</p>
+<p>For these reasons it has been chosen as the mandatory baseline of the exchange, but it is still entirely possible to use other protocols for communication between clients and server (see for example this <a href="https://github.com/matrix-org/matrix-doc/blob/master/drafts/websockets.rst">websocket transport draft</a>), and it's also possible in the future that negotiation of more efficient protocols will be added for the [federation]{.definition} between servers, with HTTP+JSON remaining as the compatibility baseline.</p>
+<p>TODO update mention of websocket proposal</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 <h2>Self-hosting</h2>
+<div class='question'>
+<h3>How do I join the global Matrix federation?</h3>
+<p>You can <a href="#matrix-compliant-apps">choose a client</a> and create a user account on an existing homeserver.</p>
+<p>To host your own homeserver you can download and run one of the available Matrix servers - please see <a href="http://matrix.org/docs/guides/getting_involved.html#run">this guide</a> for details!</p>
+<p class="definition">TODO: mention [federation]</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How do I run my own homeserver?</h3>
+<p>Follow the instructions for the [homeserver]{.definition} you want to run. If you want to run [Synapse]{.definition}, the reference homeserver from Matrix.org, follow <a href="https://github.com/matrix-org/synapse#synapse-installation">these instructions</a>.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What ports do I have to open up to join the global Matrix federation?</h3>
+<p>We recommend servers use port 8448 for server&lt;-&gt;server HTTPS traffic.  Look at <a href="https://github.com/matrix-org/synapse#setting-up-federation">&quot;Setting up Federation&quot;</a> in the Synapse readme file for details.</p>
+<p>TODO: I don't fully understand the rest of this section</p>
+<p>Client&lt;-&gt;Server traffic can talk directly to Synapse via port 8448, but as by default Synapse creates a self-signed TLS certificate this can cause problems for clients which can't easily trust self-signed certificates (e.g. most web browsers).  Instead, you can proxy access to Synapse's HTTP listener on port 8008 via an existing HTTPS proxy with a valid certificate (e.g. an nginx listening on port 443), or you can point Synapse at a valid X.509 signed TLS certificate.  In future, Synapse will probably use letsencrypt to autogenerate valid certificates rather than self-signed ones during installation, simplifying this process enormously.</p>
+<p>You can also put Synapse entirely behind an existing TLS load balancer and not expose port 8448 at all.  In this situation, Synapse will need to be configured to share the same <em>public</em> TLS certificate as the load balancer (as Synapse uses the public certificate for identity in other areas too, and it has to match the certificate that other servers see when they connect).</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How do I connect my homeserver to the public Matrix network?</h3>
+<p>TODO this is essentially federation explained again.
+See
+<a href="http://github.com/matrix-org/synapse">http://github.com/matrix-org/synapse</a>
+for details</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Can I run my own identity server?</h3>
+<p>TODO: link to &quot;what is an id server&quot;</p>
+<p>TODO: understand sydent + max's complaints</p>
+<p>Yes - the reference implementation is
+<a href="https://github.com/matrix-org/sydent">sydent</a> and you can run your own ID server cluster that tracks 3rd party to Matrix ID mappings.  This won't be very useful right now, though, and we don't recommend it.</p>
+<p>If you want your server to participate in the global replicated Matrix ID
+service then please get in touch with us. Meanwhile, we are looking at
+ways of decentralising the 'official' Matrix identity service so that
+identity servers are 100% decentralised and can openly federate with
+each other. <strong>N.B. that you can use Matrix without ever using the
+identity service - it exists only to map 3rd party IDs (e.g. email
+addresses) to matrix IDs to aid user discovery</strong>.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why can't I rename my homeserver?</h3>
+<p>Currently, the [homeserver]{.definition} name is assumed never to change. This means that if you rename your server, other servers will think it's a different server.</p>
+<p>Perhaps in the future we will add an API for changing the homeserver name, but for now this is not supported.</p>
+<p>TODO: is there an MSC for this?</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 <h1>Detail</h1>
 <h2>position in the world</h2>
+<div class='question'>
+<h3>Why do you think existing apps will ever join this officially?</h3>
+<p>We firmly believe it is what is right for the consumer. As people begin
+to use [interoperable]{.definition} communications tools, service providers will see the
+benefit and compete on quality of service, security and features rather
+than relying on locking people into their walled garden. We believe as
+soon as users see the availability and benefits of interoperable
+services they will demand it.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why aren't you doing this through the IETF? or W3C? or 3GPP?</h3>
+<p>We do recognise the advantages of working with existing standards
+bodies. We have been focused on writing code and getting it out, and the standard has been evolving rapidly since initial release in September 2014.
+Once the standard has matured sufficiently it may well be appropriate to work with an official
+standard body to maintain it going forwards.</p>
+<p>TODO: confirm if this is still the case</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How mature is this?</h3>
+<p>We started working on Matrix in July 2014, and opened it to the
+public in September 2014.  We got all the core features in place in December 2014
+and entered beta, and since then have been iterating away on the beta refining the
+architecture and APIs, fixing bugs and scalability, and adding new features, clients,
+bridges etc.</p>
+<p>As of October 2015 (synapse 0.10) it's good for serious experimentation and
+non-production services and can absolutely be used in the real world.  However, we're
+still in beta and we'll want to freeze the spec and implement clustering and other
+nice features before we really declare it ready for production.</p>
+<p>TODO: needs complete rework</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why Apache Licence?</h3>
+<p>TODO: link to &quot;what do you mean by open&quot;</p>
+<p>The Apache Licence is a permissive licence. We want the Matrix protocol itself to be free and open, but people are free to create both free and commercial apps and services that uses the protocol. In our opinion, any Matrix-service only enhances the Matrix ecosystem.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 <h2>Comparisons</h2>
+<div class='question'>
+<h3>What is the difference between Matrix and IRC?</h3>
+<p>We love IRC. In fact, prior to the point where Riot was stable enough for daily use IRC was
+our primary communication tool. Between us we've written IRCds, IRC bots
+and admined dreamforge, UnrealIRCd, epona, ircservices and several
+others.  That said, it has some limitations that Matrix seeks to improve
+on:</p>
+<ul>
+<li>Text only</li>
+<li>No history</li>
+<li>No multiple-device support</li>
+<li>No presence support</li>
+<li>Fragmented identity model</li>
+<li class="definition">No open [federation]</li>
+<li>No standard APIs, just a rather limited TCP line protocol</li>
+<li>Non-standardised federation protocol</li>
+<li>No built-in end-to-end encryption</li>
+<li>Disruptive net-splits</li>
+<li>Non-extensible</li>
+</ul>
+<p><a href="http://ircv3.net">IRCv3</a> exists and is addressing some of these issues;
+this is great news and we wish them well.  It's almost a contradiction
+in terms to get competitive between openly interoperable communication
+projects - we look forward to increasing the richness of Matrix&lt;-&gt;IRC
+bridges as the project progresses.</p>
+<p>TODO: link to irc bridge(s)</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is the difference between Matrix and XMPP?</h3>
+<p>We think of Matrix and XMPP as being quite different; at its core
+Matrix can be thought of as an eventually consistent global JSON db with
+an HTTP API and pubsub semantics - whilst XMPP can be thought of as a
+message passing protocol. You can use them both to build chat systems;
+you can use them both to build pubsub systems; each comes with different
+tradeoffs. Matrix has a deliberately extensive 'kitchen sink' baseline
+of functionality; XMPP has a deliberately minimal baseline set of
+functionality. If XMPP does what you need it to do, then we're genuinely
+happy for you :) Meanwhile, rather than competing, an XMPP Bridge like
+<a href="https://github.com/SkaveRat/xmpptrix">Skaverat's xmpptrix beta</a> or
+<a href="https://github.com/jfrederickson/matrix-xmpp-bridge">jfred's matrix-xmpp-bridge</a>
+or Matrix.org's own <a href="https://github.com/matrix-org/purple-matrix/">purple-matrix</a>
+has potential to let both environments coexist and make the most of each
+other's benefits.</p>
+<p>TODO: above is good, the below is in a strange voice, assertive but then has equivocations in italics. Need opinions</p>
+<p>The Matrix team used XMPP (Openfire, ejabberd, spectrum, asmack,
+XMPPFramework) for IM before starting to experiment with open HTTP APIs
+as an alternative in around 2012.  The main issues with XMPP that
+drove us in this direction <strong>as of 2012</strong> were:</p>
+<ul>
+<li>Not particularly web-friendly - you can't easily speak XMPP from a
+web browser. <em>N.B. Nowadays you have options like XMPP-FTW and
+Stanza.io that help loads with letting browsers talk XMPP</em></li>
+<li>Single logical server per MUC is a single point of control and
+availability. <em>MUCs can be distributed over multiple physical
+servers, but they still sit behind a single logical JID and domain.
+FMUC improves this with a similar approach to Matrix, but as of Oct
+2015 there are no open source implementations. The MIX XMPP extension
+also aims to address this limitation</em>.</li>
+<li>History synchronisation is very much a second class citizen feature</li>
+<li>Bridging to other protocols and defragmenting existing communication
+apps and networks is very much a second class citizen feature</li>
+<li>Stanzas aren't framed or reliably delivered without extensions. <em>See
+<a href="http://wiki.xmpp.org/web/Myths#Myth_Four:_XMPP_is_unreliable_without_a_bunch_of_extensions.">wiki.xmpp.org</a>
+for an XMPP take on this</em></li>
+<li>Multiple device support is limited. <em>Carbons and MAM aim to resolve this</em></li>
+<li>Baseline feature set is so minimal that fragmentation of features
+between clients and servers is common, especially as interoperability
+profiles for features have fallen behind (as of July 2015)</li>
+<li>No strong identity system (i.e. no standard E2E PKI, unless you
+count X.509 certs, which <a href="http://www.thoughtcrime.org/blog/ssl-and-the-future-of-authenticity/">are
+questionable</a>)</li>
+<li>Not particularly well designed for mobile use cases: push;
+bandwidth-efficient transports. <em>Since the time of writing a <a href="http://xmpp.org/extensions/xep-0357.html">Push
+XEP has appeared</a>, and
+<a href="http://wiki.xmpp.org/web/Myths#Myth_Three:_It.27s_too_bandwidth-inefficient_for_mobile.">wiki.xmpp.org</a>
+states that XMPP is usable over a 9600bps + 30s latency link.</em></li>
+</ul>
+<p>This said, the whole area of XMPP vs Matrix is quite subjective.
+Rather than fighting over which open interoperable communication
+standard works the best, we should just collaborate and bridge everything
+together.  The more federation and interoperability the better.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is the difference between Matrix and PSYC?</h3>
+<p>TODO: wtf is PSYC? do we need to include this?</p>
+<p>PSYC is a open federated messaging protocol loosely inspired by IRC.  In
+version 1 it was a standalone protocol, and in version 2 it is being
+reutilised as a messaging layer on top of GNUnet.  We honestly don't
+know that much about it, beyond trying to use psycd as an XMPP&lt;-&gt;IRC
+bridge in 2010. Matrix differentiates primarily by providing simple HTTP
+APIs rather than the more exotic compact line protocol in PSYC v1 or the
+comprehensive GNUnet stack in v2, and Matrix focuses more on decentralised
+conversation history rather than just decentralised chat servers.
+On the other hand, Matrix doesn't provide the metadata protection
+guarantees that GNUnet/PSYC aims for.</p>
+<p>|</p>
+<p>See <a href="http://about.psyc.eu/Matrix">http://about.psyc.eu/Matrix</a> for
+PSYC's views on Matrix.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is the difference between Matrix and Tox?</h3>
+<p>TODO Do we need to include this?</p>
+<p>Tox.chat looks to be a very cool clone of Skype - a fully decentralised
+peer-to-peer network.  Matrix is deliberately not a 'pure' peer-to-peer
+system; instead each user has a well-defined homeserver which stores
+his data and that he can depend upon.  Matrix provides HTTP APIs;
+Tox.chat provides C APIs.  As of October 2015 Tox doesn't seem to have an
+answer yet for decentralised conversation history storage.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>How does Matrix compare with something like Trillian or Pidgin?</h3>
+<p>Trillian and Pidgin and similar aggregating IM clients merge all your IM
+activity into a single app.  However, your history and
+identity is still fragmented across the networks.  People can't find you
+easily, and your history is fragmented (other than on the device
+where the client runs).   And rather than being able to chose the right
+app for the job when communicating with people, you are pushed towards
+relying on a specific aggregation app.</p>
+<p>Matrix lets you get the best of both worlds by linking to all the
+different networks (XMPP, AIM, ICQ, Lync, Skype etc) on the serverside,
+using bridges which can be run by anyone.  Matrix then provides a simple
+standard HTTP API to access any of these networks, and lets you choose
+whichever client you prefer (either as a 'native' Matrix client or using
+a non-Matrix client from one of the networks which has been bridged in).</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 <h2>more detail</h2>
+<div class='question'>
+<h3>What is a client?</h3>
+<p>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps.  It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Can I use Matrix without installing a Matrix client?</h3>
+<p>Sure. An ever increasing number of protocols are being [bridged][bridging]{.definition} into Matrix, so if you use something like IRC on Freenode you may well be indirectly benefiting from Matrix, as others may be connected into the IRC channel via Matrix.</p>
+<p>TODO: mention bridging</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is a home server?</h3>
+<p>A user's <a href="#definition-client" class="definition">client</a>s connect to a single homeserver, which stores the communication history and account information for that user, and shares data with the wider Matrix ecosystem by synchronising communication history with other homeservers.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client</td>
+<td>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is a MXID?</h3>
+<p>Matrix user IDs (MXID) are unique user IDs. They are in the format <code>@username:homeserver.tld</code> (this format is used to avoid confusing them with email addresses). They are intended to be fairly hidden (although right now they are not) - instead you will find and identify other users via [3PID]{.definition}s.</p>
+<p>TODO: is this hidden comment still true?</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is a 3PID?</h3>
+<p>Third-party IDs (3PIDs) are IDs from other systems or contexts, such as email addresses, social network accounts and phone numbers.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What is an identity server?</h3>
+<p>Users in Matrix are identified internally via their [matrix user ID (MXID)][MXID]{.definition}. However, existing 3rd party ID (3PID) namespaces such as email addresses or phone numbers should be used publicly to identify Matrix users, at least for invitation purposes.  A Matrix &quot;Identity&quot; describes both the user ID and any other existing IDs from third party namespaces linked to their account.</p>
+<p>Matrix users can link third-party IDs (3PIDs) to their user ID. Linking 3PIDs creates a mapping from a 3PID to a user ID. This mapping can then be used by Matrix users in order to discover the MXIDs of their contacts.</p>
+<p>In order to ensure that the mapping from 3PID to user ID is genuine, a globally federated cluster of trusted &quot;Identity Servers&quot; (IS) are used to verify the 3PID and persist and replicate the mappings.
+Usage of an IS is not required in order for a client application to be part of the Matrix ecosystem. However, without one clients will not be able to look up user IDs using 3PIDs.</p>
+<p>The precise architecture of identity servers is currently in flux and subject to change as we work to fully decentralise them.</p>
+<p>TODO: is all this still correct?</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Where do my conversations get stored?</h3>
+<p>Each [homeserver]{.definition} stores the communication history and account information for all of its <a href="#definition-client" class="definition">client</a>s, and shares data with the wider Matrix ecosystem by synchronising communication history with other homeservers and their clients. Clients typically communicate with each other by emitting events in the context of a virtual room. Room data is [replicated][federation]{.definition} across all of the homeservers <em>whose users are participating in a given room</em>.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client</td>
+<td>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class='question'>
+<h3>What are redactions?</h3>
+<p>Since events are extensible it is possible for malicious users and/or servers to add keys that are, for example offensive or illegal. Since some events cannot be simply deleted (e.g. membership events) we instead 'redact' events, essentially stripping the event of all keys that are not required by the protocol. Redacting an event cannot be undone, allowing server owners to also delete the offending content from the databases.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Can I log into other homeservers with my username and password?</h3>
+<p>Currently, no. We are looking at options for decentralising or migrating user accounts between multiple servers, and might add this feature at a later stage.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 <h2>Voip</h2>
 <h2>Synapse</h2>
 

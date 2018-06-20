@@ -13,16 +13,16 @@
             "name": "Real Use",
             "parts": [
                 { "name": "how as a user", "questions": [19, 20, 23, 59, 60, 61, 62] },
-                { "name": "Tech", "questions": [] },
-                { "name": "Self-hosting", "questions": [] }
+                { "name": "Tech", "questions": [26, 27, 30, 45, 48] },
+                { "name": "Self-hosting", "questions": [50, 52, 51, 25, 53, 58] }
             ]
         },
         {
             "name": "Detail",
             "parts": [
-                { "name": "position in the world", "questions": [] },
-                { "name": "Comparisons", "questions": [] },
-                { "name": "more detail", "questions": [] },
+                { "name": "position in the world", "questions": [21, 22, 31, 44 ] },
+                { "name": "Comparisons", "questions": [ 14, 15, 16, 17, 18] },
+                { "name": "more detail", "questions": [32, 33, 34, 35, 36, 37, 38, 39, 43] },
                 { "name": "Voip", "questions": [] },
                 { "name": "Synapse", "questions": [] }
             ]
