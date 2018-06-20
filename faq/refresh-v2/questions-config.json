@@ -36,6 +36,14 @@
         {
             "name": "matrixed together",
             "definition": "In mathematics, a matrix is a... "
+        },
+        {
+            "name": "homeserver",
+            "definition": "federation definition"
+        },
+        {
+            "name": "Synapse",
+            "definition": "Synapse definition"
         }
     ]
 }
