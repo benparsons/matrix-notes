@@ -7,11 +7,14 @@ md.use(require("markdown-it-anchor"), {permalink: true}); // Optional, but makes
 md.use(require("markdown-it-table-of-contents"));
 
 function html() {
-    var outline = fs.readFileSync("faq.html", 'utf-8');
+    //var root = "faq/refresh-v2/";
+    var root = "./";
+
+    var outline = fs.readFileSync(root + "faq.html", 'utf-8');
 
     var markdownSource = "\n[[toc]]\n\n";
 
-    var config = JSON.parse(fs.readFileSync("./questions-config.json", 'utf8'));
+    var config = JSON.parse(fs.readFileSync(root + "questions-config.json", 'utf8'));
 
     var definitionLinks = "";
     config.definitions.forEach((definition) => {
@@ -25,7 +28,7 @@ function html() {
         section.parts.forEach((part) => {
             markdownSource += "\n## " + part.name + "\n";
             part.questions.forEach((question) => {
-                var questionMarkdown = fs.readFileSync("questions/q" + question + ".md", 'utf-8');
+                var questionMarkdown = fs.readFileSync(root + "questions/q" + question + ".md", 'utf-8');
 
                 var questionParsed = md.parse(questionMarkdown + "\n\n" + definitionLinks, {});
                 var questionDefinitions = [];
@@ -33,17 +36,11 @@ function html() {
                     if (! token.children) {
                         return;
                     }
-                    var getDefinition = false;
                     token.children.forEach(childToken => {
-                        if (getDefinition) {
-                            questionDefinitions.push(childToken.content)
-                            getDefinition = false;
-                        }
-                        if (!getDefinition && childToken.type === "link_open") {
+                        if (childToken.type === "link_open") {
                             childToken.attrs.forEach(attr => {
-                                if (attr[0] === "class" && attr[1] === "definition") {
-                                    getDefinition = true;
-                                }
+                                if (attr[1].indexOf('#definition-') !== -1)
+                                    questionDefinitions.push(attr[1].replace('#definition-', ''));
                             });
                         }
                     });
@@ -54,7 +51,7 @@ function html() {
                 questionMarkdown += "\n\n|Term|Definition|\n|---|---|\n";
                 questionDefinitions.forEach(term => {
                     questionMarkdown += "|" + term + "|";
-                    questionMarkdown += config.definitions.find(d => {return d.name.toLowerCase() == term.toLowerCase()}).definition;
+                    questionMarkdown += config.definitions.find(d => {return d.name.toLowerCase().replace(' ', '') == term.toLowerCase()}).definition;
                     questionMarkdown += "|\n";
                 });
                 questionMarkdown += "{.definition-list}";
