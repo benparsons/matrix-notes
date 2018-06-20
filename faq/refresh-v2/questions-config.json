@@ -44,6 +44,54 @@
         {
             "name": "Synapse",
             "definition": "Synapse definition"
+        },
+        {
+            "name": "interoperable",
+            "definition": "interoperable definition"
+        },
+        {
+            "name": "New Vector",
+            "definition": "the company"
+        },
+        {
+            "name": "federation",
+            "definition": "federation definition"
+        },
+        {
+            "name": "SIP",
+            "definition": ""
+        },
+        {
+            "name": "XMPP",
+            "definition": ""
+        },
+        {
+            "name": "RCS",
+            "definition": ""
+        },
+        {
+            "name": "bridging",
+            "definition": ""
+        },
+        {
+            "name": "Riot",
+            "definition": ""
+        },
+        {
+            "name": "F-Droid",
+            "definition": ""
+        },
+        {
+            "name": "client SDK",
+            "definition": ""
+        },
+        {
+            "name": "MXID",
+            "definition": ""
+        },
+        {
+            "name": "3PID",
+            "definition": ""
         }
     ]
 }
