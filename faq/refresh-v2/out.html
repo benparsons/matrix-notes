@@ -694,8 +694,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 <div class='question'>
 <h4 id="why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F">Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc? <a class="header-anchor" href="#why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F" aria-hidden="true">¶</a></h4>
 <p>HTTP may not be the most efficient transport, but it is ubiquitous, very well understood and has numerous implementations on almost every platform and language. It also has a simple upgrade path to HTTP/2, which is relatively bandwidth and round-trip efficient.</p>
-<p>For these reasons it has been chosen as the mandatory baseline of the exchange, but it is still entirely possible to use other protocols for communication between clients and server (see for example this <a href="https://github.com/matrix-org/matrix-doc/blob/master/drafts/websockets.rst">websocket transport draft</a>), and it's also possible in the future that negotiation of more efficient protocols will be added for the <a href="#definition-federation" class="definition">federation</a> between servers, with HTTP+JSON remaining as the compatibility baseline.</p>
-<p>TODO update mention of websocket proposal</p>
+<p>For these reasons it has been chosen as the mandatory baseline of the exchange, but it is still entirely possible to use other protocols for communication between clients and server (see for example this <a href="https://github.com/matrix-org/matrix-doc/issues/1148">websocket transport spec proposal</a>), and it's also possible in the future that negotiation of more efficient protocols will be added for the <a href="#definition-federation" class="definition">federation</a> between servers, with HTTP+JSON remaining as the compatibility baseline.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -715,8 +714,8 @@ let us know on [#matrix-dev:matrix.org].</p>
 <div class='question'>
 <h3 id="how-do-i-join-the-global-matrix-federation%3F">How do I join the global Matrix federation? <a class="header-anchor" href="#how-do-i-join-the-global-matrix-federation%3F" aria-hidden="true">¶</a></h3>
 <p>You can <a href="#matrix-compliant-apps">choose a client</a> and create a user account on an existing homeserver.</p>
-<p>To host your own homeserver you can download and run one of the available Matrix servers - please see <a href="http://matrix.org/docs/guides/getting_involved.html#run">this guide</a> for details!</p>
-<p>TODO: mention <a href="#definition-federation" class="definition">federation</a></p>
+<p>To host your own <a href="#definition-homeserver" class="definition">homeserver</a> you can download and run one of the available Matrix servers - please see <a href="http://matrix.org/docs/guides/getting_involved.html#run">this guide</a> for details!</p>
+<p>To better understand how to enable <a href="#definition-federation" class="definition">federation</a> in <a href="#definition-synapse" class="definition">Synapse</a>, take a look at <a href="https://github.com/matrix-org/synapse#setting-up-federation">the specific docs</a>.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -726,8 +725,16 @@ let us know on [#matrix-dev:matrix.org].</p>
 </thead>
 <tbody>
 <tr>
+<td>homeserver</td>
+<td>federation definition</td>
+</tr>
+<tr>
 <td>federation</td>
 <td>federation definition</td>
+</tr>
+<tr>
+<td>synapse</td>
+<td>Synapse definition</td>
 </tr>
 </tbody>
 </table>
@@ -772,10 +779,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </div>
 <div class='question'>
 <h3 id="how-do-i-connect-my-homeserver-to-the-public-matrix-network%3F">How do I connect my homeserver to the public Matrix network? <a class="header-anchor" href="#how-do-i-connect-my-homeserver-to-the-public-matrix-network%3F" aria-hidden="true">¶</a></h3>
-<p>TODO this is essentially federation explained again.
-See
-<a href="http://github.com/matrix-org/synapse">http://github.com/matrix-org/synapse</a>
-for details</p>
+<p>If you have a successfully running Synapse instance and want to <a href="#definition-federation" class="definition">federate</a> with the rest of the public network, take a look at <a href="https://github.com/matrix-org/synapse#setting-up-federation">the specific documentation</a> for details.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -783,7 +787,12 @@ for details</p>
 <th>Definition</th>
 </tr>
 </thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td>federation</td>
+<td>federation definition</td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class='question'>
@@ -1330,8 +1339,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='question'>
 <h3 id="will-synapse-share-my-chat-data-with-other-servers-in-the-federation%3F">Will Synapse share my chat data with other servers in the federation? <a class="header-anchor" href="#will-synapse-share-my-chat-data-with-other-servers-in-the-federation%3F" aria-hidden="true">¶</a></h3>
-<p>Data is only shared between servers of participating users of a room. If all users in a room are on your server, no data is shared with other servers.</p>
-<p>TODO define federation</p>
+<p><a href="#definition-federation" class="definition">Federation</a> in Matrix means that data is only shared between servers of participating users of a room. If all users in a room are on your server, no data is shared with other servers.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -1339,7 +1347,12 @@ Usage of an IS is not required in order for a client application to be part of t
 <th>Definition</th>
 </tr>
 </thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td>federation</td>
+<td>federation definition</td>
+</tr>
+</tbody>
 </table>
 </div>
 
