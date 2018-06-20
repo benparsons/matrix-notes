@@ -48,10 +48,11 @@
         </div>
     </div>
 
-    <h1>Intro</h1>
-<h2>Basics</h2>
+    <p><div class="table-of-contents"><ul><li><a href="#intro">Intro</a><ul><li><a href="#basics">Basics</a></li><li><a href="#who-and-how">Who and How</a></li><li><a href="#concept">Concept</a></li><li><a href="#practical">Practical</a></li></ul></li><li><a href="#real-use">Real Use</a><ul><li><a href="#how-as-a-user">how as a user</a></li><li><a href="#tech">Tech</a></li><li><a href="#self-hosting">Self-hosting</a></li></ul></li><li><a href="#detail">Detail</a><ul><li><a href="#position-in-the-world">position in the world</a></li><li><a href="#comparisons">Comparisons</a></li><li><a href="#more-detail">more detail</a></li><li><a href="#voip">Voip</a></li><li><a href="#synapse">Synapse</a></li></ul></li></ul></div></p>
+<h1 id="intro">Intro <a class="header-anchor" href="#intro" aria-hidden="true">¶</a></h1>
+<h2 id="basics">Basics <a class="header-anchor" href="#basics" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What is Matrix?</h3>
+<h3 id="what-is-matrix%3F">What is Matrix? <a class="header-anchor" href="#what-is-matrix%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix is an open standard for interoperable, decentralised, real-time communication over IP. It can be used to power Instant Messaging, VoIP/WebRTC signalling, Internet of Things communication - or anywhere you need a standard HTTP API for publishing and subscribing to data whilst tracking the conversation history.</p>
 <p>Matrix defines the standard, and provides open source reference implementations of Matrix-compatible Servers, <a href="#definition-client" class="definition">Client</a>s, Client SDKs and Application Services to help you create new communication solutions or extend the capabilities and reach of existing ones.</p>
 <table class="definition-list">
@@ -70,7 +71,7 @@
 </table>
 </div>
 <div class='question'>
-<h3>What is Matrix's Mission?</h3>
+<h3 id="what-is-matrix's-mission%3F">What is Matrix's Mission? <a class="header-anchor" href="#what-is-matrix's-mission%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix’s initial goal is to fix the problem of fragmented IP communications: letting users message and call each other without having to care what app the other user is on - making it as easy as sending an email.</p>
 <p>The longer term goal is for Matrix to act as a generic HTTP messaging and data synchronisation system for the whole web - allowing people, services and devices to easily communicate with each other, empowering users to own and control their data and select the services and vendors they want to use.</p>
 <table class="definition-list">
@@ -84,7 +85,7 @@
 </table>
 </div>
 <div class='question'>
-<h3>What does this mean for users?</h3>
+<h3 id="what-does-this-mean-for-users%3F">What does this mean for users? <a class="header-anchor" href="#what-does-this-mean-for-users%3F" aria-hidden="true">¶</a></h3>
 <p>The aim is to provide an analogous ecosystem to email - one where you can communicate with pretty much anyone, without caring what app or server they are using, using whichever <a href="#definition-client" class="definition">client</a> app &amp; server you chose, and use a neutral identity system like an e-mail address or phone number to discover people to talk to.</p>
 <table class="definition-list">
 <thead>
@@ -102,7 +103,7 @@
 </table>
 </div>
 <div class='question'>
-<h3>Why are you called Matrix?</h3>
+<h3 id="why-are-you-called-matrix%3F">Why are you called Matrix? <a class="header-anchor" href="#why-are-you-called-matrix%3F" aria-hidden="true">¶</a></h3>
 <p>We are called Matrix because we provide a structure in which all communication can be <a href="#definition-matrixedtogether" class="definition">matrixed together</a>.</p>
 <p>No, it’s nothing to do with the film (although you could go and build virtual worlds on top of Matrix if you wanted :)</p>
 <table class="definition-list">
@@ -121,7 +122,7 @@
 </table>
 </div>
 <div class='question'>
-<h3>What does Matrix provide?</h3>
+<h3 id="what-does-matrix-provide%3F">What does Matrix provide? <a class="header-anchor" href="#what-does-matrix-provide%3F" aria-hidden="true">¶</a></h3>
 <ul>
 <li><a href="/docs/spec">Open Standard</a> HTTP APIs for transferring JSON messages (e.g. instant messages, WebRTC signalling), including:</li>
 <li><a href="/docs/spec#client-server-api-v1">Client&lt;-&gt;Server API</a> - defines how Matrix compatible clients communicate with Matrix homeservers.</li>
@@ -147,9 +148,9 @@
 <tbody></tbody>
 </table>
 </div>
-<h2>Who and How</h2>
+<h2 id="who-and-how">Who and How <a class="header-anchor" href="#who-and-how" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What kind of company is Matrix.org?</h3>
+<h3 id="what-kind-of-company-is-matrix.org%3F">What kind of company is Matrix.org? <a class="header-anchor" href="#what-kind-of-company-is-matrix.org%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix.org is an open initiative which acts as a neutral and independent custodian of the Matrix standard. As of Sept 2017 we are finally in the process of incorporating it as a dedicated non-profit entity (most likely a limited by guarantee UK private company called the Matrix.org Foundation).</p>
 <p>TODO rewrite</p>
 <table class="definition-list">
@@ -163,7 +164,7 @@
 </table>
 </div>
 <div class='question'>
-<h3>How is Matrix.org funded?</h3>
+<h3 id="how-is-matrix.org-funded%3F">How is Matrix.org funded? <a class="header-anchor" href="#how-is-matrix.org-funded%3F" aria-hidden="true">¶</a></h3>
 <p>TODO: rewrite to include Status.im.</p>
 <p>Matrix.org is currently (Sept 2017) funded by the community, through a
 combination of community support (via
@@ -202,7 +203,7 @@ are funded by their own employers or donate their own time to the project.</p>
 </table>
 </div>
 <div class='question'>
-<h3>Who is building Matrix?</h3>
+<h3 id="who-is-building-matrix%3F">Who is building Matrix? <a class="header-anchor" href="#who-is-building-matrix%3F" aria-hidden="true">¶</a></h3>
 <p>The core team is ~12 people with extensive experience in building custom
 VoIP and Messaging apps for mobile network operators. Most of us work for [New Vector]{.definition},
 but there are an increasing number of contributors from other companies and
@@ -218,9 +219,9 @@ folks all over the internet.</p>
 <tbody></tbody>
 </table>
 </div>
-<h2>Concept</h2>
+<h2 id="concept">Concept <a class="header-anchor" href="#concept" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>Why have you released this as open source?</h3>
+<h3 id="why-have-you-released-this-as-open-source%3F">Why have you released this as open source? <a class="header-anchor" href="#why-have-you-released-this-as-open-source%3F" aria-hidden="true">¶</a></h3>
 <p>We believe that any open standard defining interoperable communication needs to be justified, demonstrated and validated with transparent open source implementations. For Matrix to achieve its mission of making all communications services [interoperable]{.definition} we believe it needs to be truly open, giving people access to take all the code we produce and to use and build on top of it.</p>
 <table class="definition-list">
 <thead>
@@ -233,7 +234,7 @@ folks all over the internet.</p>
 </table>
 </div>
 <div class='question'>
-<h3>What do you mean by open?</h3>
+<h3 id="what-do-you-mean-by-open%3F">What do you mean by open? <a class="header-anchor" href="#what-do-you-mean-by-open%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix is an open standard, meaning that we have freely published the
 details for how to communicate [interoperably][interoperable]{.definition} using the Matrix set of
 HTTP APIs.  We encourage anyone and everyone to use the APIs and build
@@ -257,7 +258,7 @@ enhance them and contribute their enhancements as they see fit.</p>
 </table>
 </div>
 <div class='question'>
-<h3>What does federated mean?</h3>
+<h3 id="what-does-federated-mean%3F">What does federated mean? <a class="header-anchor" href="#what-does-federated-mean%3F" aria-hidden="true">¶</a></h3>
 <p>Federation allows separate deployments of a communication service to
 communicate with each other - for instance a mail server run by Google
 federates with a mail server run by Microsoft when you send email from
@@ -278,7 +279,7 @@ can join into the Matrix ecosystem by deploying their own server.</p>
 </table>
 </div>
 <div class='question'>
-<h3>How is this like e-mail?</h3>
+<h3 id="how-is-this-like-e-mail%3F">How is this like e-mail? <a class="header-anchor" href="#how-is-this-like-e-mail%3F" aria-hidden="true">¶</a></h3>
 <p>When email was first set up in the early ‘80s, companies like Compuserve
 and AT&amp;T and Sprint set up isolated email communities which only allowed
 you to exchange mail with users on the same system.  If you got your
@@ -297,7 +298,7 @@ VoIP and IM.</p>
 </table>
 </div>
 <div class='question'>
-<h3>Why has no one done this before?</h3>
+<h3 id="why-has-no-one-done-this-before%3F">Why has no one done this before? <a class="header-anchor" href="#why-has-no-one-done-this-before%3F" aria-hidden="true">¶</a></h3>
 <p>There have been several attempts before including [SIP]{.definition}, [XMPP]{.definition} and [RCS]{.definition}.</p>
 <p>All of these have had some level of success, but many different
 technological/usability/economic factors have ended up limiting their
@@ -315,9 +316,9 @@ actually uses RCS.</p>
 <tbody></tbody>
 </table>
 </div>
-<h2>Practical</h2>
+<h2 id="practical">Practical <a class="header-anchor" href="#practical" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What can I actually do with this?</h3>
+<h3 id="what-can-i-actually-do-with-this%3F">What can I actually do with this? <a class="header-anchor" href="#what-can-i-actually-do-with-this%3F" aria-hidden="true">¶</a></h3>
 <p>A typical <a href="#definition-client" class="definition">client</a> provides a simple chatroom interface to Matrix -
 letting the user interact with users and rooms anywhere within the
 Matrix [federation]{.definition}.  Text and image messages are supported, and basic
@@ -340,7 +341,7 @@ on Riot.im).</p>
 </table>
 </div>
 <div class='question'>
-<h3>How can I get involved?</h3>
+<h3 id="how-can-i-get-involved%3F">How can I get involved? <a class="header-anchor" href="#how-can-i-get-involved%3F" aria-hidden="true">¶</a></h3>
 <p>Come say hi on <a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a>!  Install [synapse]{.defintion} and tell us how you get on. Critique [the spec].  Write <a href="#definition-client" class="defintion">clients</a>.  Write bridges!  Run bridges!  Nose around in the repositories in our
 <a href="https://github.com/matrix-org">GitHub organization</a> and send us some pull requests
 to fix some bugs or add some features!  You could even try to write a homeserver
@@ -361,7 +362,7 @@ TODO: there needs to be a separate page for just this</p>
 </table>
 </div>
 <div class='question'>
-<h3>Where can I get support?</h3>
+<h3 id="where-can-i-get-support%3F">Where can I get support? <a class="header-anchor" href="#where-can-i-get-support%3F" aria-hidden="true">¶</a></h3>
 <p><a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a> aka #matrix on irc.freenode.is your best bet.</p>
 <p>TODO: expand with personas</p>
 <table class="definition-list">
@@ -374,10 +375,10 @@ TODO: there needs to be a separate page for just this</p>
 <tbody></tbody>
 </table>
 </div>
-<h1>Real Use</h1>
-<h2>how as a user</h2>
+<h1 id="real-use">Real Use <a class="header-anchor" href="#real-use" aria-hidden="true">¶</a></h1>
+<h2 id="how-as-a-user">how as a user <a class="header-anchor" href="#how-as-a-user" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What Matrix compliant apps are there?</h3>
+<h3 id="what-matrix-compliant-apps-are-there%3F">What Matrix compliant apps are there? <a class="header-anchor" href="#what-matrix-compliant-apps-are-there%3F" aria-hidden="true">¶</a></h3>
 <p>Quite a few, ranging from the glossy mass-market to the geeky command-line.  There's even an emacs macro.</p>
 <p>Check out <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a> for the current
 list of Matrix enabled projects.</p>
@@ -393,7 +394,7 @@ list of Matrix enabled projects.</p>
 </table>
 </div>
 <div class='question'>
-<h3>What bridges to other networks are available?</h3>
+<h3 id="what-bridges-to-other-networks-are-available%3F">What bridges to other networks are available? <a class="header-anchor" href="#what-bridges-to-other-networks-are-available%3F" aria-hidden="true">¶</a></h3>
 <p>There are a large number of '[bridges]{.definition}' which integrate existing communication networks into
 Matrix. This list is growing rapidly, and you can find bridges both written by the Matrix core team
 and contributed by the wider community.  The full list can be seen at
@@ -420,7 +421,7 @@ for an example of how to write a fully functional Slack bridge in less than 100 
 </table>
 </div>
 <div class='question'>
-<h3>How do I get an account and get started?</h3>
+<h3 id="how-do-i-get-an-account-and-get-started%3F">How do I get an account and get started? <a class="header-anchor" href="#how-do-i-get-an-account-and-get-started%3F" aria-hidden="true">¶</a></h3>
 <p>The quickest way is to pick a client from <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a> and sign up.</p>
 <p>Clients can access any [homeserver]{.definition} - you don't have to use matrix.org, though as of July 2018 matrix.org is the largest public homeserver.</p>
 <p>TODO: mention hello-matrix.net?</p>
@@ -435,7 +436,7 @@ for an example of how to write a fully functional Slack bridge in less than 100 
 </table>
 </div>
 <div class='question'>
-<h3>Where can I find a mobile app?</h3>
+<h3 id="where-can-i-find-a-mobile-app%3F">Where can I find a mobile app? <a class="header-anchor" href="#where-can-i-find-a-mobile-app%3F" aria-hidden="true">¶</a></h3>
 <p>[Riot]{.definition} is available for Android and iOS.</p>
 <p>The iOS version can be downloaded from the <a href="https://itunes.apple.com/us/app/vector.im/id1083446067">Apple store</a>.</p>
 <p>The Android version can be downloaded from the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a> or <a href="https://f-droid.org/repository/browse/?fdid=im.vector.alpha">F-Droid</a>. If you are not sure which one to choose, install Riot from the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a>.</p>
@@ -452,7 +453,7 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 </table>
 </div>
 <div class='question'>
-<h3>I installed Riot via F-Droid, why is it draining my battery?</h3>
+<h3 id="i-installed-riot-via-f-droid%2C-why-is-it-draining-my-battery%3F">I installed Riot via F-Droid, why is it draining my battery? <a class="header-anchor" href="#i-installed-riot-via-f-droid%2C-why-is-it-draining-my-battery%3F" aria-hidden="true">¶</a></h3>
 <p>The [F-Droid]{.definition} release of Riot does not use <a href="https://developers.google.com/cloud-messaging/">Google Cloud Messaging</a>. This allows users that do not have or want Google Services installed to use Riot.</p>
 <p>The drawback is that Riot has to pull for new messages, which can drain your battery. To counter this, you can change the delay between polls in the settings. Higher delay means better battery life (but may delay receiving messages). You can also disable the background sync entirely (which means that you won't get any notifications at all).</p>
 <p>If you don't mind using Google Services, you might be better off installing the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a> version.</p>
@@ -467,7 +468,7 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 </table>
 </div>
 <div class='question'>
-<h3>Where can I find a web app?</h3>
+<h3 id="where-can-i-find-a-web-app%3F">Where can I find a web app? <a class="header-anchor" href="#where-can-i-find-a-web-app%3F" aria-hidden="true">¶</a></h3>
 <p>You can use <a href="https://riot.im/app/">Riot.im</a> - a glossy web client written on top of <a href="https://github.com/matrix-org/matrix-react-sdk">matrix-react-sdk</a>.</p>
 <p>You can also host Riot on your own server. It's a static web application, just download the <a href="https://github.com/vector-im/riot-web/">last release</a> and unpack it.</p>
 <p>TODO: Mention neo?</p>
@@ -482,7 +483,7 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 </table>
 </div>
 <div class='question'>
-<h3>Where can I find a desktop client?</h3>
+<h3 id="where-can-i-find-a-desktop-client%3F">Where can I find a desktop client? <a class="header-anchor" href="#where-can-i-find-a-desktop-client%3F" aria-hidden="true">¶</a></h3>
 <p>You can use the desktop build of <a href="https://riot.im/desktop.html">Riot.im</a>.</p>
 <p>There are also other desktop clients - check the list of clients on <a href="http://matrix.org/docs/projects/try-matrix-now.html#clients">matrix.org</a>.</p>
 <p>TODO: update this list with concrete examples</p>
@@ -496,9 +497,9 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 <tbody></tbody>
 </table>
 </div>
-<h2>Tech</h2>
+<h2 id="tech">Tech <a class="header-anchor" href="#tech" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>How do I Matrix-enable my existing app?</h3>
+<h3 id="how-do-i-matrix-enable-my-existing-app%3F">How do I Matrix-enable my existing app? <a class="header-anchor" href="#how-do-i-matrix-enable-my-existing-app%3F" aria-hidden="true">¶</a></h3>
 <p>If your app doesn't have any communication capability already, you'll want
 to use one of the Matrix [client SDK]{.definition}s to add it in.  These come in different
 levels of sophistication - ranging from a simple HTTP API wrapper (like matrix-js-sdk, matrix-ios-sdk or matrix-android-sdk)
@@ -525,7 +526,7 @@ that bridges have to implement.</p>
 </table>
 </div>
 <div class='question'>
-<h3>How can I write a client on Matrix?</h3>
+<h3 id="how-can-i-write-a-client-on-matrix%3F">How can I write a client on Matrix? <a class="header-anchor" href="#how-can-i-write-a-client-on-matrix%3F" aria-hidden="true">¶</a></h3>
 <p>See the <a href="http://matrix.org/docs/howtos/client-server.html">Client-Server API
 HOWTO</a> and the <a href="/docs/api">API
 docs</a> and <a href="/docs/spec">the Spec</a> for all the details you need
@@ -542,7 +543,7 @@ to write a client.</p>
 </table>
 </div>
 <div class='question'>
-<h3>How do I register custom matrix event types?</h3>
+<h3 id="how-do-i-register-custom-matrix-event-types%3F">How do I register custom matrix event types? <a class="header-anchor" href="#how-do-i-register-custom-matrix-event-types%3F" aria-hidden="true">¶</a></h3>
 <p>We're not yet managing a registry of custom matrix event types.  If you
 have any particularly good ones you want to tell the world about, please
 let us know on [#matrix-dev:matrix.org].</p>
@@ -557,7 +558,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </table>
 </div>
 <div class='question'>
-<h3>Can I write a Matrix homeserver?</h3>
+<h3 id="can-i-write-a-matrix-homeserver%3F">Can I write a Matrix homeserver? <a class="header-anchor" href="#can-i-write-a-matrix-homeserver%3F" aria-hidden="true">¶</a></h3>
 <p>Yes. Matrix is just a spec, and implementations of the spec are very welcome!</p>
 <p>The most well-distributed [homeserver] in the wild today is [Synapse], but other projects aiming to implement the server component include:</p>
 <ul>
@@ -581,7 +582,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </table>
 </div>
 <div class='question'>
-<h4>Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc?</h4>
+<h4 id="why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F">Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc? <a class="header-anchor" href="#why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F" aria-hidden="true">¶</a></h4>
 <p>HTTP may not be the most efficient transport, but it is ubiquitous, very well understood and has numerous implementations on almost every platform and language. It also has a simple upgrade path to HTTP/2, which is relatively bandwidth and round-trip efficient.</p>
 <p>For these reasons it has been chosen as the mandatory baseline of the exchange, but it is still entirely possible to use other protocols for communication between clients and server (see for example this <a href="https://github.com/matrix-org/matrix-doc/blob/master/drafts/websockets.rst">websocket transport draft</a>), and it's also possible in the future that negotiation of more efficient protocols will be added for the [federation]{.definition} between servers, with HTTP+JSON remaining as the compatibility baseline.</p>
 <p>TODO update mention of websocket proposal</p>
@@ -595,9 +596,9 @@ let us know on [#matrix-dev:matrix.org].</p>
 <tbody></tbody>
 </table>
 </div>
-<h2>Self-hosting</h2>
+<h2 id="self-hosting">Self-hosting <a class="header-anchor" href="#self-hosting" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>How do I join the global Matrix federation?</h3>
+<h3 id="how-do-i-join-the-global-matrix-federation%3F">How do I join the global Matrix federation? <a class="header-anchor" href="#how-do-i-join-the-global-matrix-federation%3F" aria-hidden="true">¶</a></h3>
 <p>You can <a href="#matrix-compliant-apps">choose a client</a> and create a user account on an existing homeserver.</p>
 <p>To host your own homeserver you can download and run one of the available Matrix servers - please see <a href="http://matrix.org/docs/guides/getting_involved.html#run">this guide</a> for details!</p>
 <p class="definition">TODO: mention [federation]</p>
@@ -612,7 +613,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </table>
 </div>
 <div class='question'>
-<h3>How do I run my own homeserver?</h3>
+<h3 id="how-do-i-run-my-own-homeserver%3F">How do I run my own homeserver? <a class="header-anchor" href="#how-do-i-run-my-own-homeserver%3F" aria-hidden="true">¶</a></h3>
 <p>Follow the instructions for the [homeserver]{.definition} you want to run. If you want to run [Synapse]{.definition}, the reference homeserver from Matrix.org, follow <a href="https://github.com/matrix-org/synapse#synapse-installation">these instructions</a>.</p>
 <table class="definition-list">
 <thead>
@@ -625,7 +626,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </table>
 </div>
 <div class='question'>
-<h3>What ports do I have to open up to join the global Matrix federation?</h3>
+<h3 id="what-ports-do-i-have-to-open-up-to-join-the-global-matrix-federation%3F">What ports do I have to open up to join the global Matrix federation? <a class="header-anchor" href="#what-ports-do-i-have-to-open-up-to-join-the-global-matrix-federation%3F" aria-hidden="true">¶</a></h3>
 <p>We recommend servers use port 8448 for server&lt;-&gt;server HTTPS traffic.  Look at <a href="https://github.com/matrix-org/synapse#setting-up-federation">&quot;Setting up Federation&quot;</a> in the Synapse readme file for details.</p>
 <p>TODO: I don't fully understand the rest of this section</p>
 <p>Client&lt;-&gt;Server traffic can talk directly to Synapse via port 8448, but as by default Synapse creates a self-signed TLS certificate this can cause problems for clients which can't easily trust self-signed certificates (e.g. most web browsers).  Instead, you can proxy access to Synapse's HTTP listener on port 8008 via an existing HTTPS proxy with a valid certificate (e.g. an nginx listening on port 443), or you can point Synapse at a valid X.509 signed TLS certificate.  In future, Synapse will probably use letsencrypt to autogenerate valid certificates rather than self-signed ones during installation, simplifying this process enormously.</p>
@@ -641,7 +642,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </table>
 </div>
 <div class='question'>
-<h3>How do I connect my homeserver to the public Matrix network?</h3>
+<h3 id="how-do-i-connect-my-homeserver-to-the-public-matrix-network%3F">How do I connect my homeserver to the public Matrix network? <a class="header-anchor" href="#how-do-i-connect-my-homeserver-to-the-public-matrix-network%3F" aria-hidden="true">¶</a></h3>
 <p>TODO this is essentially federation explained again.
 See
 <a href="http://github.com/matrix-org/synapse">http://github.com/matrix-org/synapse</a>
@@ -657,8 +658,8 @@ for details</p>
 </table>
 </div>
 <div class='question'>
-<h3>Can I run my own identity server?</h3>
-<p>TODO: link to &quot;what is an id server&quot;</p>
+<h3 id="can-i-run-my-own-identity-server%3F">Can I run my own identity server? <a class="header-anchor" href="#can-i-run-my-own-identity-server%3F" aria-hidden="true">¶</a></h3>
+<p>See also: <a href="#what-is-an-identity-server%3F">What is an identity server?</a></p>
 <p>TODO: understand sydent + max's complaints</p>
 <p>Yes - the reference implementation is
 <a href="https://github.com/matrix-org/sydent">sydent</a> and you can run your own ID server cluster that tracks 3rd party to Matrix ID mappings.  This won't be very useful right now, though, and we don't recommend it.</p>
@@ -680,7 +681,7 @@ addresses) to matrix IDs to aid user discovery</strong>.</p>
 </table>
 </div>
 <div class='question'>
-<h3>Why can't I rename my homeserver?</h3>
+<h3 id="why-can't-i-rename-my-homeserver%3F">Why can't I rename my homeserver? <a class="header-anchor" href="#why-can't-i-rename-my-homeserver%3F" aria-hidden="true">¶</a></h3>
 <p>Currently, the [homeserver]{.definition} name is assumed never to change. This means that if you rename your server, other servers will think it's a different server.</p>
 <p>Perhaps in the future we will add an API for changing the homeserver name, but for now this is not supported.</p>
 <p>TODO: is there an MSC for this?</p>
@@ -694,10 +695,10 @@ addresses) to matrix IDs to aid user discovery</strong>.</p>
 <tbody></tbody>
 </table>
 </div>
-<h1>Detail</h1>
-<h2>position in the world</h2>
+<h1 id="detail">Detail <a class="header-anchor" href="#detail" aria-hidden="true">¶</a></h1>
+<h2 id="position-in-the-world">position in the world <a class="header-anchor" href="#position-in-the-world" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>Why do you think existing apps will ever join this officially?</h3>
+<h3 id="why-do-you-think-existing-apps-will-ever-join-this-officially%3F">Why do you think existing apps will ever join this officially? <a class="header-anchor" href="#why-do-you-think-existing-apps-will-ever-join-this-officially%3F" aria-hidden="true">¶</a></h3>
 <p>We firmly believe it is what is right for the consumer. As people begin
 to use [interoperable]{.definition} communications tools, service providers will see the
 benefit and compete on quality of service, security and features rather
@@ -715,7 +716,7 @@ services they will demand it.</p>
 </table>
 </div>
 <div class='question'>
-<h3>Why aren't you doing this through the IETF? or W3C? or 3GPP?</h3>
+<h3 id="why-aren't-you-doing-this-through-the-ietf%3F-or-w3c%3F-or-3gpp%3F">Why aren't you doing this through the IETF? or W3C? or 3GPP? <a class="header-anchor" href="#why-aren't-you-doing-this-through-the-ietf%3F-or-w3c%3F-or-3gpp%3F" aria-hidden="true">¶</a></h3>
 <p>We do recognise the advantages of working with existing standards
 bodies. We have been focused on writing code and getting it out, and the standard has been evolving rapidly since initial release in September 2014.
 Once the standard has matured sufficiently it may well be appropriate to work with an official
@@ -732,7 +733,7 @@ standard body to maintain it going forwards.</p>
 </table>
 </div>
 <div class='question'>
-<h3>How mature is this?</h3>
+<h3 id="how-mature-is-this%3F">How mature is this? <a class="header-anchor" href="#how-mature-is-this%3F" aria-hidden="true">¶</a></h3>
 <p>We started working on Matrix in July 2014, and opened it to the
 public in September 2014.  We got all the core features in place in December 2014
 and entered beta, and since then have been iterating away on the beta refining the
@@ -754,7 +755,7 @@ nice features before we really declare it ready for production.</p>
 </table>
 </div>
 <div class='question'>
-<h3>Why Apache Licence?</h3>
+<h3 id="why-apache-licence%3F">Why Apache Licence? <a class="header-anchor" href="#why-apache-licence%3F" aria-hidden="true">¶</a></h3>
 <p>TODO: link to &quot;what do you mean by open&quot;</p>
 <p>The Apache Licence is a permissive licence. We want the Matrix protocol itself to be free and open, but people are free to create both free and commercial apps and services that uses the protocol. In our opinion, any Matrix-service only enhances the Matrix ecosystem.</p>
 <table class="definition-list">
@@ -767,9 +768,9 @@ nice features before we really declare it ready for production.</p>
 <tbody></tbody>
 </table>
 </div>
-<h2>Comparisons</h2>
+<h2 id="comparisons">Comparisons <a class="header-anchor" href="#comparisons" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What is the difference between Matrix and IRC?</h3>
+<h3 id="what-is-the-difference-between-matrix-and-irc%3F">What is the difference between Matrix and IRC? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-irc%3F" aria-hidden="true">¶</a></h3>
 <p>We love IRC. In fact, prior to the point where Riot was stable enough for daily use IRC was
 our primary communication tool. Between us we've written IRCds, IRC bots
 and admined dreamforge, UnrealIRCd, epona, ircservices and several
@@ -805,7 +806,7 @@ bridges as the project progresses.</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is the difference between Matrix and XMPP?</h3>
+<h3 id="what-is-the-difference-between-matrix-and-xmpp%3F">What is the difference between Matrix and XMPP? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-xmpp%3F" aria-hidden="true">¶</a></h3>
 <p>We think of Matrix and XMPP as being quite different; at its core
 Matrix can be thought of as an eventually consistent global JSON db with
 an HTTP API and pubsub semantics - whilst XMPP can be thought of as a
@@ -869,7 +870,7 @@ together.  The more federation and interoperability the better.</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is the difference between Matrix and PSYC?</h3>
+<h3 id="what-is-the-difference-between-matrix-and-psyc%3F">What is the difference between Matrix and PSYC? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-psyc%3F" aria-hidden="true">¶</a></h3>
 <p>TODO: wtf is PSYC? do we need to include this?</p>
 <p>PSYC is a open federated messaging protocol loosely inspired by IRC.  In
 version 1 it was a standalone protocol, and in version 2 it is being
@@ -895,7 +896,7 @@ PSYC's views on Matrix.</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is the difference between Matrix and Tox?</h3>
+<h3 id="what-is-the-difference-between-matrix-and-tox%3F">What is the difference between Matrix and Tox? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-tox%3F" aria-hidden="true">¶</a></h3>
 <p>TODO Do we need to include this?</p>
 <p>Tox.chat looks to be a very cool clone of Skype - a fully decentralised
 peer-to-peer network.  Matrix is deliberately not a 'pure' peer-to-peer
@@ -914,7 +915,7 @@ answer yet for decentralised conversation history storage.</p>
 </table>
 </div>
 <div class='question'>
-<h3>How does Matrix compare with something like Trillian or Pidgin?</h3>
+<h3 id="how-does-matrix-compare-with-something-like-trillian-or-pidgin%3F">How does Matrix compare with something like Trillian or Pidgin? <a class="header-anchor" href="#how-does-matrix-compare-with-something-like-trillian-or-pidgin%3F" aria-hidden="true">¶</a></h3>
 <p>Trillian and Pidgin and similar aggregating IM clients merge all your IM
 activity into a single app.  However, your history and
 identity is still fragmented across the networks.  People can't find you
@@ -938,9 +939,9 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 <tbody></tbody>
 </table>
 </div>
-<h2>more detail</h2>
+<h2 id="more-detail">more detail <a class="header-anchor" href="#more-detail" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What is a client?</h3>
+<h3 id="what-is-a-client%3F">What is a client? <a class="header-anchor" href="#what-is-a-client%3F" aria-hidden="true">¶</a></h3>
 <p>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps.  It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</p>
 <table class="definition-list">
 <thead>
@@ -953,7 +954,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </table>
 </div>
 <div class='question'>
-<h3>Can I use Matrix without installing a Matrix client?</h3>
+<h3 id="can-i-use-matrix-without-installing-a-matrix-client%3F">Can I use Matrix without installing a Matrix client? <a class="header-anchor" href="#can-i-use-matrix-without-installing-a-matrix-client%3F" aria-hidden="true">¶</a></h3>
 <p>Sure. An ever increasing number of protocols are being [bridged][bridging]{.definition} into Matrix, so if you use something like IRC on Freenode you may well be indirectly benefiting from Matrix, as others may be connected into the IRC channel via Matrix.</p>
 <p>TODO: mention bridging</p>
 <table class="definition-list">
@@ -967,7 +968,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is a home server?</h3>
+<h3 id="what-is-a-home-server%3F">What is a home server? <a class="header-anchor" href="#what-is-a-home-server%3F" aria-hidden="true">¶</a></h3>
 <p>A user's <a href="#definition-client" class="definition">client</a>s connect to a single homeserver, which stores the communication history and account information for that user, and shares data with the wider Matrix ecosystem by synchronising communication history with other homeservers.</p>
 <table class="definition-list">
 <thead>
@@ -985,7 +986,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is a MXID?</h3>
+<h3 id="what-is-a-mxid%3F">What is a MXID? <a class="header-anchor" href="#what-is-a-mxid%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix user IDs (MXID) are unique user IDs. They are in the format <code>@username:homeserver.tld</code> (this format is used to avoid confusing them with email addresses). They are intended to be fairly hidden (although right now they are not) - instead you will find and identify other users via [3PID]{.definition}s.</p>
 <p>TODO: is this hidden comment still true?</p>
 <table class="definition-list">
@@ -999,7 +1000,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is a 3PID?</h3>
+<h3 id="what-is-a-3pid%3F">What is a 3PID? <a class="header-anchor" href="#what-is-a-3pid%3F" aria-hidden="true">¶</a></h3>
 <p>Third-party IDs (3PIDs) are IDs from other systems or contexts, such as email addresses, social network accounts and phone numbers.</p>
 <table class="definition-list">
 <thead>
@@ -1012,7 +1013,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </table>
 </div>
 <div class='question'>
-<h3>What is an identity server?</h3>
+<h3 id="what-is-an-identity-server%3F">What is an identity server? <a class="header-anchor" href="#what-is-an-identity-server%3F" aria-hidden="true">¶</a></h3>
 <p>Users in Matrix are identified internally via their [matrix user ID (MXID)][MXID]{.definition}. However, existing 3rd party ID (3PID) namespaces such as email addresses or phone numbers should be used publicly to identify Matrix users, at least for invitation purposes.  A Matrix &quot;Identity&quot; describes both the user ID and any other existing IDs from third party namespaces linked to their account.</p>
 <p>Matrix users can link third-party IDs (3PIDs) to their user ID. Linking 3PIDs creates a mapping from a 3PID to a user ID. This mapping can then be used by Matrix users in order to discover the MXIDs of their contacts.</p>
 <p>In order to ensure that the mapping from 3PID to user ID is genuine, a globally federated cluster of trusted &quot;Identity Servers&quot; (IS) are used to verify the 3PID and persist and replicate the mappings.
@@ -1030,7 +1031,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Where do my conversations get stored?</h3>
+<h3 id="where-do-my-conversations-get-stored%3F">Where do my conversations get stored? <a class="header-anchor" href="#where-do-my-conversations-get-stored%3F" aria-hidden="true">¶</a></h3>
 <p>Each [homeserver]{.definition} stores the communication history and account information for all of its <a href="#definition-client" class="definition">client</a>s, and shares data with the wider Matrix ecosystem by synchronising communication history with other homeservers and their clients. Clients typically communicate with each other by emitting events in the context of a virtual room. Room data is [replicated][federation]{.definition} across all of the homeservers <em>whose users are participating in a given room</em>.</p>
 <table class="definition-list">
 <thead>
@@ -1048,7 +1049,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>What are redactions?</h3>
+<h3 id="what-are-redactions%3F">What are redactions? <a class="header-anchor" href="#what-are-redactions%3F" aria-hidden="true">¶</a></h3>
 <p>Since events are extensible it is possible for malicious users and/or servers to add keys that are, for example offensive or illegal. Since some events cannot be simply deleted (e.g. membership events) we instead 'redact' events, essentially stripping the event of all keys that are not required by the protocol. Redacting an event cannot be undone, allowing server owners to also delete the offending content from the databases.</p>
 <table class="definition-list">
 <thead>
@@ -1061,7 +1062,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Can I log into other homeservers with my username and password?</h3>
+<h3 id="can-i-log-into-other-homeservers-with-my-username-and-password%3F">Can I log into other homeservers with my username and password? <a class="header-anchor" href="#can-i-log-into-other-homeservers-with-my-username-and-password%3F" aria-hidden="true">¶</a></h3>
 <p>Currently, no. We are looking at options for decentralising or migrating user accounts between multiple servers, and might add this feature at a later stage.</p>
 <table class="definition-list">
 <thead>
@@ -1073,9 +1074,9 @@ Usage of an IS is not required in order for a client application to be part of t
 <tbody></tbody>
 </table>
 </div>
-<h2>Voip</h2>
+<h2 id="voip">Voip <a class="header-anchor" href="#voip" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>How do you do VoIP calls on Matrix?</h3>
+<h3 id="how-do-you-do-voip-calls-on-matrix%3F">How do you do VoIP calls on Matrix? <a class="header-anchor" href="#how-do-you-do-voip-calls-on-matrix%3F" aria-hidden="true">¶</a></h3>
 <p>Voice (and video) over Matrix uses the WebRTC 1.0 standard to transfer call media (i.e. the actual voice and video traffic).  Matrix is used to signal the establishment and termination of the call by sending call events, like any other event.</p>
 <table class="definition-list">
 <thead>
@@ -1088,7 +1089,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Are VoIP calls encrypted?</h3>
+<h3 id="are-voip-calls-encrypted%3F">Are VoIP calls encrypted? <a class="header-anchor" href="#are-voip-calls-encrypted%3F" aria-hidden="true">¶</a></h3>
 <p>WebRTC encrypts the media that's being sent. The signalling events that set up (and end) the call are encrypted if the room they were sent in has enabled encryption.</p>
 <table class="definition-list">
 <thead>
@@ -1101,7 +1102,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Do I need a TURN server?</h3>
+<h3 id="do-i-need-a-turn-server%3F">Do I need a TURN server? <a class="header-anchor" href="#do-i-need-a-turn-server%3F" aria-hidden="true">¶</a></h3>
 <p>VoIP calls should work if both parties are on public networks. However, in practice one (or both) devices are often behind NAT, and so having a <a href="https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT">TURN</a> server is important to help set up the call.</p>
 <p>See <a href="https://github.com/matrix-org/synapse/blob/master/docs/turn-howto.rst">this guide</a> for setting up a TURN server with Synapse.</p>
 <table class="definition-list">
@@ -1114,9 +1115,9 @@ Usage of an IS is not required in order for a client application to be part of t
 <tbody></tbody>
 </table>
 </div>
-<h2>Synapse</h2>
+<h2 id="synapse">Synapse <a class="header-anchor" href="#synapse" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3>What is Synapse?</h3>
+<h3 id="what-is-synapse%3F">What is Synapse? <a class="header-anchor" href="#what-is-synapse%3F" aria-hidden="true">¶</a></h3>
 <p>Synapse is a reference &quot;[homeserver]{.definition}&quot; implementation of Matrix from the core development team at matrix.org, written in Python 2/Twisted.  It is intended to showcase the concept of Matrix and let folks see the spec in the context of a codebase and let you run your own homeserver and generally help bootstrap the ecosystem.</p>
 <table class="definition-list">
 <thead>
@@ -1129,7 +1130,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Why is Synapse in Python/Twisted?</h3>
+<h3 id="why-is-synapse-in-python%2Ftwisted%3F">Why is Synapse in Python/Twisted? <a class="header-anchor" href="#why-is-synapse-in-python%2Ftwisted%3F" aria-hidden="true">¶</a></h3>
 <p>This is because both provide a mature and well known event-driven async IO framework for writing serverside code.  Whilst this has been okay for our initial experimentation and proof of concept, it's likely that future homeserver work will be written in a more strongly typed language (e.g. Go).</p>
 <p>TODO: Dendrite. There are other homeservers</p>
 <table class="definition-list">
@@ -1143,7 +1144,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Why aren't you using an ORM layer like SqlAlchemy in Synapse?</h3>
+<h3 id="why-aren't-you-using-an-orm-layer-like-sqlalchemy-in-synapse%3F">Why aren't you using an ORM layer like SqlAlchemy in Synapse? <a class="header-anchor" href="#why-aren't-you-using-an-orm-layer-like-sqlalchemy-in-synapse%3F" aria-hidden="true">¶</a></h3>
 <p>Synapse is <em>very</em> database dependent (as of Oct 2015; this is improving in the near future however), and we like having the flexibility to sculpt our own queries.</p>
 <table class="definition-list">
 <thead>
@@ -1156,7 +1157,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <div class='question'>
-<h3>Will Synapse share my chat data with other servers in the federation?</h3>
+<h3 id="will-synapse-share-my-chat-data-with-other-servers-in-the-federation%3F">Will Synapse share my chat data with other servers in the federation? <a class="header-anchor" href="#will-synapse-share-my-chat-data-with-other-servers-in-the-federation%3F" aria-hidden="true">¶</a></h3>
 <p>Data is only shared between servers of participating users of a room. If all users in a room are on your server, no data is shared with other servers.</p>
 <p>TODO define federation</p>
 <table class="definition-list">

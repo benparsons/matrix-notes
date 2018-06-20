@@ -3,11 +3,13 @@ var MarkdownIt = require('markdown-it');
 var md = new MarkdownIt({html: true});
 var markdownItAttrs = require('markdown-it-attrs'); 
 md.use(markdownItAttrs);
+md.use(require("markdown-it-anchor"), {permalink: true}); // Optional, but makes sense as you really want to link to something
+md.use(require("markdown-it-table-of-contents"));
 
 function html() {
     var outline = fs.readFileSync("faq.html", 'utf-8');
 
-    var markdownSource = "";
+    var markdownSource = "\n[[toc]]\n\n";
 
     var config = JSON.parse(fs.readFileSync("./questions-config.json", 'utf8'));
 
