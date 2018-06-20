@@ -92,6 +92,10 @@
         {
             "name": "3PID",
             "definition": ""
+        },
+        {
+            "name": "the spec",
+            "definition": ""
         }
     ]
 }

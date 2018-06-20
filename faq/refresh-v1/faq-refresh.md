@@ -209,5 +209,7 @@ just like gmail.com belongs to google and hotmail.com to microsoft
 but you can send messages from one to the other
 
 Spec related points
+* what's an MSC
+* what is the process for adding spec proposals
 
 Make a list of things to compare to, then make a separate page?
