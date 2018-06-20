@@ -822,7 +822,6 @@ addresses) to matrix IDs to aid user discovery</strong>.</p>
 <h3 id="why-can't-i-rename-my-homeserver%3F">Why can't I rename my homeserver? <a class="header-anchor" href="#why-can't-i-rename-my-homeserver%3F" aria-hidden="true">¶</a></h3>
 <p>Currently, the <a href="#definition-homeserver" class="definition">homeserver</a> name is assumed never to change. This means that if you rename your server, other servers will think it's a different server.</p>
 <p>Perhaps in the future we will add an API for changing the homeserver name, but for now this is not supported.</p>
-<p>TODO: is there an MSC for this?</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -904,7 +903,7 @@ nice features before we really declare it ready for production.</p>
 </div>
 <div class='question'>
 <h3 id="why-apache-licence%3F">Why Apache Licence? <a class="header-anchor" href="#why-apache-licence%3F" aria-hidden="true">¶</a></h3>
-<p>TODO: link to &quot;what do you mean by open&quot;</p>
+<p>See also: <a href="#what-do-you-mean-by-open%3F">What do you mean by open?</a></p>
 <p>The Apache Licence is a permissive licence. We want the Matrix protocol itself to be free and open, but people are free to create both free and commercial apps and services that uses the protocol. In our opinion, any Matrix-service only enhances the Matrix ecosystem.</p>
 <table class="definition-list">
 <thead>
@@ -919,7 +918,7 @@ nice features before we really declare it ready for production.</p>
 <h2 id="comparisons">Comparisons <a class="header-anchor" href="#comparisons" aria-hidden="true">¶</a></h2>
 <div class='question'>
 <h3 id="what-is-the-difference-between-matrix-and-irc%3F">What is the difference between Matrix and IRC? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-irc%3F" aria-hidden="true">¶</a></h3>
-<p>We love IRC. In fact, prior to the point where Riot was stable enough for daily use IRC was
+<p>We love IRC. In fact, prior to the point where <a href="#definition-riot" class="definition">Riot</a> was stable enough for daily use IRC was
 our primary communication tool. Between us we've written IRCds, IRC bots
 and admined dreamforge, UnrealIRCd, epona, ircservices and several
 others.  That said, it has some limitations that Matrix seeks to improve
@@ -940,9 +939,9 @@ on:</p>
 <p><a href="http://ircv3.net">IRCv3</a> exists and is addressing some of these issues;
 this is great news and we wish them well.  It's almost a contradiction
 in terms to get competitive between openly interoperable communication
-projects - we look forward to increasing the richness of Matrix&lt;-&gt;IRC
-bridges as the project progresses.</p>
-<p>TODO: link to irc bridge(s)</p>
+projects - in fact there there already exist mature Matrix&lt;-&gt;IRC
+bridges. <a href="https://github.com/matrix-org/matrix-appservice-irc/">matrix-appservice-irc</a>
+is currently used by matrix.org to bridge with FreeNode.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -951,6 +950,10 @@ bridges as the project progresses.</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>riot</td>
+<td></td>
+</tr>
 <tr>
 <td>federation</td>
 <td>federation definition</td>
@@ -1108,8 +1111,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </div>
 <div class='question'>
 <h3 id="can-i-use-matrix-without-installing-a-matrix-client%3F">Can I use Matrix without installing a Matrix client? <a class="header-anchor" href="#can-i-use-matrix-without-installing-a-matrix-client%3F" aria-hidden="true">¶</a></h3>
-<p>Sure. An ever increasing number of protocols are being <a href="#definition-bridging" class="definition">bridged</a> into Matrix, so if you use something like IRC on Freenode you may well be indirectly benefiting from Matrix, as others may be connected into the IRC channel via Matrix.</p>
-<p>TODO: mention bridging</p>
+<p>Yes! An ever increasing number of protocols are being <a href="#definition-bridging" class="definition">bridged</a> into Matrix, so if you use something like IRC on Freenode you may well be indirectly benefiting from Matrix, as others may be connected into the IRC channel via Matrix.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -1312,8 +1314,8 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='question'>
 <h3 id="why-is-synapse-in-python%2Ftwisted%3F">Why is Synapse in Python/Twisted? <a class="header-anchor" href="#why-is-synapse-in-python%2Ftwisted%3F" aria-hidden="true">¶</a></h3>
-<p>This is because both provide a mature and well known event-driven async IO framework for writing serverside code.  Whilst this has been okay for our initial experimentation and proof of concept, it's likely that future homeserver work will be written in a more strongly typed language (e.g. Go).</p>
-<p>TODO: Dendrite. There are other homeservers</p>
+<p>This is because both provide a mature and well known event-driven async IO framework for writing serverside code.  Whilst this has been okay for our initial experimentation and proof of concept, it's future <a href="#definition-homeserver" class="definition">homeserver</a> work will be written in a more strongly typed language (e.g. Go).</p>
+<p>As of July 2018 work is progressing on [Dendrite]{.definition], a homeserver from the matrix.org core team written in Go.</p>
 <table class="definition-list">
 <thead>
 <tr>
@@ -1321,7 +1323,12 @@ Usage of an IS is not required in order for a client application to be part of t
 <th>Definition</th>
 </tr>
 </thead>
-<tbody></tbody>
+<tbody>
+<tr>
+<td>homeserver</td>
+<td>federation definition</td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class='question'>
