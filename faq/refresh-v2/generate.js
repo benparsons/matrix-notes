@@ -28,7 +28,8 @@ function html() {
         section.parts.forEach((part) => {
             markdownSource += "\n## " + part.name + "\n";
             part.questions.forEach((question) => {
-                var questionMarkdown = fs.readFileSync(root + "questions/q" + question + ".md", 'utf-8');
+                if (typeof(question) == 'number') { question = "q" + question; } 
+                var questionMarkdown = fs.readFileSync(root + "questions/" + question + ".md", 'utf-8');
 
                 var questionParsed = md.parse(questionMarkdown + "\n\n" + definitionLinks, {});
                 var questionDefinitions = [];

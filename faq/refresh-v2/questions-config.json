@@ -12,7 +12,7 @@
         {   
             "name": "Real Use",
             "parts": [
-                { "name": "how as a user", "questions": [19, 20, 23, 59, 60, 61, 62] },
+                { "name": "how as a user", "questions": [19, 20, 23, 59, 60, 61, 62, "room-directory"] },
                 { "name": "Tech", "questions": [26, 27, 30, 45, 48] },
                 { "name": "Self-hosting", "questions": [50, 52, 51, 25, 53, 58] }
             ]
@@ -24,7 +24,8 @@
                 { "name": "Comparisons", "questions": [ 14, 15, 16, 17, 18] },
                 { "name": "more detail", "questions": [32, 33, 34, 35, 36, 37, 38, 39, 43] },
                 { "name": "Voip", "questions": [ 40, 41, 42 ] },
-                { "name": "Synapse", "questions": [ 49, 55, 56, 57 ] }
+                { "name": "Synapse", "questions": [ 49, 55, 56, 57 ] },
+                { "name": "Unanswered Questions", "questions": ["unanswered-questions"] }
             ]
         }
     ],

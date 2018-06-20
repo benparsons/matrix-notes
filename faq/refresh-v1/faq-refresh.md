@@ -196,7 +196,6 @@ c-e
 
 # New Questions
 What are communities? (What are groups? == communities)
-Hello, how can I get rooms list from matrix.org?
 What are some examples of clients?
 What does End-to-End (E2E) encryption mean?
 
@@ -213,3 +212,5 @@ Spec related points
 * what is the process for adding spec proposals
 
 Make a list of things to compare to, then make a separate page?
+
+Need to mention that rooms are the fundamental block
