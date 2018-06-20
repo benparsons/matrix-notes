@@ -1074,6 +1074,100 @@ Usage of an IS is not required in order for a client application to be part of t
 </table>
 </div>
 <h2>Voip</h2>
+<div class='question'>
+<h3>How do you do VoIP calls on Matrix?</h3>
+<p>Voice (and video) over Matrix uses the WebRTC 1.0 standard to transfer call media (i.e. the actual voice and video traffic).  Matrix is used to signal the establishment and termination of the call by sending call events, like any other event.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Are VoIP calls encrypted?</h3>
+<p>WebRTC encrypts the media that's being sent. The signalling events that set up (and end) the call are encrypted if the room they were sent in has enabled encryption.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Do I need a TURN server?</h3>
+<p>VoIP calls should work if both parties are on public networks. However, in practice one (or both) devices are often behind NAT, and so having a <a href="https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT">TURN</a> server is important to help set up the call.</p>
+<p>See <a href="https://github.com/matrix-org/synapse/blob/master/docs/turn-howto.rst">this guide</a> for setting up a TURN server with Synapse.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 <h2>Synapse</h2>
+<div class='question'>
+<h3>What is Synapse?</h3>
+<p>Synapse is a reference &quot;[homeserver]{.definition}&quot; implementation of Matrix from the core development team at matrix.org, written in Python 2/Twisted.  It is intended to showcase the concept of Matrix and let folks see the spec in the context of a codebase and let you run your own homeserver and generally help bootstrap the ecosystem.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why is Synapse in Python/Twisted?</h3>
+<p>This is because both provide a mature and well known event-driven async IO framework for writing serverside code.  Whilst this has been okay for our initial experimentation and proof of concept, it's likely that future homeserver work will be written in a more strongly typed language (e.g. Go).</p>
+<p>TODO: Dendrite. There are other homeservers</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Why aren't you using an ORM layer like SqlAlchemy in Synapse?</h3>
+<p>Synapse is <em>very</em> database dependent (as of Oct 2015; this is improving in the near future however), and we like having the flexibility to sculpt our own queries.</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='question'>
+<h3>Will Synapse share my chat data with other servers in the federation?</h3>
+<p>Data is only shared between servers of participating users of a room. If all users in a room are on your server, no data is shared with other servers.</p>
+<p>TODO define federation</p>
+<table class="definition-list">
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
 
 </body>
