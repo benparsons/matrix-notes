@@ -6,7 +6,6 @@
 * How do I maintain my synapse's DB (e.g. prune old conversations)?
 * How do I maintain my synapse's content repository (e.g. prune old content)?
 * Why is the spec so big, especially relative to the XMPP baseline spec?
-* How do I contribute to the spec?
 * What is the privacy policy on Matrix.org?
 * How precisely does E2E work?
 * How does Matrix actually work architecturally?
@@ -30,11 +29,6 @@
 > so yes, most belong to other users  
 > just like gmail.com belongs to google and hotmail.com to microsoft  
 > but you can send messages from one to the other
-
-Spec related points
-
-* what's an MSC
-* what is the process for adding spec proposals
 
 Make a list of things to compare to, then make a separate page?
 

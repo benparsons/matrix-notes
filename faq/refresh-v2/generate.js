@@ -49,13 +49,17 @@ function html() {
 
                 markdownSource += "\n<div class='question'>\n\n";
 
-                questionMarkdown += "\n\n|Term|Definition|\n|---|---|\n";
+                questionMarkdown += "\n\n<div class='definition-list'>\n\n";
+                
                 questionDefinitions.forEach(term => {
-                    questionMarkdown += "|" + term + "|";
+                    questionMarkdown += "\n\n<div class='definition-item definition-" + term + "'>\n\n";
+                    questionMarkdown += "**" + term + "**\n\n";
                     questionMarkdown += config.definitions.find(d => {return d.name.toLowerCase().replace(' ', '') == term.toLowerCase()}).definition;
-                    questionMarkdown += "|\n";
+                    questionMarkdown += "\n\n</div>\n\n";
                 });
-                questionMarkdown += "{.definition-list}";
+
+                questionMarkdown += "\n\n</div>\n\n";
+
                 markdownSource += questionMarkdown;
                 markdownSource += "\n</div>\n";
             });

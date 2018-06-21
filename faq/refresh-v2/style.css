@@ -5,7 +5,7 @@ div.top-menu-row {
     border: black 1px solid;
     margin: 2px;
 }
-div.top-menu-row-inner { /*outer*/
+div.top-menu-row-inner {
     display: inline-block;
     background-color: red;
 }
@@ -15,9 +15,49 @@ div.top-menu-item {
     margin: 5px;
     border: black 1px solid;
 }
-.definition-list {
+div.definition-item {
+    float:left;
+    padding: 5px;
+    margin: 5px;
+    border: black 1px solid;
+    max-width: 300px;
+}
+div.definition-list {
     display: none;
+    background-color: rgb(0, 255, 13);
+}
+div.highlighted-definition {
+    background-color: orangered;
 }
 a.definition {
     background-color: orangered;
+}
+
+
+/** Taken from matrix.org divi style.css **/
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.7em;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
 }
