@@ -19,7 +19,6 @@
 
 #### New Questions
 
-* What are some examples of clients?
 * What does End-to-End (E2E) encryption mean?
 * Need a quick and understandable way to explain federation in a practical way. Like the guy who did not understand why he could not see the Arch linux room on disroot.
 
