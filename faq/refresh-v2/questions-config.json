@@ -22,7 +22,7 @@
             "parts": [
                 { "name": "position in the world", "questions": [21, 22, 31, 44 ] },
                 { "name": "Comparisons", "questions": [ 14, 15, 16, 17, 18] },
-                { "name": "more detail", "questions": [32, 33, 34, 35, 36, 37, 38, 39, 43] },
+                { "name": "more detail", "questions": [32, 33, 34, 35, 36, 37, 38, 39, 43, "what-are-communities"] },
                 { "name": "The Spec", "questions": ["what-is-the-spec", "where-is-the-spec", "contribute-to-the-spec", "proposals-process", "whats-an-msc"] },
                 { "name": "Voip", "questions": [ 40, 41, 42 ] },
                 { "name": "Synapse", "questions": [ 49, 55, 56, 57 ] },
@@ -98,6 +98,18 @@
         {
             "name": "the spec",
             "definition": ""
+        },
+        {
+            "name": "sigil",
+            "definition": "Sigils refer the symbols uses at the beginning of many matrix identifiers. For example '@' is used for users, '#' for rooms, and '+' for communities."
+        },
+        {
+            "name": "community",
+            "definition": "Communities are collections of rooms."
+        },
+        {
+            "name": "group",
+            "definition": "Groups are now known as communities."
         }
     ]
 }
