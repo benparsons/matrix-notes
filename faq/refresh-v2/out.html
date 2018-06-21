@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <p><div class="table-of-contents"><ul><li><a href="#intro">Intro</a><ul><li><a href="#basics">Basics</a></li><li><a href="#who-and-how">Who and How</a></li><li><a href="#concept">Concept</a></li><li><a href="#practical">Practical</a></li></ul></li><li><a href="#real-use">Real Use</a><ul><li><a href="#how-as-a-user">how as a user</a></li><li><a href="#tech">Tech</a></li><li><a href="#self-hosting">Self-hosting</a></li></ul></li><li><a href="#detail">Detail</a><ul><li><a href="#position-in-the-world">position in the world</a></li><li><a href="#comparisons">Comparisons</a></li><li><a href="#more-detail">more detail</a></li><li><a href="#the-spec">The Spec</a></li><li><a href="#voip">Voip</a></li><li><a href="#synapse">Synapse</a></li><li><a href="#unanswered-questions">Unanswered Questions</a></li></ul></li></ul></div></p>
+    <p><div class="table-of-contents"><ul><li><a href="#intro">Intro</a><ul><li><a href="#basics">Basics</a></li><li><a href="#who-and-how">Who and How</a></li><li><a href="#concept">Concept</a></li><li><a href="#practical">Practical</a></li></ul></li><li><a href="#real-use">Real Use</a><ul><li><a href="#how-as-a-user">how as a user</a></li></ul></li><li><a href="#neo">neo</a><ul><li><a href="#tech">Tech</a></li><li><a href="#self-hosting">Self-hosting</a></li></ul></li><li><a href="#detail">Detail</a><ul><li><a href="#position-in-the-world">position in the world</a></li><li><a href="#comparisons">Comparisons</a></li><li><a href="#more-detail">more detail</a></li><li><a href="#architecture">Architecture</a></li><li><a href="#encryption">Encryption</a></li><li><a href="#the-spec">The Spec</a></li><li><a href="#voip">Voip</a></li><li><a href="#synapse">Synapse</a></li><li><a href="#unanswered-questions">Unanswered Questions</a></li></ul></li></ul></div></p>
 <h1 id="intro">Intro <a class="header-anchor" href="#intro" aria-hidden="true">¶</a></h1>
 <h2 id="basics">Basics <a class="header-anchor" href="#basics" aria-hidden="true">¶</a></h2>
 <div class='question'>
@@ -317,10 +317,14 @@ full details on how to contribute to the project.  All are welcome!</p>
 </div>
 <div class='question'>
 <h3 id="where-can-i-get-support%3F">Where can I get support? <a class="header-anchor" href="#where-can-i-get-support%3F" aria-hidden="true">¶</a></h3>
-<p>The point of entry for everything matrix is the [room]{.definition} <a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a> aka #matrix on irc.freenode.</p>
+<p>The point of entry for everything matrix is the <a href="#definition-room" class="definition">room</a> <a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a> aka #matrix on irc.freenode.</p>
 <p>If you're a developer and are looking to get involved with building something on Matrix, try [#matrix-dev:matrix.org].</p>
 <p>If you host a <a href="#definition-synapse" class="definition">Synapse</a> homeserver instance and would like support, try [#synapse-community:matrix.org].</p>
 <div class='definition-list'>
+<div class='definition-item definition-room'>
+<p><strong>room</strong></p>
+<p>A room is a fundamental building bock of the matrix architecture: events are typically sent in the context of a room.</p>
+</div>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
 <p>Synapse definition</p>
@@ -330,16 +334,9 @@ full details on how to contribute to the project.  All are welcome!</p>
 <h1 id="real-use">Real Use <a class="header-anchor" href="#real-use" aria-hidden="true">¶</a></h1>
 <h2 id="how-as-a-user">how as a user <a class="header-anchor" href="#how-as-a-user" aria-hidden="true">¶</a></h2>
 <div class='question'>
-<h3 id="what-matrix-compliant-apps-are-there%3F">What Matrix compliant apps are there? <a class="header-anchor" href="#what-matrix-compliant-apps-are-there%3F" aria-hidden="true">¶</a></h3>
-<p>Quite a few, ranging from the glossy mass-market to the geeky command-line.  There's even an emacs macro.</p>
-<p>Check out <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a> for the current
-list of Matrix enabled projects.</p>
-<p>TODO: Give some examples</p>
-<div class='definition-list'>
-</div>
-</div>
-<div class='question'>
 <h3 id="what-clients-are-available%3F">What clients are available? <a class="header-anchor" href="#what-clients-are-available%3F" aria-hidden="true">¶</a></h3>
+<p>See also: <a href="#which-matrix-clients-support-e2e%3F">Which matrix clients support E2E?</a></p>
+<p>There are many clients available, ranging from the glossy mass-market to the geeky command-line.  There's even an emacs macro.</p>
 <p>The most popular and established client is Riot, available on web, desktop, Android and iOS.</p>
 <p>Alternatively you can find a client suitable for you:</p>
 <ul>
@@ -415,22 +412,32 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 </div>
 <div class='question'>
 <h3 id="where-can-i-find-a-web-app%3F">Where can I find a web app? <a class="header-anchor" href="#where-can-i-find-a-web-app%3F" aria-hidden="true">¶</a></h3>
+<p>See also: <a href="#what-clients-are-available%3F">What clients are available?</a></p>
+<h4 id="riot">Riot <a class="header-anchor" href="#riot" aria-hidden="true">¶</a></h4>
 <p>You can use <a href="https://riot.im/app/">Riot.im</a> - a glossy web client written on top of <a href="https://github.com/matrix-org/matrix-react-sdk">matrix-react-sdk</a>.</p>
 <p>You can also host Riot on your own server. It's a static web application, just download the <a href="https://github.com/vector-im/riot-web/">last release</a> and unpack it.</p>
-<p>TODO: Mention neo?</p>
+<h1 id="neo">neo <a class="header-anchor" href="#neo" aria-hidden="true">¶</a></h1>
+<p>[neo] is a Matrix React.js webclient which aims to be lighter than Riot while still feature complete.</p>
 <div class='definition-list'>
 </div>
 </div>
 <div class='question'>
 <h3 id="where-can-i-find-a-desktop-client%3F">Where can I find a desktop client? <a class="header-anchor" href="#where-can-i-find-a-desktop-client%3F" aria-hidden="true">¶</a></h3>
+<p>See also: <a href="#what-clients-are-available%3F">What clients are available?</a></p>
 <p>You can use the desktop build of <a href="https://riot.im/desktop.html">Riot.im</a>.</p>
+<ul>
+<li>if you're using GNOME, try [Fractal]</li>
+<li>[Nheko] is a glossy native desktop app for Matrix, based on Qt5.</li>
+<li>[Quaternion] is a cross-platform desktop client based on Qt5/QML</li>
+<li>[Seaglass] is a recently announced (as of July 2018) client written as a native macOS app</li>
+</ul>
 <p>There are also other desktop clients - check the list of clients on <a href="http://matrix.org/docs/projects/try-matrix-now.html#clients">matrix.org</a>.</p>
-<p>TODO: update this list with concrete examples</p>
 <div class='definition-list'>
 </div>
 </div>
 <div class='question'>
 <h3 id="how-can-i-get-rooms-list-from-matrix.org%3F">How can I get rooms list from matrix.org? <a class="header-anchor" href="#how-can-i-get-rooms-list-from-matrix.org%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
 <p>If you're using</p>
 <div class='definition-list'>
 </div>
@@ -503,7 +510,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </div>
 </div>
 <div class='question'>
-<h4 id="why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F">Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc? <a class="header-anchor" href="#why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F" aria-hidden="true">¶</a></h4>
+<h3 id="why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F">Why HTTP? Doesn't HTTP suck? Why don't you use websockets/CoAP/HTTP2/etc? <a class="header-anchor" href="#why-http%3F-doesn't-http-suck%3F-why-don't-you-use-websockets%2Fcoap%2Fhttp2%2Fetc%3F" aria-hidden="true">¶</a></h3>
 <p>HTTP may not be the most efficient transport, but it is ubiquitous, very well understood and has numerous implementations on almost every platform and language. It also has a simple upgrade path to HTTP/2, which is relatively bandwidth and round-trip efficient.</p>
 <p>For these reasons it has been chosen as the mandatory baseline of the exchange, but it is still entirely possible to use other protocols for communication between clients and server (see for example this <a href="https://github.com/matrix-org/matrix-doc/issues/1148">websocket transport spec proposal</a>), and it's also possible in the future that negotiation of more efficient protocols will be added for the <a href="#definition-federation" class="definition">federation</a> between servers, with HTTP+JSON remaining as the compatibility baseline.</p>
 <div class='definition-list'>
@@ -890,6 +897,44 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 </div>
 </div>
+<h2 id="architecture">Architecture <a class="header-anchor" href="#architecture" aria-hidden="true">¶</a></h2>
+<div class='question'>
+<h3 id="how-does-matrix-actually-work-architecturally%3F">How does Matrix actually work architecturally? <a class="header-anchor" href="#how-does-matrix-actually-work-architecturally%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
+<div class='definition-list'>
+</div>
+</div>
+<div class='question'>
+<h3 id="what-is-a-room%3F">What is a room? <a class="header-anchor" href="#what-is-a-room%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
+<div class='definition-list'>
+</div>
+</div>
+<h2 id="encryption">Encryption <a class="header-anchor" href="#encryption" aria-hidden="true">¶</a></h2>
+<div class='question'>
+<h3 id="what-does-end-to-end-(e2e)-encryption-mean%3F">What does End-to-End (E2E) encryption mean? <a class="header-anchor" href="#what-does-end-to-end-(e2e)-encryption-mean%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
+<div class='definition-list'>
+</div>
+</div>
+<div class='question'>
+<h3 id="how-precisely-does-e2e-work%3F">How precisely does E2E work? <a class="header-anchor" href="#how-precisely-does-e2e-work%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
+<div class='definition-list'>
+</div>
+</div>
+<div class='question'>
+<h3 id="what-is-the-status-of-e2e%3F">What is the status of E2E? <a class="header-anchor" href="#what-is-the-status-of-e2e%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
+<div class='definition-list'>
+</div>
+</div>
+<div class='question'>
+<h3 id="which-matrix-clients-support-e2e%3F">Which matrix clients support E2E? <a class="header-anchor" href="#which-matrix-clients-support-e2e%3F" aria-hidden="true">¶</a></h3>
+<p>TODO</p>
+<div class='definition-list'>
+</div>
+</div>
 <h2 id="the-spec">The Spec <a class="header-anchor" href="#the-spec" aria-hidden="true">¶</a></h2>
 <div class='question'>
 <h3 id="what-is-the-spec%3F">What is The Spec? <a class="header-anchor" href="#what-is-the-spec%3F" aria-hidden="true">¶</a></h3>
@@ -989,8 +1034,6 @@ Usage of an IS is not required in order for a client application to be part of t
 <li>How do I maintain my synapse's content repository (e.g. prune old content)?</li>
 <li>Why is the spec so big, especially relative to the XMPP baseline spec?</li>
 <li>What is the privacy policy on Matrix.org?</li>
-<li>How precisely does E2E work?</li>
-<li>How does Matrix actually work architecturally?</li>
 <li>What IOT use cases are there for Matrix?</li>
 <li>Why is are the Matrix reference implementations written in so many different languages?</li>
 <li>How does push work?</li>
@@ -1001,7 +1044,6 @@ Usage of an IS is not required in order for a client application to be part of t
 </ul>
 <h4 id="new-questions">New Questions <a class="header-anchor" href="#new-questions" aria-hidden="true">¶</a></h4>
 <ul>
-<li>What does End-to-End (E2E) encryption mean?</li>
 <li>Need a quick and understandable way to explain federation in a practical way. Like the guy who did not understand why he could not see the Arch linux room on disroot.</li>
 </ul>
 <blockquote>
@@ -1012,7 +1054,6 @@ just like gmail.com belongs to google and hotmail.com to microsoft<br>
 but you can send messages from one to the other</p>
 </blockquote>
 <p>Make a list of things to compare to, then make a separate page?</p>
-<p>Need to mention that rooms are the fundamental block</p>
 <div class='definition-list'>
 </div>
 </div>

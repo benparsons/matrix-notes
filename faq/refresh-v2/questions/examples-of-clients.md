@@ -1,5 +1,9 @@
 ### What clients are available?
 
+See also: [Which matrix clients support E2E?](#which-matrix-clients-support-e2e%3F)
+
+There are many clients available, ranging from the glossy mass-market to the geeky command-line.  There's even an emacs macro.  
+
 The most popular and established client is Riot, available on web, desktop, Android and iOS.
 
 Alternatively you can find a client suitable for you:
