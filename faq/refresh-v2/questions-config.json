@@ -91,11 +91,11 @@
         },
         {
             "name": "MXID",
-            "definition": ""
+            "definition": "Matrix user IDs (MXID) are unique user IDs. They are in the format ```@username:homeserver.tld```."
         },
         {
             "name": "3PID",
-            "definition": ""
+            "definition": "Third-party IDs (3PIDs) are IDs from other systems or contexts, such as email addresses, social network accounts and phone numbers."
         },
         {
             "name": "the spec",
