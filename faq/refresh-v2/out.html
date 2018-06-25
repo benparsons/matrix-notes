@@ -323,7 +323,7 @@ full details on how to contribute to the project.  All are welcome!</p>
 <div class='definition-list'>
 <div class='definition-item definition-room'>
 <p><strong>room</strong></p>
-<p>A room is a fundamental building bock of the matrix architecture: events are typically sent in the context of a room.</p>
+<p>A room is a fundamental building bock of the matrix architecture: events are typically sent in the context of a room. A room is a conceptual place where users can send and receive events. Events are sent to a room, and all participants in that room with sufficient access will receive the event. <a href="https://matrix.org/docs/spec/intro#room-structure">See more detail.</a></p>
 </div>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
@@ -889,7 +889,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='definition-item definition-group'>
 <p><strong>group</strong></p>
-<p>Groups are now known as communities.</p>
+<p>Groups are now known as communities, they are collections of rooms.</p>
 </div>
 <div class='definition-item definition-sigil'>
 <p><strong>sigil</strong></p>
@@ -906,14 +906,15 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='question'>
 <h3 id="what-is-a-room%3F">What is a room? <a class="header-anchor" href="#what-is-a-room%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>For a more thorough introduction see: <a href="https://matrix.org/docs/spec/intro.html#room-structure">https://matrix.org/docs/spec/intro.html#room-structure</a>.</p>
+<p>A room is a conceptual place where users can send and receive events. Events are sent to a room, and all participants in that room with sufficient access will receive the event.</p>
 <div class='definition-list'>
 </div>
 </div>
 <h2 id="encryption">Encryption <a class="header-anchor" href="#encryption" aria-hidden="true">¶</a></h2>
 <div class='question'>
 <h3 id="what-does-end-to-end-(e2e)-encryption-mean%3F">What does End-to-End (E2E) encryption mean? <a class="header-anchor" href="#what-does-end-to-end-(e2e)-encryption-mean%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>End-to-End encryption describes a scenario where a message is encrypted at the device or client of the sender, and is only decrypted by the device or client of the receiver, with no decryption or reading performed on the server.</p>
 <div class='definition-list'>
 </div>
 </div>
@@ -931,26 +932,37 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='question'>
 <h3 id="which-matrix-clients-support-e2e%3F">Which matrix clients support E2E? <a class="header-anchor" href="#which-matrix-clients-support-e2e%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>End-to-end encryption is currently available in <a href="#definition-riot">Riot</a> (and the [js-sdk]) and more recently in [Nheko]. E2E will also presently be available in the [matrix-python-sdk].</p>
 <div class='definition-list'>
+<div class='definition-item definition-riot'>
+<p><strong>riot</strong></p>
+</div>
 </div>
 </div>
 <h2 id="the-spec">The Spec <a class="header-anchor" href="#the-spec" aria-hidden="true">¶</a></h2>
 <div class='question'>
 <h3 id="what-is-the-spec%3F">What is The Spec? <a class="header-anchor" href="#what-is-the-spec%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>The Matrix Specification describes and prescribes the interaction between <a href="#definition-client">clients</a>, [servers][server], [Application Services] and more.</p>
+<p>The spec is <a href="https://matrix.org/docs/spec/">available to read on matrix.org</a>.</p>
+<p>To contribute to the development of the Matrix Specification, see <a href="https://matrix.org/docs/spec/proposals">https://matrix.org/docs/spec/proposals</a>.</p>
 <div class='definition-list'>
+<div class='definition-item definition-client'>
+<p><strong>client</strong></p>
+<p>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</p>
+</div>
 </div>
 </div>
 <div class='question'>
 <h3 id="where-is-the-spec%3F">Where is The Spec? <a class="header-anchor" href="#where-is-the-spec%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>You can view the spec at <a href="https://matrix.org/docs/spec/">https://matrix.org/docs/spec/</a>.</p>
+<p>For an introductory text, see <a href="https://matrix.org/docs/spec/intro">https://matrix.org/docs/spec/intro</a>.</p>
 <div class='definition-list'>
 </div>
 </div>
 <div class='question'>
 <h3 id="how-can-i-contribute-to-the-spec%3F">How can I contribute to The Spec? <a class="header-anchor" href="#how-can-i-contribute-to-the-spec%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>To contribute to the Matrix Specification, first take a look at the <a href="https://matrix.org/docs/spec/intro">documentation as it is currently written</a>, then review the <a href="https://matrix.org/docs/spec/proposals">process for new proposals</a>. You should start by writing a publicly-accessible proposal describing your change.</p>
+<p>To see the proposals currently under discussion,join us in [#matrix-spec:matrix.org].</p>
 <div class='definition-list'>
 </div>
 </div>
@@ -962,7 +974,8 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='question'>
 <h3 id="what's-an-msc%3F">What's an MSC? <a class="header-anchor" href="#what's-an-msc%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
+<p>&quot;MSC&quot; refers to <strong>M</strong>atrix <strong>S</strong>pec <strong>C</strong>hange, each proposal is assigned an MSC number to make referencing them easier.</p>
+<p>MSC numbers are taken from GitHub issues on the <a href="https://github.com/matrix-org/matrix-doc/issues">matrix-doc repo</a>. To see a list of all active MSCs, and to understand how to contribute your own, see <a href="https://matrix.org/docs/spec/proposals">https://matrix.org/docs/spec/proposals</a>.</p>
 <div class='definition-list'>
 </div>
 </div>

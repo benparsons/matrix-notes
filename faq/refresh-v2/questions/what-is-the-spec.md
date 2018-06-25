@@ -1,3 +1,7 @@
 ### What is The Spec?
 
-TODO
+The Matrix Specification describes and prescribes the interaction between [clients][client], [servers][server], [Application Services] and more.
+
+The spec is [available to read on matrix.org](https://matrix.org/docs/spec/).
+
+To contribute to the development of the Matrix Specification, see <https://matrix.org/docs/spec/proposals>.

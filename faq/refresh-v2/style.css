@@ -30,7 +30,10 @@ div.highlighted-definition {
     background-color: orangered;
 }
 a.definition {
-    background-color: orangered;
+    /*background-color: orangered;*/
+    background: transparent url(i.png) center right no-repeat;
+    padding-right: 18px;
+    background-size:1em;
 }
 
 

@@ -111,11 +111,11 @@
         },
         {
             "name": "group",
-            "definition": "Groups are now known as communities."
+            "definition": "Groups are now known as communities, they are collections of rooms."
         },
         {
             "name": "room",
-            "definition": "A room is a fundamental building bock of the matrix architecture: events are typically sent in the context of a room."
+            "definition": "A room is a fundamental building bock of the matrix architecture: events are typically sent in the context of a room. A room is a conceptual place where users can send and receive events. Events are sent to a room, and all participants in that room with sufficient access will receive the event. [See more detail.](https://matrix.org/docs/spec/intro#room-structure)"
         }
     ]
 }
