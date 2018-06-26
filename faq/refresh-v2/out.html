@@ -229,13 +229,12 @@ can join into the Matrix ecosystem by deploying their own server.</p>
 </div>
 <div class='question'>
 <h3 id="how-is-this-like-e-mail%3F">How is this like e-mail? <a class="header-anchor" href="#how-is-this-like-e-mail%3F" aria-hidden="true">¶</a></h3>
-<p>When email was first set up in the early ‘80s, companies like Compuserve
-and AT&amp;T and Sprint set up isolated email communities which only allowed
+<p>The <a href="https://en.wikipedia.org/wiki/History_of_email">History of email</a> is instructive when thinking about the importance of [interoperability]{.definition}.</p>
+<p>Early email systems behaved as isolated communities which only allowed
 you to exchange mail with users on the same system.  If you got your
 email from one service and your friend from another, then you couldn't
 message each other.  This is basically the situation we're in today with
 VoIP and IM.</p>
-<p>TODO : how was the problem solved for email? how does this relate to federation?</p>
 <div class='definition-list'>
 </div>
 </div>
@@ -437,9 +436,12 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 </div>
 <div class='question'>
 <h3 id="how-can-i-get-rooms-list-from-matrix.org%3F">How can I get rooms list from matrix.org? <a class="header-anchor" href="#how-can-i-get-rooms-list-from-matrix.org%3F" aria-hidden="true">¶</a></h3>
-<p>TODO</p>
-<p>If you're using</p>
+<p>If you're using <a href="#definition-riot" class="definition">Riot</a>, you can use the &quot;Room directory&quot; screen, which you open from a button in the bottom left.</p>
+<p>It you're working on a client, you can use the <a href="https://matrix.org/docs/guides/client-server.html">Client-Server API</a> to <a href="https://matrix.org/docs/spec/client_server/r0.3.0.html#listing-rooms">get a list of public rooms</a>.</p>
 <div class='definition-list'>
+<div class='definition-item definition-riot'>
+<p><strong>riot</strong></p>
+</div>
 </div>
 </div>
 <h2 id="tech">Tech <a class="header-anchor" href="#tech" aria-hidden="true">¶</a></h2>
@@ -692,90 +694,28 @@ is currently used by matrix.org to bridge with FreeNode.</p>
 </div>
 <div class='question'>
 <h3 id="what-is-the-difference-between-matrix-and-xmpp%3F">What is the difference between Matrix and XMPP? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-xmpp%3F" aria-hidden="true">¶</a></h3>
-<p>We think of Matrix and XMPP as being quite different; at its core
+<p>We think of Matrix and <a href="#definition-xmpp" class="definition">XMPP</a> as being quite different; at its core
 Matrix can be thought of as an eventually consistent global JSON db with
-an HTTP API and pubsub semantics - whilst XMPP can be thought of as a
+an HTTP API and [pubsub]{.definition} semantics - whilst XMPP can be thought of as a
 message passing protocol. You can use them both to build chat systems;
 you can use them both to build pubsub systems; each comes with different
 tradeoffs. Matrix has a deliberately extensive 'kitchen sink' baseline
 of functionality; XMPP has a deliberately minimal baseline set of
 functionality. If XMPP does what you need it to do, then we're genuinely
-happy for you :) Meanwhile, rather than competing, an XMPP Bridge like
+happy for you! Meanwhile, rather than competing, an XMPP Bridge like
 <a href="https://github.com/SkaveRat/xmpptrix">Skaverat's xmpptrix beta</a> or
 <a href="https://github.com/jfrederickson/matrix-xmpp-bridge">jfred's matrix-xmpp-bridge</a>
 or Matrix.org's own <a href="https://github.com/matrix-org/purple-matrix/">purple-matrix</a>
 has potential to let both environments coexist and make the most of each
 other's benefits.</p>
-<p>TODO: above is good, the below is in a strange voice, assertive but then has equivocations in italics. Need opinions</p>
-<p>The Matrix team used XMPP (Openfire, ejabberd, spectrum, asmack,
-XMPPFramework) for IM before starting to experiment with open HTTP APIs
-as an alternative in around 2012.  The main issues with XMPP that
-drove us in this direction <strong>as of 2012</strong> were:</p>
-<ul>
-<li>Not particularly web-friendly - you can't easily speak XMPP from a
-web browser. <em>N.B. Nowadays you have options like XMPP-FTW and
-Stanza.io that help loads with letting browsers talk XMPP</em></li>
-<li>Single logical server per MUC is a single point of control and
-availability. <em>MUCs can be distributed over multiple physical
-servers, but they still sit behind a single logical JID and domain.
-FMUC improves this with a similar approach to Matrix, but as of Oct
-2015 there are no open source implementations. The MIX XMPP extension
-also aims to address this limitation</em>.</li>
-<li>History synchronisation is very much a second class citizen feature</li>
-<li>Bridging to other protocols and defragmenting existing communication
-apps and networks is very much a second class citizen feature</li>
-<li>Stanzas aren't framed or reliably delivered without extensions. <em>See
-<a href="http://wiki.xmpp.org/web/Myths#Myth_Four:_XMPP_is_unreliable_without_a_bunch_of_extensions.">wiki.xmpp.org</a>
-for an XMPP take on this</em></li>
-<li>Multiple device support is limited. <em>Carbons and MAM aim to resolve this</em></li>
-<li>Baseline feature set is so minimal that fragmentation of features
-between clients and servers is common, especially as interoperability
-profiles for features have fallen behind (as of July 2015)</li>
-<li>No strong identity system (i.e. no standard E2E PKI, unless you
-count X.509 certs, which <a href="http://www.thoughtcrime.org/blog/ssl-and-the-future-of-authenticity/">are
-questionable</a>)</li>
-<li>Not particularly well designed for mobile use cases: push;
-bandwidth-efficient transports. <em>Since the time of writing a <a href="http://xmpp.org/extensions/xep-0357.html">Push
-XEP has appeared</a>, and
-<a href="http://wiki.xmpp.org/web/Myths#Myth_Three:_It.27s_too_bandwidth-inefficient_for_mobile.">wiki.xmpp.org</a>
-states that XMPP is usable over a 9600bps + 30s latency link.</em></li>
-</ul>
-<p>This said, the whole area of XMPP vs Matrix is quite subjective.
+<p>The whole area of XMPP vs Matrix is quite subjective.
 Rather than fighting over which open interoperable communication
 standard works the best, we should just collaborate and bridge everything
 together.  The more federation and interoperability the better.</p>
 <div class='definition-list'>
+<div class='definition-item definition-xmpp'>
+<p><strong>xmpp</strong></p>
 </div>
-</div>
-<div class='question'>
-<h3 id="what-is-the-difference-between-matrix-and-psyc%3F">What is the difference between Matrix and PSYC? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-psyc%3F" aria-hidden="true">¶</a></h3>
-<p>TODO: wtf is PSYC? do we need to include this?</p>
-<p>PSYC is a open federated messaging protocol loosely inspired by IRC.  In
-version 1 it was a standalone protocol, and in version 2 it is being
-reutilised as a messaging layer on top of GNUnet.  We honestly don't
-know that much about it, beyond trying to use psycd as an XMPP&lt;-&gt;IRC
-bridge in 2010. Matrix differentiates primarily by providing simple HTTP
-APIs rather than the more exotic compact line protocol in PSYC v1 or the
-comprehensive GNUnet stack in v2, and Matrix focuses more on decentralised
-conversation history rather than just decentralised chat servers.
-On the other hand, Matrix doesn't provide the metadata protection
-guarantees that GNUnet/PSYC aims for.</p>
-<p>|</p>
-<p>See <a href="http://about.psyc.eu/Matrix">http://about.psyc.eu/Matrix</a> for
-PSYC's views on Matrix.</p>
-<div class='definition-list'>
-</div>
-</div>
-<div class='question'>
-<h3 id="what-is-the-difference-between-matrix-and-tox%3F">What is the difference between Matrix and Tox? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-tox%3F" aria-hidden="true">¶</a></h3>
-<p>TODO Do we need to include this?</p>
-<p>Tox.chat looks to be a very cool clone of Skype - a fully decentralised
-peer-to-peer network.  Matrix is deliberately not a 'pure' peer-to-peer
-system; instead each user has a well-defined homeserver which stores
-his data and that he can depend upon.  Matrix provides HTTP APIs;
-Tox.chat provides C APIs.  As of October 2015 Tox doesn't seem to have an
-answer yet for decentralised conversation history storage.</p>
-<div class='definition-list'>
 </div>
 </div>
 <div class='question'>

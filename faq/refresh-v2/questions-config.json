@@ -21,7 +21,7 @@
             "name": "Detail",
             "parts": [
                 { "name": "position in the world", "questions": [21, 22, 31, 44 ] },
-                { "name": "Comparisons", "questions": [ 14, 15, 16, 17, 18] },
+                { "name": "Comparisons", "questions": [ 14, 15, 18] },
                 { "name": "more detail", "questions": [32, 33, 34, 35, 36, 37, 38, 39, 43, "what-are-communities"] },
                 { "name": "Architecture", "questions": [ "matrix-work-architecturally", "what-is-a-room"] },
                 { "name": "Encryption", "questions": ["e2e-meaning", "e2e-work", "e2e-status","e2e-clients"] },
