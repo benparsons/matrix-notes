@@ -355,16 +355,17 @@ full details on how to contribute to the project.  All are welcome!</p>
 <p>There are a large number of '<a href="#definition-bridging" class="definition">bridges</a>' which integrate existing communication networks into
 Matrix. This list is growing rapidly, and you can find bridges both written by the Matrix core team
 and contributed by the wider community.  The full list can be seen at
-<a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a>, but the core ones as of Oct 2015 include:</p>
-<p>TODO update list, talk to Half-Shot</p>
+<a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a></p>
+<p>As of July 2018, active bridges include:</p>
 <ul>
-<li><a href="https://github.com/matrix-org/matrix-appservice-irc">matrix-appservice-irc</a> - an increasinglycomprehensive Matrix&lt;-&gt;IRC bridge</li>
-<li><a href="https://github.com/matrix-org/matrix-appservice-verto">matrix-appservice-verto</a> - links from Matrix toFreeSWITCH via the Verto protocol</li>
-<li><a href="https://github.com/matrix-org/matrix-appservice-slack">matrix-appservice-slack</a> - a basic bridge toSlack</li>
+<li><a href="https://github.com/matrix-org/matrix-appservice-irc">matrix-appservice-irc</a> - a comprehensive Matrix&lt;-&gt;IRC bridge</li>
+<li><a href="https://github.com/tulir/mautrix-telegram">mautrix-telegram</a> - allows bridging to Telegram</li>
+<li><a href="https://github.com/Half-Shot/matrix-appservice-discord">matrix-appservice-discord</a> - for bridging to discord</li>
+<li><a href="https://github.com/matrix-org/matrix-appservice-gitter">matrix-appservice-gitter</a> - a bridge to Gitter</li>
+<li><a href="https://github.com/matrix-org/matrix-appservice-slack">matrix-appservice-slack</a> - a basic bridge to Slack</li>
 <li><a href="https://github.com/matrix-org/node-purple">node-purple</a> - lets you access any of the 20+ protocolssupported by <a href="https://developer.pidgin.im/wiki/WhatIsLibpurple">libpurple</a>, including Skype, Lync, XMPP,etc)</li>
 <li><a href="https://github.com/matrix-org/matrix-appservice-bridge">matrix-appservice-bridge</a> - a general NodeJS framework for writing bridges</li>
 </ul>
-<p>TODO: this tutorial should be hosted on Matrix.org</p>
 <p>Writing new bridges is incredibly fun and easy - see the <a href="https://github.com/matrix-org/matrix-appservice-bridge/blob/master/HOWTO.md">matrix-appservice-bridge HOWTO</a>
 for an example of how to write a fully functional Slack bridge in less than 100 lines of code!</p>
 <div class='definition-list'>
@@ -448,11 +449,15 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 <div class='question'>
 <h3 id="how-do-i-matrix-enable-my-existing-app%3F">How do I Matrix-enable my existing app? <a class="header-anchor" href="#how-do-i-matrix-enable-my-existing-app%3F" aria-hidden="true">¶</a></h3>
 <p>If your app doesn't have any communication capability already, you'll want
-to use one of the Matrix <a href="#definition-clientsdk" class="definition">client SDK</a>s to add it in.  These come in different
-levels of sophistication - ranging from a simple HTTP API wrapper (like matrix-js-sdk, matrix-ios-sdk or matrix-android-sdk)
-through to reusable UI components (like matrix-react-sdk and matrix-ios-kit).
-TODO: update this list
-Pick the one for your platform, or a 3rd party one if none of the above work for you,
+to use one of the Matrix <a href="#definition-clientsdk" class="definition">client SDK</a>s to add it in.   These come in different levels of sophistication - ranging from a simple HTTP API wrapper through to reusable UI components.</p>
+<ul>
+<li><a href="https://github.com/matrix-org/matrix-android-sdk">matrix-android-sdk</a></li>
+<li><a href="https://github.com/matrix-org/matrix-js-sdk">matrix-js-sdk</a></li>
+<li><a href="https://github.com/matrix-org/matrix-python-sdk">matrix-python-sdk</a></li>
+<li><a href="https://github.com/matrix-org/matrix-ios-sdk">matrix-ios-sdk</a></li>
+</ul>
+<p>There are even <a href="https://matrix.org/docs/projects/try-matrix-now.html#client-sdks">more client SDKs available</a>.</p>
+<p>Pick the one for your platform, or a 3rd party one if none of the above work for you,
 and get plugging it in.  You'll probably also want to read the <a href="http://matrix.org/docs/howtos/client-server.html">Client-Server API
 HOWTO</a> too.</p>
 <p>If you already have communication infrastructure set up (XMPP, custom HTTP, or whatever),
