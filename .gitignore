@@ -2,3 +2,4 @@ node_modules/
 html/
 .vscode/
 .DS_Store
+pr-acceptance/example.db
