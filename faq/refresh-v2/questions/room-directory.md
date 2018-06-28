@@ -1,4 +1,4 @@
-### How can I get rooms list from matrix.org?
+### How can I get a rooms list from matrix.org?
 
 If you're using [Riot]{.definition}, you can use the "Room directory" screen, which you open from a button in the bottom left.
 
