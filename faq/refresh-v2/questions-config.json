@@ -47,19 +47,19 @@
         },
         {
             "name": "Synapse",
-            "definition": "Synapse definition"
+            "definition": "Synapse is a homeserver implemented in Python by the matrix.org core team. It is currently by far the most installed homeserver available."
         },
         {
             "name": "interoperable",
-            "definition": "interoperable definition"
+            "definition": "TODO interoperable definition"
         },
         {
             "name": "New Vector",
-            "definition": "the company"
+            "definition": "TODO the company"
         },
         {
             "name": "federation",
-            "definition": "federation definition"
+            "definition": "TODO federation definition"
         },
         {
             "name": "SIP",
@@ -75,19 +75,15 @@
         },
         {
             "name": "bridging",
-            "definition": ""
+            "definition": "Bridging to Matrix means that it's possible to read and write to channels hosted outside matrix. For example, it's possible to speak in IRC and slack rooms."
         },
         {
             "name": "Riot",
-            "definition": ""
-        },
-        {
-            "name": "F-Droid",
-            "definition": ""
+            "definition": "Riot is a popular matrix client developed by the core matrix.org team. [It's available as a web app, on Android and on iOS](https://matrix.org/docs/projects/try-matrix-now.html)."
         },
         {
             "name": "client SDK",
-            "definition": ""
+            "definition": "A client SDK makes it easier to develop client applications using matrix. See: [How do I Matrix-enable my existing app?](#how-do-i-matrix-enable-my-existing-app%3F)"
         },
         {
             "name": "MXID",
@@ -99,7 +95,7 @@
         },
         {
             "name": "the spec",
-            "definition": ""
+            "definition": "The Matrix Specification describes the interactions between actors in the Matrix ecosystem, including Server-Server and Client-Server. [You can see the spec here.](https://matrix.org/docs/spec/)"
         },
         {
             "name": "sigil",
@@ -116,6 +112,14 @@
         {
             "name": "room",
             "definition": "A room is a fundamental building bock of the matrix architecture: events are typically sent in the context of a room. A room is a conceptual place where users can send and receive events. Events are sent to a room, and all participants in that room with sufficient access will receive the event. [See more detail.](https://matrix.org/docs/spec/intro#room-structure)"
+        },
+        {
+            "name": "bot",
+            "definition": "TODO"
+        },
+        {
+            "name": "pubsub",
+            "definition": "TODO"
         }
     ]
 }

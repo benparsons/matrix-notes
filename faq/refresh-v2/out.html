@@ -59,11 +59,15 @@
 <div class='question'>
 <h3 id="what-is-matrix%3F">What is Matrix? <a class="header-anchor" href="#what-is-matrix%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix is an open standard for interoperable, decentralised, real-time communication over IP. It can be used to power Instant Messaging, VoIP/WebRTC signalling, Internet of Things communication - or anywhere you need a standard HTTP API for publishing and subscribing to data whilst tracking the conversation history.</p>
-<p>Matrix defines the standard, and provides open source reference implementations of Matrix-compatible Servers, <a href="#definition-client" class="definition">Client</a>s, Client SDKs and Application Services to help you create new communication solutions or extend the capabilities and reach of existing ones.</p>
+<p>Matrix defines the standard, and provides open source reference implementations of Matrix-compatible Servers, <a href="#definition-client" class="definition">Client</a>s, <a href="#definition-clientsdk" class="definition">Client SDKs</a> and Application Services to help you create new communication solutions or extend the capabilities and reach of existing ones.</p>
 <div class='definition-list'>
 <div class='definition-item definition-client'>
 <p><strong>client</strong></p>
 <p>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</p>
+</div>
+<div class='definition-item definition-clientsdk'>
+<p><strong>clientsdk</strong></p>
+<p>A client SDK makes it easier to develop client applications using matrix. See: <a href="#how-do-i-matrix-enable-my-existing-app%3F">How do I Matrix-enable my existing app?</a></p>
 </div>
 </div>
 </div>
@@ -98,21 +102,31 @@
 <div class='question'>
 <h3 id="what-does-matrix-provide%3F">What does Matrix provide? <a class="header-anchor" href="#what-does-matrix-provide%3F" aria-hidden="true">¶</a></h3>
 <ul>
-<li><a href="/docs/spec">Open Standard</a> HTTP APIs for transferring JSON messages (e.g. instant messages, WebRTC signalling), including:</li>
+<li><a href="/docs/spec">Open Standard</a> HTTP APIs for transferring JSON messages (e.g. instant messages, WebRTC signalling), including:
+<ul>
 <li><a href="/docs/spec#client-server-api-v1">Client&lt;-&gt;Server API</a> - defines how Matrix compatible clients communicate with Matrix homeservers.</li>
 <li><a href="/docs/spec#federation-api">Server&lt;-&gt;Server API</a> - defines how Matrix homeservers exchange messages and synchronise history with each other.</li>
 <li><a href="/docs/spec/#application-service-api">Application Service API</a> - defines how to extend the functionality of Matrix with 'integrations' and bridge to other networks.</li>
 <li><a href="/docs/spec/#modules">Modules</a> - specifies features that must be implemented by particular classes of clients.</li>
-<li>Open source reference implementations of:</li>
+</ul>
+</li>
+<li>Open source reference implementations of:
+<ul>
 <li>Clients (Web (React), iOS, Android)</li>
-<li>Client SDKs (Javascript, Web (React), iOS, Android)</li>
+<li><a href="#definition-clientsdk" class="definition">Client SDKs</a> (Javascript, Web (React), iOS, Android)</li>
 <li>Homeservers (Synapse)</li>
 <li>Application Services (bridges to IRC, Slack, Skype, Lync and more...)</li>
+</ul>
+</li>
 <li>The actual ecosystem and community of everyone running Matrix servers and services</li>
 <li>Loads of 3rd party contributions of clients, SDKs, servers and services.</li>
 </ul>
 <p>You can find the full list of Matrix enabled projects at <a href="https://matrix.org/blog/try-matrix-now">https://matrix.org/blog/try-matrix-now</a>.</p>
 <div class='definition-list'>
+<div class='definition-item definition-clientsdk'>
+<p><strong>clientsdk</strong></p>
+<p>A client SDK makes it easier to develop client applications using matrix. See: <a href="#how-do-i-matrix-enable-my-existing-app%3F">How do I Matrix-enable my existing app?</a></p>
+</div>
 </div>
 </div>
 <h2 id="who-and-how">Who and How <a class="header-anchor" href="#who-and-how" aria-hidden="true">¶</a></h2>
@@ -155,7 +169,7 @@ are funded by their own employers or donate their own time to the project.</p>
 <div class='definition-list'>
 <div class='definition-item definition-newvector'>
 <p><strong>newvector</strong></p>
-<p>the company</p>
+<p>TODO the company</p>
 </div>
 </div>
 </div>
@@ -169,7 +183,7 @@ folks all over the internet.</p>
 <div class='definition-list'>
 <div class='definition-item definition-newvector'>
 <p><strong>newvector</strong></p>
-<p>the company</p>
+<p>TODO the company</p>
 </div>
 </div>
 </div>
@@ -180,7 +194,7 @@ folks all over the internet.</p>
 <div class='definition-list'>
 <div class='definition-item definition-interoperable'>
 <p><strong>interoperable</strong></p>
-<p>interoperable definition</p>
+<p>TODO interoperable definition</p>
 </div>
 </div>
 </div>
@@ -201,7 +215,7 @@ enhance them and contribute their enhancements as they see fit.</p>
 <div class='definition-list'>
 <div class='definition-item definition-interoperable'>
 <p><strong>interoperable</strong></p>
-<p>interoperable definition</p>
+<p>TODO interoperable definition</p>
 </div>
 </div>
 </div>
@@ -219,23 +233,27 @@ can join into the Matrix ecosystem by deploying their own server.</p>
 <div class='definition-list'>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 <div class='definition-item definition-interoperable'>
 <p><strong>interoperable</strong></p>
-<p>interoperable definition</p>
+<p>TODO interoperable definition</p>
 </div>
 </div>
 </div>
 <div class='question'>
 <h3 id="how-is-this-like-e-mail%3F">How is this like e-mail? <a class="header-anchor" href="#how-is-this-like-e-mail%3F" aria-hidden="true">¶</a></h3>
-<p>The <a href="https://en.wikipedia.org/wiki/History_of_email">History of email</a> is instructive when thinking about the importance of [interoperability]{.definition}.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/History_of_email">History of email</a> is instructive when thinking about the importance of <a href="#definition-interoperable" class="definition">interoperability</a>.</p>
 <p>Early email systems behaved as isolated communities which only allowed
 you to exchange mail with users on the same system.  If you got your
 email from one service and your friend from another, then you couldn't
 message each other.  This is basically the situation we're in today with
 VoIP and IM.</p>
 <div class='definition-list'>
+<div class='definition-item definition-interoperable'>
+<p><strong>interoperable</strong></p>
+<p>TODO interoperable definition</p>
+</div>
 </div>
 </div>
 <div class='question'>
@@ -275,7 +293,7 @@ on Riot.im).</p>
 </div>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 </div>
 </div>
@@ -300,10 +318,11 @@ full details on how to contribute to the project.  All are welcome!</p>
 <div class='definition-list'>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
-<p>Synapse definition</p>
+<p>Synapse is a homeserver implemented in Python by the matrix.org core team. It is currently by far the most installed homeserver available.</p>
 </div>
 <div class='definition-item definition-thespec'>
 <p><strong>thespec</strong></p>
+<p>The Matrix Specification describes the interactions between actors in the Matrix ecosystem, including Server-Server and Client-Server. <a href="https://matrix.org/docs/spec/">You can see the spec here.</a></p>
 </div>
 <div class='definition-item definition-client'>
 <p><strong>client</strong></p>
@@ -311,14 +330,15 @@ full details on how to contribute to the project.  All are welcome!</p>
 </div>
 <div class='definition-item definition-bridging'>
 <p><strong>bridging</strong></p>
+<p>Bridging to Matrix means that it's possible to read and write to channels hosted outside matrix. For example, it's possible to speak in IRC and slack rooms.</p>
 </div>
 </div>
 </div>
 <div class='question'>
 <h3 id="where-can-i-get-support%3F">Where can I get support? <a class="header-anchor" href="#where-can-i-get-support%3F" aria-hidden="true">¶</a></h3>
 <p>The point of entry for everything matrix is the <a href="#definition-room" class="definition">room</a> <a href="https://matrix.to/#/#matrix:matrix.org">#matrix:matrix.org</a> aka #matrix on irc.freenode.</p>
-<p>If you're a developer and are looking to get involved with building something on Matrix, try [#matrix-dev:matrix.org].</p>
-<p>If you host a <a href="#definition-synapse" class="definition">Synapse</a> homeserver instance and would like support, try [#synapse-community:matrix.org].</p>
+<p>If you're a developer and are looking to get involved with building something on Matrix, try <a href="https://matrix.to/#/#matrix-dev:matrix.org">#matrix-dev:matrix.org</a>.</p>
+<p>If you host a <a href="#definition-synapse" class="definition">Synapse</a> homeserver instance and would like support, try <a href="https://matrix.to/#/#synapse-community:matrix.org">#synapse-community:matrix.org</a>.</p>
 <div class='definition-list'>
 <div class='definition-item definition-room'>
 <p><strong>room</strong></p>
@@ -326,7 +346,7 @@ full details on how to contribute to the project.  All are welcome!</p>
 </div>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
-<p>Synapse definition</p>
+<p>Synapse is a homeserver implemented in Python by the matrix.org core team. It is currently by far the most installed homeserver available.</p>
 </div>
 </div>
 </div>
@@ -339,14 +359,14 @@ full details on how to contribute to the project.  All are welcome!</p>
 <p>The most popular and established client is Riot, available on web, desktop, Android and iOS.</p>
 <p>Alternatively you can find a client suitable for you:</p>
 <ul>
-<li>if you're using GNOME, try [Fractal]</li>
-<li>[Nheko] is a glossy native desktop app for Matrix, based on Qt5.</li>
-<li>[Quaternion] is a cross-platform desktop client based on Qt5/QML</li>
-<li>if you prefer a command line client, there is a [Matrix plugin for Weechat]</li>
-<li>[neo] is a Matrix React.js webclient</li>
-<li>[Seaglass] is a recently announced (as of July 2018) client written as a native macOS app</li>
+<li>if you're using GNOME, try <a href="https://wiki.gnome.org/Apps/Fractal">Fractal</a></li>
+<li><a href="https://github.com/mujx/nheko">Nheko</a> is a glossy native desktop app for Matrix, based on Qt5.</li>
+<li><a href="https://github.com/QMatrixClient/Quaternion">Quaternion</a> is a cross-platform desktop client based on Qt5/QML</li>
+<li>if you prefer a command line client, there is a <a href="https://matrix.org/docs/projects/client/weechat.html">Matrix plugin for Weechat</a></li>
+<li><a href="https://github.com/f0x52/neo">neo</a> is a Matrix React.js webclient</li>
+<li><a href="https://github.com/neilalexander/seaglass">Seaglass</a> is a recently announced (as of July 2018) client written as a native macOS app</li>
 </ul>
-<p>A thorough list of clients can be found on the [try-matrix-now] page.</p>
+<p>A thorough list of clients can be found on the <a href="https://matrix.org/blog/try-matrix-now">try-matrix-now</a> page.</p>
 <div class='definition-list'>
 </div>
 </div>
@@ -371,6 +391,7 @@ for an example of how to write a fully functional Slack bridge in less than 100 
 <div class='definition-list'>
 <div class='definition-item definition-bridging'>
 <p><strong>bridging</strong></p>
+<p>Bridging to Matrix means that it's possible to read and write to channels hosted outside matrix. For example, it's possible to speak in IRC and slack rooms.</p>
 </div>
 </div>
 </div>
@@ -396,18 +417,16 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 <div class='definition-list'>
 <div class='definition-item definition-riot'>
 <p><strong>riot</strong></p>
+<p>Riot is a popular matrix client developed by the core matrix.org team. <a href="https://matrix.org/docs/projects/try-matrix-now.html">It's available as a web app, on Android and on iOS</a>.</p>
 </div>
 </div>
 </div>
 <div class='question'>
 <h3 id="i-installed-riot-via-f-droid%2C-why-is-it-draining-my-battery%3F">I installed Riot via F-Droid, why is it draining my battery? <a class="header-anchor" href="#i-installed-riot-via-f-droid%2C-why-is-it-draining-my-battery%3F" aria-hidden="true">¶</a></h3>
-<p>The <a href="#definition-f-droid" class="definition">F-Droid</a> release of Riot does not use <a href="https://developers.google.com/cloud-messaging/">Google Cloud Messaging</a>. This allows users that do not have or want Google Services installed to use Riot.</p>
+<p>The <a href="https://f-droid.org/repository/browse/?fdid=im.vector.alpha">F-Droid</a> release of Riot does not use <a href="https://developers.google.com/cloud-messaging/">Google Cloud Messaging</a>. This allows users that do not have or want Google Services installed to use Riot.</p>
 <p>The drawback is that Riot has to pull for new messages, which can drain your battery. To counter this, you can change the delay between polls in the settings. Higher delay means better battery life (but may delay receiving messages). You can also disable the background sync entirely (which means that you won't get any notifications at all).</p>
 <p>If you don't mind using Google Services, you might be better off installing the <a href="https://play.google.com/store/apps/details?id=im.vector.alpha">Google Play store</a> version.</p>
 <div class='definition-list'>
-<div class='definition-item definition-f-droid'>
-<p><strong>f-droid</strong></p>
-</div>
 </div>
 </div>
 <div class='question'>
@@ -417,7 +436,7 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 <p>You can use <a href="https://riot.im/app/">Riot.im</a> - a glossy web client written on top of <a href="https://github.com/matrix-org/matrix-react-sdk">matrix-react-sdk</a>.</p>
 <p>You can also host Riot on your own server. It's a static web application, just download the <a href="https://github.com/vector-im/riot-web/">last release</a> and unpack it.</p>
 <h1 id="neo">neo <a class="header-anchor" href="#neo" aria-hidden="true">¶</a></h1>
-<p>[neo] is a Matrix React.js webclient which aims to be lighter than Riot while still feature complete.</p>
+<p><a href="https://github.com/f0x52/neo">neo</a> is a Matrix React.js webclient which aims to be lighter than Riot while still feature complete.</p>
 <div class='definition-list'>
 </div>
 </div>
@@ -426,10 +445,10 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 <p>See also: <a href="#what-clients-are-available%3F">What clients are available?</a></p>
 <p>You can use the desktop build of <a href="https://riot.im/desktop.html">Riot.im</a>.</p>
 <ul>
-<li>if you're using GNOME, try [Fractal]</li>
-<li>[Nheko] is a glossy native desktop app for Matrix, based on Qt5.</li>
-<li>[Quaternion] is a cross-platform desktop client based on Qt5/QML</li>
-<li>[Seaglass] is a recently announced (as of July 2018) client written as a native macOS app</li>
+<li>if you're using GNOME, try <a href="https://wiki.gnome.org/Apps/Fractal">Fractal</a></li>
+<li><a href="https://github.com/mujx/nheko">Nheko</a> is a glossy native desktop app for Matrix, based on Qt5.</li>
+<li><a href="https://github.com/QMatrixClient/Quaternion">Quaternion</a> is a cross-platform desktop client based on Qt5/QML</li>
+<li><a href="https://github.com/neilalexander/seaglass">Seaglass</a> is a recently announced (as of July 2018) client written as a native macOS app</li>
 </ul>
 <p>There are also other desktop clients - check the list of clients on <a href="http://matrix.org/docs/projects/try-matrix-now.html#clients">matrix.org</a>.</p>
 <div class='definition-list'>
@@ -442,6 +461,7 @@ built by <a href="http://matrix.org/jenkins/job/VectorAndroidDevelop">Jenkins</a
 <div class='definition-list'>
 <div class='definition-item definition-riot'>
 <p><strong>riot</strong></p>
+<p>Riot is a popular matrix client developed by the core matrix.org team. <a href="https://matrix.org/docs/projects/try-matrix-now.html">It's available as a web app, on Android and on iOS</a>.</p>
 </div>
 </div>
 </div>
@@ -470,6 +490,7 @@ that bridges have to implement.</p>
 <div class='definition-list'>
 <div class='definition-item definition-clientsdk'>
 <p><strong>clientsdk</strong></p>
+<p>A client SDK makes it easier to develop client applications using matrix. See: <a href="#how-do-i-matrix-enable-my-existing-app%3F">How do I Matrix-enable my existing app?</a></p>
 </div>
 </div>
 </div>
@@ -487,23 +508,23 @@ to write a client.</p>
 <h3 id="how-do-i-register-custom-matrix-event-types%3F">How do I register custom matrix event types? <a class="header-anchor" href="#how-do-i-register-custom-matrix-event-types%3F" aria-hidden="true">¶</a></h3>
 <p>We're not yet managing a registry of custom matrix event types.  If you
 have any particularly good ones you want to tell the world about, please
-let us know on [#matrix-dev:matrix.org].</p>
+let us know on <a href="https://matrix.to/#/#matrix-dev:matrix.org">#matrix-dev:matrix.org</a>.</p>
 <div class='definition-list'>
 </div>
 </div>
 <div class='question'>
 <h3 id="can-i-write-a-matrix-homeserver%3F">Can I write a Matrix homeserver? <a class="header-anchor" href="#can-i-write-a-matrix-homeserver%3F" aria-hidden="true">¶</a></h3>
 <p>Yes. Matrix is just a spec, and implementations of the spec are very welcome!</p>
-<p>The most well-distributed <a href="#definition-homeserver" class="definition">homeserver</a> in the wild today is <a href="#definition-synapse" class="definition">Synapse</a>. Writing a Matrix homeserver is a different and larger challenge than writing a [bot]{.definition} or a <a href="#definition-client" class="definition">client</a>, but  other projects aiming to implement the server component include:</p>
+<p>The most well-distributed <a href="#definition-homeserver" class="definition">homeserver</a> in the wild today is <a href="#definition-synapse" class="definition">Synapse</a>. Writing a Matrix homeserver is a different and larger challenge than writing a <a href="#definition-bot" class="definition">bot</a> or a <a href="#definition-client" class="definition">client</a>, but  other projects aiming to implement the server component include:</p>
 <ul>
-<li>[Dendrite]</li>
-<li>[Ruma]</li>
-<li>[The Construct]</li>
-<li>[Plasma]</li>
+<li><a href="https://github.com/matrix-org/dendrite">Dendrite</a></li>
+<li><a href="https://github.com/ruma/ruma">Ruma</a></li>
+<li><a href="https://github.com/jevolk/charybdis">The Construct</a></li>
+<li><a href="https://gitlab.com/beerfactory.org/plasma/">Plasma</a></li>
 <li><a href="https://gitlab.com/ma1uta/jeon">jeon</a></li>
 <li>mxhsd (TODO still wants to be included?)</li>
 </ul>
-<p>The [S2S] spec is still being finalised for r0, so if you are planning on doing work in this area, come chat to us in [#matrix-dev:matrix.org]. You can also read about the <a href="https://matrix.org/docs/spec/server_server/unstable.html">Federation API here</a>.</p>
+<p>The <a href="https://matrix.org/docs/spec/server_server/unstable.html">S2S spec</a> is still being finalised for r0, so if you are planning on doing work in this area, come chat to us in <a href="https://matrix.to/#/#matrix-dev:matrix.org">#matrix-dev:matrix.org</a>. You can also read about the <a href="https://matrix.org/docs/spec/server_server/unstable.html">Federation API here</a>.</p>
 <div class='definition-list'>
 <div class='definition-item definition-homeserver'>
 <p><strong>homeserver</strong></p>
@@ -511,7 +532,11 @@ let us know on [#matrix-dev:matrix.org].</p>
 </div>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
-<p>Synapse definition</p>
+<p>Synapse is a homeserver implemented in Python by the matrix.org core team. It is currently by far the most installed homeserver available.</p>
+</div>
+<div class='definition-item definition-bot'>
+<p><strong>bot</strong></p>
+<p>TODO</p>
 </div>
 <div class='definition-item definition-client'>
 <p><strong>client</strong></p>
@@ -526,7 +551,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 <div class='definition-list'>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 </div>
 </div>
@@ -543,11 +568,11 @@ let us know on [#matrix-dev:matrix.org].</p>
 </div>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
-<p>Synapse definition</p>
+<p>Synapse is a homeserver implemented in Python by the matrix.org core team. It is currently by far the most installed homeserver available.</p>
 </div>
 </div>
 </div>
@@ -561,7 +586,7 @@ let us know on [#matrix-dev:matrix.org].</p>
 </div>
 <div class='definition-item definition-synapse'>
 <p><strong>synapse</strong></p>
-<p>Synapse definition</p>
+<p>Synapse is a homeserver implemented in Python by the matrix.org core team. It is currently by far the most installed homeserver available.</p>
 </div>
 </div>
 </div>
@@ -580,14 +605,14 @@ let us know on [#matrix-dev:matrix.org].</p>
 <div class='definition-list'>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 </div>
 </div>
 <div class='question'>
 <h3 id="can-i-run-my-own-identity-server%3F">Can I run my own identity server? <a class="header-anchor" href="#can-i-run-my-own-identity-server%3F" aria-hidden="true">¶</a></h3>
 <p>See also: <a href="#what-is-an-identity-server%3F">What is an identity server?</a></p>
-<p>TODO: understand sydent + max's complaints</p>
+<p>TODO: talk to Dave about rewrite. understand sydent + max's complaints</p>
 <p>Yes - the reference implementation is
 <a href="https://github.com/matrix-org/sydent">sydent</a> and you can run your own ID server cluster that tracks 3rd party to Matrix ID mappings.  This won't be very useful right now, though, and we don't recommend it.</p>
 <p>If you want your server to participate in the global replicated Matrix ID
@@ -624,7 +649,7 @@ services they will demand it.</p>
 <div class='definition-list'>
 <div class='definition-item definition-interoperable'>
 <p><strong>interoperable</strong></p>
-<p>interoperable definition</p>
+<p>TODO interoperable definition</p>
 </div>
 </div>
 </div>
@@ -690,10 +715,11 @@ is currently used by matrix.org to bridge with FreeNode.</p>
 <div class='definition-list'>
 <div class='definition-item definition-riot'>
 <p><strong>riot</strong></p>
+<p>Riot is a popular matrix client developed by the core matrix.org team. <a href="https://matrix.org/docs/projects/try-matrix-now.html">It's available as a web app, on Android and on iOS</a>.</p>
 </div>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 </div>
 </div>
@@ -701,7 +727,7 @@ is currently used by matrix.org to bridge with FreeNode.</p>
 <h3 id="what-is-the-difference-between-matrix-and-xmpp%3F">What is the difference between Matrix and XMPP? <a class="header-anchor" href="#what-is-the-difference-between-matrix-and-xmpp%3F" aria-hidden="true">¶</a></h3>
 <p>We think of Matrix and <a href="#definition-xmpp" class="definition">XMPP</a> as being quite different; at its core
 Matrix can be thought of as an eventually consistent global JSON db with
-an HTTP API and [pubsub]{.definition} semantics - whilst XMPP can be thought of as a
+an HTTP API and <a href="#definition-pubsub" class="definition">pubsub</a> semantics - whilst XMPP can be thought of as a
 message passing protocol. You can use them both to build chat systems;
 you can use them both to build pubsub systems; each comes with different
 tradeoffs. Matrix has a deliberately extensive 'kitchen sink' baseline
@@ -720,6 +746,10 @@ together.  The more federation and interoperability the better.</p>
 <div class='definition-list'>
 <div class='definition-item definition-xmpp'>
 <p><strong>xmpp</strong></p>
+</div>
+<div class='definition-item definition-pubsub'>
+<p><strong>pubsub</strong></p>
+<p>TODO</p>
 </div>
 </div>
 </div>
@@ -754,6 +784,7 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 <div class='definition-list'>
 <div class='definition-item definition-bridging'>
 <p><strong>bridging</strong></p>
+<p>Bridging to Matrix means that it's possible to read and write to channels hosted outside matrix. For example, it's possible to speak in IRC and slack rooms.</p>
 </div>
 </div>
 </div>
@@ -770,7 +801,6 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 <div class='question'>
 <h3 id="what-is-a-mxid%3F">What is a MXID? <a class="header-anchor" href="#what-is-a-mxid%3F" aria-hidden="true">¶</a></h3>
 <p>Matrix user IDs (MXID) are unique user IDs. They are in the format <code>@username:homeserver.tld</code> (this format is used to avoid confusing them with email addresses.) They are intended to be fairly hidden (although right now they are not) - instead you will find and identify other users via <a href="#definition-3pid" class="definition">3PID</a>s.</p>
-<p>TODO: is this hidden comment still true?</p>
 <div class='definition-list'>
 <div class='definition-item definition-3pid'>
 <p><strong>3pid</strong></p>
@@ -786,16 +816,19 @@ a non-Matrix client from one of the networks which has been bridged in).</p>
 </div>
 <div class='question'>
 <h3 id="what-is-an-identity-server%3F">What is an identity server? <a class="header-anchor" href="#what-is-an-identity-server%3F" aria-hidden="true">¶</a></h3>
-<p>Users in Matrix are identified internally via their <a href="#definition-mxid" class="definition">matrix user ID (MXID)</a>. However, existing 3rd party ID (3PID) namespaces such as email addresses or phone numbers should be used publicly to identify Matrix users, at least for invitation purposes.  A Matrix &quot;Identity&quot; describes both the user ID and any other existing IDs from third party namespaces linked to their account.</p>
+<p>Users in Matrix are identified internally via their <a href="#definition-mxid" class="definition">matrix user ID (MXID)</a>. However, existing 3rd party ID (<a href="#definition-3pid" class="definition">3PID</a>) namespaces such as email addresses or phone numbers should be used publicly to identify Matrix users, at least for invitation purposes.  A Matrix &quot;Identity&quot; describes both the user ID and any other existing IDs from third party namespaces linked to their account.</p>
 <p>Matrix users can link third-party IDs (3PIDs) to their user ID. Linking 3PIDs creates a mapping from a 3PID to a user ID. This mapping can then be used by Matrix users in order to discover the MXIDs of their contacts.</p>
-<p>In order to ensure that the mapping from 3PID to user ID is genuine, a globally federated cluster of trusted &quot;Identity Servers&quot; (IS) are used to verify the 3PID and persist and replicate the mappings.
+<p>In order to ensure that the mapping from 3PID to user ID is genuine, the intention is for a globally federated cluster of trusted &quot;Identity Servers&quot; (IS) be used to verify the 3PID and persist and replicate the mappings.
 Usage of an IS is not required in order for a client application to be part of the Matrix ecosystem. However, without one clients will not be able to look up user IDs using 3PIDs.</p>
 <p>The precise architecture of identity servers is currently in flux and subject to change as we work to fully decentralise them.</p>
-<p>TODO: is all this still correct?</p>
 <div class='definition-list'>
 <div class='definition-item definition-mxid'>
 <p><strong>mxid</strong></p>
 <p>Matrix user IDs (MXID) are unique user IDs. They are in the format <code>@username:homeserver.tld</code>.</p>
+</div>
+<div class='definition-item definition-3pid'>
+<p><strong>3pid</strong></p>
+<p>Third-party IDs (3PIDs) are IDs from other systems or contexts, such as email addresses, social network accounts and phone numbers.</p>
 </div>
 </div>
 </div>
@@ -813,7 +846,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 </div>
 </div>
@@ -831,7 +864,7 @@ Usage of an IS is not required in order for a client application to be part of t
 </div>
 <div class='question'>
 <h3 id="what-are-communities%3F">What are communities? <a class="header-anchor" href="#what-are-communities%3F" aria-hidden="true">¶</a></h3>
-<p><a href="#definition-community" class="definition">Communities</a>, previously known as &quot;<a href="#definition-group" class="definition">groups</a>&quot; are collections of rooms. They use &quot;+&quot; as a <a href="#definition-sigil" class="definition">sigil</a>, for example [+matrix:matrix.org].</p>
+<p><a href="#definition-community" class="definition">Communities</a>, previously known as &quot;<a href="#definition-group" class="definition">groups</a>&quot; are collections of rooms. They use &quot;+&quot; as a <a href="#definition-sigil" class="definition">sigil</a>, for example <a href="https://matrix.to/#/+matrix:matrix.org">+matrix:matrix.org</a>.</p>
 <div class='definition-list'>
 <div class='definition-item definition-community'>
 <p><strong>community</strong></p>
@@ -877,33 +910,39 @@ Usage of an IS is not required in order for a client application to be part of t
 <div class='question'>
 <h3 id="what-is-the-status-of-e2e%3F">What is the status of E2E? <a class="header-anchor" href="#what-is-the-status-of-e2e%3F" aria-hidden="true">¶</a></h3>
 <p>End-to-End Encryption is currently in late beta. Rooms can have encryption enabled, but it is not by default.</p>
-<p>Regarding client support, <a href="#definition-riot" class="definition">Riot</a> and [Nheko]{.definition} each currently support E2E end.</p>
-<p>As of July 2018, work is progressing to add E2E support in the [matrix-python-sdk].</p>
+<p>Regarding client support, <a href="#definition-riot" class="definition">Riot</a> and <a href="https://github.com/mujx/nheko" class="definition">Nheko</a> each currently support E2E end.</p>
+<p>As of July 2018, work is progressing to add E2E support in the <a href="https://github.com/matrix-org/matrix-python-sdk">matrix-python-sdk</a>.</p>
 <div class='definition-list'>
 <div class='definition-item definition-riot'>
 <p><strong>riot</strong></p>
+<p>Riot is a popular matrix client developed by the core matrix.org team. <a href="https://matrix.org/docs/projects/try-matrix-now.html">It's available as a web app, on Android and on iOS</a>.</p>
 </div>
 </div>
 </div>
 <div class='question'>
 <h3 id="which-matrix-clients-support-e2e%3F">Which matrix clients support E2E? <a class="header-anchor" href="#which-matrix-clients-support-e2e%3F" aria-hidden="true">¶</a></h3>
-<p>End-to-end encryption is currently available in <a href="#definition-riot">Riot</a> (and the [js-sdk]) and more recently in [Nheko]. E2E will also presently be available in the [matrix-python-sdk].</p>
+<p>End-to-end encryption is currently available in <a href="#definition-riot">Riot</a> (and the <a href="https://github.com/matrix-org/matrix-react-sdk">matrix-react-sdk</a>) and more recently in <a href="https://github.com/mujx/nheko">Nheko</a>. E2E will also presently be available in the <a href="https://github.com/matrix-org/matrix-python-sdk">matrix-python-sdk</a>.</p>
 <div class='definition-list'>
 <div class='definition-item definition-riot'>
 <p><strong>riot</strong></p>
+<p>Riot is a popular matrix client developed by the core matrix.org team. <a href="https://matrix.org/docs/projects/try-matrix-now.html">It's available as a web app, on Android and on iOS</a>.</p>
 </div>
 </div>
 </div>
 <h2 id="the-spec">The Spec <a class="header-anchor" href="#the-spec" aria-hidden="true">¶</a></h2>
 <div class='question'>
 <h3 id="what-is-the-spec%3F">What is The Spec? <a class="header-anchor" href="#what-is-the-spec%3F" aria-hidden="true">¶</a></h3>
-<p>The Matrix Specification describes and prescribes the interaction between <a href="#definition-client">clients</a>, [servers][server], [Application Services] and more.</p>
+<p>The Matrix Specification describes and prescribes the interaction between <a href="#definition-client" class="definition">clients</a>, <a href="#definition-homeserver">servers</a>, <a href="https://matrix.org/docs/guides/application_services.html">Application Services</a> and more.</p>
 <p>The spec is <a href="https://matrix.org/docs/spec/">available to read on matrix.org</a>.</p>
 <p>To contribute to the development of the Matrix Specification, see <a href="https://matrix.org/docs/spec/proposals">https://matrix.org/docs/spec/proposals</a>.</p>
 <div class='definition-list'>
 <div class='definition-item definition-client'>
 <p><strong>client</strong></p>
 <p>Users in Matrix use one or more clients to communicate. This could be any combination of a web client, a command line client, a mobile client - or embedded clients built into existing apps. It could even be a piece of hardware (e.g. a drone) that is Matrix enabled.</p>
+</div>
+<div class='definition-item definition-homeserver'>
+<p><strong>homeserver</strong></p>
+<p>federation definition</p>
 </div>
 </div>
 </div>
@@ -917,7 +956,7 @@ Usage of an IS is not required in order for a client application to be part of t
 <div class='question'>
 <h3 id="how-can-i-contribute-to-the-spec%3F">How can I contribute to The Spec? <a class="header-anchor" href="#how-can-i-contribute-to-the-spec%3F" aria-hidden="true">¶</a></h3>
 <p>To contribute to the Matrix Specification, first take a look at the <a href="https://matrix.org/docs/spec/intro">documentation as it is currently written</a>, then review the <a href="https://matrix.org/docs/spec/proposals">process for new proposals</a>. You should start by writing a publicly-accessible proposal describing your change.</p>
-<p>To see the proposals currently under discussion,join us in [#matrix-spec:matrix.org].</p>
+<p>To see the proposals currently under discussion,join us in <a href="https://matrix.to/#/#matrix-spec:matrix.org">#matrix-spec:matrix.org</a>.</p>
 <div class='definition-list'>
 </div>
 </div>
@@ -975,7 +1014,7 @@ Usage of an IS is not required in order for a client application to be part of t
 <div class='question'>
 <h3 id="why-is-synapse-in-python%2Ftwisted%3F">Why is Synapse in Python/Twisted? <a class="header-anchor" href="#why-is-synapse-in-python%2Ftwisted%3F" aria-hidden="true">¶</a></h3>
 <p>This is because both provide a mature and well known event-driven async IO framework for writing serverside code.  Whilst this has been okay for our initial experimentation and proof of concept, it's future <a href="#definition-homeserver" class="definition">homeserver</a> work will be written in a more strongly typed language (e.g. Go).</p>
-<p>As of July 2018 work is progressing on [Dendrite]{.definition], a homeserver from the matrix.org core team written in Go.</p>
+<p>As of July 2018 work is progressing on <a href="https://github.com/matrix-org/dendrite">Dendrite</a>{.definition], a homeserver from the matrix.org core team written in Go.</p>
 <div class='definition-list'>
 <div class='definition-item definition-homeserver'>
 <p><strong>homeserver</strong></p>
@@ -995,7 +1034,7 @@ Usage of an IS is not required in order for a client application to be part of t
 <div class='definition-list'>
 <div class='definition-item definition-federation'>
 <p><strong>federation</strong></p>
-<p>federation definition</p>
+<p>TODO federation definition</p>
 </div>
 </div>
 </div>

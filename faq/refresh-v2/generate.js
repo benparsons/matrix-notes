@@ -5,7 +5,7 @@ var markdownItAttrs = require('markdown-it-attrs');
 md.use(markdownItAttrs);
 md.use(require("markdown-it-anchor"), {permalink: true}); // Optional, but makes sense as you really want to link to something
 md.use(require("markdown-it-table-of-contents"));
-
+html();
 function html() {
     //var root = "faq/refresh-v2/";
     var root = "./";
@@ -68,6 +68,10 @@ function html() {
 
     markdownSource += "\n\n";
     markdownSource += definitionLinks;
+
+    var twimUrls = fs.readFileSync(root + "../../twim/_url-directory.md", 'utf8');
+
+    markdownSource += "\n\n" + twimUrls;
 
     return outline.replace("{{QUESTIONS}}", md.render(markdownSource));
 }

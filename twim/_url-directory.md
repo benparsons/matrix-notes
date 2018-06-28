@@ -102,3 +102,11 @@
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[Quaternion]: https://github.com/QMatrixClient/Quaternion
+[Seaglass]: https://github.com/neilalexander/seaglass
+[#matrix-dev:matrix.org]: https://matrix.to/#/#matrix-dev:matrix.org
+[#synapse-community:matrix.org]: https://matrix.to/#/#synapse-community:matrix.org
+[Plasma]: https://gitlab.com/beerfactory.org/plasma/
+[Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
+[try-matrix-now]: https://matrix.org/blog/try-matrix-now
+[+matrix:matrix.org]: https://matrix.to/#/+matrix:matrix.org
