@@ -66,6 +66,13 @@ function html() {
         });
     });
 
+    var definitionsTable = '\n\n\# Definitions\n\nTerm | Definition\n--- | ---\n';
+    config.definitions.forEach((definition) => {
+        definitionsTable += definition.name;
+        definitionsTable += '|' + definition.definition + "|\n";
+    });
+    markdownSource += "\n\n" + definitionsTable + "\n\n";
+
     markdownSource += "\n\n";
     markdownSource += definitionLinks;
 
