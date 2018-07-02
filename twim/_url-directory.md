@@ -110,3 +110,11 @@
 [Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
 [try-matrix-now]: https://matrix.org/blog/try-matrix-now
 [+matrix:matrix.org]: https://matrix.to/#/+matrix:matrix.org
+[dsn-traveller]: https://dsn-traveller.dsn.scc.kit.edu/
+[radicus]: https://matrix.to/#/@radicus:matrix.org
+[vurpo]: https://matrix.to/#/@vurpo:vurpo.fi
+[#matrix-appservice-voip:kamax.io]: https://matrix.to/#/#matrix-appservice-voip:kamax.io
+[koma]: https://github.com/koma-im/koma/
+[matrix-appservice-voip]: https://github.com/kamax-io/matrix-appservice-voip
+[bettiah]: https://matrix.to/#/@bettiah:matrix.org
+[Florian]: https://matrix.to/#/@florianjacob:matrix.org
