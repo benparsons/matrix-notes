@@ -17,7 +17,7 @@ or Matrix.org's own [purple-matrix](https://github.com/matrix-org/purple-matrix/
 has potential to let both environments coexist and make the most of each
 other's benefits.
 
-TODO: above is good, the below is in a strange voice, assertive but then has equivocations in italics. Need opinions
+TODO-M: above is good, the below is in a strange voice, assertive but then has equivocations in italics. Need opinions
 
 The Matrix team used XMPP (Openfire, ejabberd, spectrum, asmack,
 XMPPFramework) for IM before starting to experiment with open HTTP APIs
