@@ -1,13 +1,14 @@
 div.top-menu-row {
-    background-color: yellow;
     width: 100%;
     text-align: center;
-    border: black 1px solid;
+    /* border: black 1px solid; */
     margin: 2px;
 }
 div.top-menu-row-inner {
     display: inline-block;
-    background-color: red;
+}
+div.top-menu-row-inner span.title {
+    font-size: larger;
 }
 div.top-menu-item {
     float:left;
@@ -64,4 +65,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 10px;
     line-height: 1em;
     font-weight: 500;
+}
+.external-link-symbol {
+    width: 30px
+}
+.permalink {
+    font-size: small;
+    text-decoration: none;
 }

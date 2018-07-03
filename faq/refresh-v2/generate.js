@@ -3,8 +3,14 @@ var MarkdownIt = require('markdown-it');
 var md = new MarkdownIt({html: true});
 var markdownItAttrs = require('markdown-it-attrs'); 
 md.use(markdownItAttrs);
-md.use(require("markdown-it-anchor"), {permalink: true}); // Optional, but makes sense as you really want to link to something
-md.use(require("markdown-it-table-of-contents"));
+var markdownItAnchor = require("markdown-it-anchor");
+md.use(markdownItAnchor, {
+    permalink: true,
+    permalinkSymbol: "&#128279;",
+    permalinkClass: "permalink",
+    permalinkBefore: true
+});
+
 html();
 function html() {
     //var root = "faq/refresh-v2/";
@@ -12,7 +18,8 @@ function html() {
 
     var outline = fs.readFileSync(root + "faq.html", 'utf-8');
 
-    var markdownSource = "\n[[toc]]\n\n";
+    var markdownSource = "";
+    var topMenuHtmlSource = "";
 
     var config = JSON.parse(fs.readFileSync(root + "questions-config.json", 'utf8'));
 
@@ -25,8 +32,10 @@ function html() {
 
     config.sections.forEach((section) => {
         markdownSource += "\n# " + section.name + "\n";
+        topMenuHtmlSource += '<div class="top-menu-item"><span class="title"><a href="#' + markdownItAnchor.defaults.slugify(section.name) + '">' + section.name + '</a></span><br />';
         section.parts.forEach((part) => {
             markdownSource += "\n## " + part.name + "\n";
+            topMenuHtmlSource += '<a href="#' + markdownItAnchor.defaults.slugify(part.name) + '">' + part.name + '</a><br />';
             part.questions.forEach((question) => {
                 if (typeof(question) == 'number') { question = "q" + question; } 
                 var questionMarkdown = fs.readFileSync(root + "questions/" + question + ".md", 'utf-8');
@@ -64,6 +73,7 @@ function html() {
                 markdownSource += "\n</div>\n";
             });
         });
+        topMenuHtmlSource += '</div>';
     });
 
     var definitionsTable = '\n\n\# Definitions\n\nTerm | Definition\n--- | ---\n';
@@ -80,7 +90,10 @@ function html() {
 
     markdownSource += "\n\n" + twimUrls;
 
-    return outline.replace("{{QUESTIONS}}", md.render(markdownSource));
+    outline = outline.replace("{{QUESTIONS}}", md.render(markdownSource));
+    outline = outline.replace("{{TOP-MENU}}", topMenuHtmlSource);
+
+    return outline;
 }
 
 module.exports = {
