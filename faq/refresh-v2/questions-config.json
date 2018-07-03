@@ -39,11 +39,11 @@
         },
         {
             "name": "matrixed together",
-            "definition": "In mathematics, a matrix is a... TODO"
+            "definition": "In mathematics, a matrix is a lattice-like arrangement, in which expressions can be combined and treated as a single entity"
         },
         {
             "name": "homeserver",
-            "definition": "federation definition"
+            "definition": "Each account in the Matrix federation is associated with a single homeserver. The software running at this server stores the history and account information for that user. Homeservers synchronise message history with other homeservers."
         },
         {
             "name": "Synapse",
@@ -51,27 +51,27 @@
         },
         {
             "name": "interoperable",
-            "definition": "TODO interoperable definition"
+            "definition": "TODO-M interoperable definition to distinguish from federation/federated"
         },
         {
             "name": "New Vector",
-            "definition": "TODO the company"
+            "definition": "New Vector is a company formed to build Matrix.org. It is a continuation of the original project team, and is focused on development and maintenance of matrix.org."
         },
         {
             "name": "federation",
-            "definition": "TODO federation definition"
+            "definition": "Federation means that separate instances of a service communicate - the best example of this is email servers, in which it's possible to send mail between difference service providers. For Matrix, this means that data about rooms and message history is shared between servers of participating users."
         },
         {
             "name": "SIP",
-            "definition": "TODO"
+            "definition": "[Session Initiation Protocol](https://en.wikipedia.org/wiki/Session_Initiation_Protocol) is a communications protocol for signaling and controlling multimedia communication sessions in applications of Internet telephony for voice and video calls."
         },
         {
             "name": "XMPP",
-            "definition": "TODO"
+            "definition": "[XMPP](https://en.wikipedia.org/wiki/XMPP) is a communication protocol for message-oriented middleware based on XML. We think of Matrix and XMPP as being quite different; at its core Matrix can be thought of as an eventually consistent global JSON db, whilst XMPP can be thought of as a  message passing protocol."
         },
         {
             "name": "RCS",
-            "definition": "TODO"
+            "definition": "[Rich Communication Services](https://en.wikipedia.org/wiki/Rich_Communication_Services) is a communication protocol between mobile-telephone carriers and between phone and carrier, aiming at replacing SMS messages with a text-message system that is richer, provides phonebook polling (for service discovery), and transmit in-call multimedia."
         },
         {
             "name": "bridging",
@@ -115,11 +115,11 @@
         },
         {
             "name": "bot",
-            "definition": "TODO"
+            "definition": "A bot is an autonomous agent. In the context of matrix, it means software which is able to make automated posts in rooms."
         },
         {
             "name": "pubsub",
-            "definition": "TODO"
+            "definition": "The publish-subscribe pattern describes an architecture in which message senders push messages to a location, without needing to know who the subscribers will be. For Matrix, this means a client can send a message to a room without knowing the members, and the members can read that message."
         }
     ]
 }
