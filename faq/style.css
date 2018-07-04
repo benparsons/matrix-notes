@@ -28,7 +28,7 @@ div.definition-list {
     border: solid 1px #666;
 }
 div.highlighted-definition {
-    background-color: #999;
+    background-color: #ccc;
     color: black;
 }
 a.definition {

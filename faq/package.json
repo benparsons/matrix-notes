@@ -5,8 +5,7 @@
   "main": "render.js",
   "dependencies": {
     "markdown-it": "^8.4.1",
-    "markdown-it-attrs": "^2.1.0",
-    "markdown-it-table-of-contents": "^0.3.6"
+    "markdown-it-attrs": "^2.1.0"
   },
   "devDependencies": {},
   "scripts": {
