@@ -24,14 +24,17 @@ div.definition-item {
     max-width: 300px;
 }
 div.definition-close {
-    float:left;
-    padding: 5px;
-    margin: 5px;
     cursor: pointer;
+    position: absolute;
+    right: 5px;
+    display: block;
 }
 div.definition-list {
+    position: relative;
     display: none;
     border: solid 1px #666;
+    padding-right: 50px;
+}
 }
 div.highlighted-definition {
     background-color: #ccc;
