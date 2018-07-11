@@ -22,6 +22,8 @@ div.definition-item {
     margin: 5px;
     border: solid 1px #666;
     max-width: 300px;
+    height: 210px;
+    overflow-y: auto;
 }
 div.definition-close {
     cursor: pointer;
@@ -34,7 +36,6 @@ div.definition-list {
     display: none;
     border: solid 1px #666;
     padding-right: 50px;
-}
 }
 div.highlighted-definition {
     background-color: #ccc;
