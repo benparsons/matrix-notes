@@ -5,6 +5,7 @@
   "main": "render.js",
   "dependencies": {
     "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2",
     "markdown-it-attrs": "^2.1.0"
   },
   "devDependencies": {},
