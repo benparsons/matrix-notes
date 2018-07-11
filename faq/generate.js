@@ -61,9 +61,10 @@ function html() {
                 questionMarkdown += "\n\n<div class='definition-list'>\n\n";
                 
                 questionDefinitions.forEach(term => {
+                    var definition = config.definitions.find(d => {return d.name.toLowerCase().replace(' ', '') == term.toLowerCase()})
                     questionMarkdown += "\n\n<div class='definition-item definition-" + term + "'>\n\n";
-                    questionMarkdown += "**" + term + "**\n\n";
-                    questionMarkdown += config.definitions.find(d => {return d.name.toLowerCase().replace(' ', '') == term.toLowerCase()}).definition;
+                    questionMarkdown += "**" + definition.name + "**\n\n";
+                    questionMarkdown += definition.definition;
                     questionMarkdown += "\n\n</div>\n\n";
                 });
 
