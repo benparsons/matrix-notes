@@ -25,4 +25,8 @@
 > just like gmail.com belongs to google and hotmail.com to microsoft  
 > but you can send messages from one to the other
 
-Make a list of things to compare to, then make a separate page?
+* Make a list of things to compare to, then make a separate page?
+
+* can someone please tell me how do I go about reporting rooms sharing illegal stuff
+
+> e-mail abuse@matrix.org as per <https://matrix.org/docs/guides/code_of_conduct#reporting-issues>
