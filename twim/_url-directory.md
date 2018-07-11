@@ -118,3 +118,6 @@
 [matrix-appservice-voip]: https://github.com/kamax-io/matrix-appservice-voip
 [bettiah]: https://matrix.to/#/@bettiah:matrix.org
 [Florian]: https://matrix.to/#/@florianjacob:matrix.org
+[poljar]: https://github.com/poljar
+[ananace]: https://github.com/ananace/
+[sideboat]: https://matrix.to/#/@sideboat:matrix.org
