@@ -67,7 +67,9 @@ function html() {
                     questionMarkdown += "\n\n</div>\n\n";
                 });
 
-                questionMarkdown += "\n\n</div>\n\n";
+                questionMarkdown += "<div class='definition-close'>close</div>";
+
+                questionMarkdown += "\n\n</div><!--.definition-list-->\n\n";
 
                 markdownSource += questionMarkdown;
                 markdownSource += "\n</div>\n";
@@ -86,7 +88,7 @@ function html() {
     markdownSource += "\n\n";
     markdownSource += definitionLinks;
 
-    var twimUrls = fs.readFileSync(root + "../../twim/_url-directory.md", 'utf8');
+    var twimUrls = fs.readFileSync(root + "../twim/_url-directory.md", 'utf8');
 
     markdownSource += "\n\n" + twimUrls;
 

@@ -23,6 +23,12 @@ div.definition-item {
     border: solid 1px #666;
     max-width: 300px;
 }
+div.definition-close {
+    float:left;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
 div.definition-list {
     display: none;
     border: solid 1px #666;
