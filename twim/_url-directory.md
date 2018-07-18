@@ -121,3 +121,7 @@
 [poljar]: https://github.com/poljar
 [ananace]: https://github.com/ananace/
 [sideboat]: https://matrix.to/#/@sideboat:matrix.org
+[fluffychat]: https://github.com/ChristianPauly/fluffychat
+[Ubuntu Touch]: https://ubports.com
+[uMatriks]: https://github.com/uMatriks/uMatriks
+[matrix-appservice-irc]: https://github.com/matrix-org/matrix-appservice-irc
