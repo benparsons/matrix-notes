@@ -125,3 +125,4 @@
 [Ubuntu Touch]: https://ubports.com
 [uMatriks]: https://github.com/uMatriks/uMatriks
 [matrix-appservice-irc]: https://github.com/matrix-org/matrix-appservice-irc
+[matrix-doc]: https://github.com/matrix-org/matrix-doc
