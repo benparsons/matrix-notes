@@ -128,3 +128,6 @@
 [matrix-doc]: https://github.com/matrix-org/matrix-doc
 [Nico]: https://gitlab.com/beerfactory.org/
 [#discord:half-shot.uk]: https://matrix.to/#/#discord:half-shot.uk
+[FAQBot]: https://github.com/Matrixcoffee/FAQBot
+[Coffee]: https://github.com/Matrixcoffee
+[matrix-appservice-bridge]: https://github.com/matrix-org/matrix-appservice-bridge
