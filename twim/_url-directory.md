@@ -78,6 +78,10 @@
 [MSC1421]: https://github.com/matrix-org/matrix-doc/issues/1421
 [MSC1425]: https://github.com/matrix-org/matrix-doc/issues/1425
 [MSC1318]: https://github.com/matrix-org/matrix-doc/issues/1318
+[MSC1501]: https://github.com/matrix-org/matrix-doc/issues/1501
+[MSC1497]: https://github.com/matrix-org/matrix-doc/issues/1497
+[MSC1442]: https://github.com/matrix-org/matrix-doc/issues/1442
+[MSC1485]: https://github.com/matrix-org/matrix-doc/issues/1485
 [MTRNord]: https://matrix.to/#/@MTRNord:matrix.ffslfl.net
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
@@ -138,3 +142,6 @@
 [Coffee]: https://github.com/Matrixcoffee
 [matrix-appservice-bridge]: https://github.com/matrix-org/matrix-appservice-bridge
 [Matrix Python SDK]: https://github.com/matrix-org/matrix-python-sdk
+[Ruby Matrix SDK]: https://github.com/ananace/ruby-matrix-sdk
+[jeon]: https://gitlab.com/ma1uta/jeon
+[gene]: https://github.com/ma1uta/gene
