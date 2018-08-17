@@ -145,3 +145,5 @@
 [Ruby Matrix SDK]: https://github.com/ananace/ruby-matrix-sdk
 [jeon]: https://gitlab.com/ma1uta/jeon
 [gene]: https://github.com/ma1uta/gene
+[matrix-js-sdk]: https://github.com/matrix-org/matrix-js-sdk
+[matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk
