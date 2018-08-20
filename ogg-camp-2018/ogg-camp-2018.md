@@ -35,7 +35,7 @@
 * Metadata privacy?
 * E2E/olm next steps
 
-eg new clients like seaglass and nheko (although it’s a rabid linux audience so they will prolly look blank at seaglass), gomuks
+eg new clients like seaglass and nheko , gomuks
 e2e in new clients
 spec r0, project board
 riot redesign
@@ -44,3 +44,5 @@ groups
 and yeah, ecosystem expansion
 lazy loading
 state res redesign
+r0 is almost here!!!
+cross signing
