@@ -1,6 +1,7 @@
 [@anoadragon453]: https://github.com/anoadragon453
 [@eeeeeta]: https://github.com/eeeeeta
 [@slavi:devture.com]: https://matrix.to/#/@slavi:devture.com
+[Slavi]: https://matrix.to/#/@slavi:devture.com
 [@Sorunome]: https://github.com/Sorunome
 [@turt2live]: https://github.com/turt2live
 [&Adam]: https://matrix.to/#/@adam:thebeckmeyers.xyz
@@ -103,11 +104,11 @@
 [ruma-events]: https://github.com/ruma/ruma-events
 [Ruma]: https://github.com/ruma/ruma
 [SolarDrew]: https://matrix.to/#/@SolarDrew:matrix.org
-[t3chguy]: @x:riot.ovh
+[t3chguy]: https://matrix.to/#/@x:riot.ovh
 [The Construct]: https://github.com/jevolk/charybdis
 [toml]: https://matrix.to/#/@tom:lant.uk
 [TravisR]:  https://github.com/turt2live
-[tulir]: @tulir:maunium.net
+[tulir]: https://matrix.to/#/@tulir:maunium.net
 [uhoreg]: https://matrix.to/#/@uhoreg:matrix.org
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
@@ -149,3 +150,9 @@
 [matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk
 [mxtoot]: https://github.com/ma1uta/mxtoot
 [twimbot]: https://github.com/Cadair/skill-twim
+[#matrix-synapse-shared-secret-auth:devture.com]: https://matrix.to/#/#matrix-synapse-shared-secret-auth:devture.com
+[#matrix-corporal:devture.com]: https://matrix.to/#/#matrix-corporal:devture.com
+[@hashtag:t2bot.io]: https://matrix.to/#/@hashtag:t2bot.io
+[#whatsapp:maunium.net]: https://matrix.to/#/#whatsapp:maunium.net
+[#:maunium.net]: https://matrix.to/#/#:maunium.net
+[#twim_updates:cadair.com]: https://matrix.to/#/#twim_updates:cadair.com
