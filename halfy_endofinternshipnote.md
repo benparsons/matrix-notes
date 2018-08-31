@@ -1,4 +1,4 @@
-Hi all, today marks my last day of my 3 month internship at New Vector. For those of you who haven't
+Today marks my last day of my 3 month internship at New Vector. For those of you who haven't
 been reading Ben's fabulous blog posts, I've been working exclusively on bridges; in particular the IRC bridge.
 Tasked with the goal of making it crash less and run faster, I hope that the evidence is visible and people are generally having a better experience on it.
 
@@ -24,15 +24,15 @@ But aside from showing off some stats, I wanted to mention all the new features:
   with group flairs!
 * Support for node 4 has been dropped, and support for 6,8 and 10 has been assured.
 
-On the [matrix-appservice-bridge](https://github.com/matrix-org/matrix-appservice-bridge) side, I optimised 
+On the [matrix-appservice-bridge](https://github.com/matrix-org/matrix-appservice-bridge) side, I optimised
 some calls to cache locally and avoid hitting the homeserver too often, and disabling presence for homeservers
 that don't support it.
 
-In the future, there are plans to make bridging more visible to Matrix Clients as a first class citizen. Ideas
+There are future plans to make bridging more visible to Matrix Clients as a first class citizen. Ideas
 like [speccing a state event (MSC1410)](https://github.com/matrix-org/matrix-doc/issues/1410) so that bridges can
-interact with each other properly and client's can create full bridge management views which are still decentralised
+interact with each other properly and clients can create full bridge management views which are still decentralised
 from an integration manager.
 
-I'd like to give a shoutout to Travis who has been reviewing nearly all my changes that have made it's way into the bridge
-on top of all the other tasks he has on his plate. And of course a thank you to all of the Matrix team who have been 
+I'd like to give a shoutout to Travis who has reviewed nearly all my changes that have made their way into the bridge,
+on top of all the other tasks he has on his plate. And of course a thank you to all of the Matrix team who have been
 very supportive during my time here.
