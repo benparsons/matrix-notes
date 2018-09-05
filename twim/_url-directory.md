@@ -156,3 +156,4 @@
 [#whatsapp:maunium.net]: https://matrix.to/#/#whatsapp:maunium.net
 [#:maunium.net]: https://matrix.to/#/#:maunium.net
 [#twim_updates:cadair.com]: https://matrix.to/#/#twim_updates:cadair.com
+[mautrix-whatsapp]: https://github.com/tulir/mautrix-whatsapp
