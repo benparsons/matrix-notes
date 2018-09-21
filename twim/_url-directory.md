@@ -157,3 +157,4 @@
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[#spectral:encom.eu.org]: https://matrix.to/#/#spectral:encom.eu.org
