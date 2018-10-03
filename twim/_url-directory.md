@@ -70,6 +70,7 @@
 [jeon]: https://gitlab.com/ma1uta/jeon
 [JonTheNiceGuy]: https://matrix.to/#/@JonTheNiceGuy:matrix.org
 [Julian]: https://matrix.to/#/@iamjsparber:matrix.org
+[Julian Sparber]: https://matrix.to/#/@iamjsparber:matrix.org
 [kamax]:  https://kamax.io
 [kitsune]: https://matrix.to/#/@kitsune:matrix.org
 [koma]: https://github.com/koma-im/koma/
@@ -158,3 +159,13 @@
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
 [#spectral:encom.eu.org]: https://matrix.to/#/#spectral:encom.eu.org
+[Matrix Corporal]: https://github.com/devture/matrix-corporal
+[#quaternion:matrix.org]: https://matrix.to/#/#quaternion:matrix.org
+[jmsdk]: https://github.com/ma1uta/jmsdk
+[IRC Connection Tracker]: https://github.com/Half-Shot/irc-conntrack/
+[#open-science:matrix.vgorcum.com]: https://matrix.to/#/#open-science:matrix.vgorcum.com
+[#dsn-traveller:matrix.org]: https://matrix.to/#/#dsn-traveller:matrix.org
+[Mathijs]: https://matrix.to/#/@mathijs:matrix.vgorcum.com
+[matrix-appservice-slack]: https://github.com/matrix-org/matrix-appservice-slack
+[#irc-conntrack:half-shot.uk]: https://matrix.to/#/#irc-conntrack:half-shot.uk
+[Spectral]: https://gitlab.com/b0/spectral
