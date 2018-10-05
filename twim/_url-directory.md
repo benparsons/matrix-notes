@@ -9,8 +9,11 @@
 [#book-talk:disroot.org]: https://matrix.to/#/#book-talk:disroot.org
 [#chatrpg-dev:matrix.org]: https://matrix.to/#/#chatrpg-dev:matrix.org
 [#discord:half-shot.uk]: https://matrix.to/#/#discord:half-shot.uk
+[#discuss:weu.informo.network]: https://matrix.to/#/#discuss:weu.informo.network
 [#dsn-traveller:dsn-traveller.dsn.scc.kit.edu]: https://matrix.to/#/#dsn-traveller:dsn-traveller.dsn.scc.kit.edu
-[#gtad:matrix.org]: http://matrix.to/#/#gtad:matrix.org
+[#dsn-traveller:matrix.org]: https://matrix.to/#/#dsn-traveller:matrix.org
+[#gtad:matrix.org]: https://matrix.to/#/#gtad:matrix.org
+[#irc-conntrack:half-shot.uk]: https://matrix.to/#/#irc-conntrack:half-shot.uk
 [#jeon:matrix.org]: https://matrix.to/#/#jeon:matrix.org
 [#lebistrot:matrix.org]: https://matrix.to/#/#lebistrot:matrix.org
 [#matrix-appservice-voip:kamax.io]: https://matrix.to/#/#matrix-appservice-voip:kamax.io
@@ -22,10 +25,14 @@
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
 [#matrix-synapse-shared-secret-auth:devture.com]: https://matrix.to/#/#matrix-synapse-shared-secret-auth:devture.com
 [#mxtoot:matrix.org]: https://matrix.to/#/#mxtoot:matrix.org
+[#open-science:matrix.vgorcum.com]: https://matrix.to/#/#open-science:matrix.vgorcum.com
 [#palaver:matrix.localtoast.de]: https://matrix.to/#/#palaver:matrix.localtoast.de
+[#quaternion:matrix.org]: https://matrix.to/#/#quaternion:matrix.org
 [#riot-themes:matrix.ffslfl.net]: https://matrix.to/#/#riot-themes:matrix.ffslfl.net
+[#spectral:encom.eu.org]: https://matrix.to/#/#spectral:encom.eu.org
 [#synapse-community:matrix.org]: https://matrix.to/#/#synapse-community:matrix.org
 [#synapse-py3:matrix.org]: https://matrix.to/#/#synapse-py3:matrix.org
+[#synapse:matrix.org]: https://matrix.to/#/#synapse:matrix.org
 [#test-doge-bot-crom:matrix.org]: https://matrix.to/#/#test-doge-bot-crom:matrix.org
 [#twim_updates:cadair.com]: https://matrix.to/#/#twim_updates:cadair.com
 [#TWIM:matrix.org]: https://matrix.to/#/#TWIM:matrix.org
@@ -41,7 +48,7 @@
 [benpa]: https://matrix.to/#/@benpa:matrix.org
 [bettiah]: https://matrix.to/#/@bettiah:matrix.org
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
-[Black Hat]: http://matrix.to/#/@bhat:encom.eu.org
+[Black Hat]: https://matrix.to/#/@bhat:encom.eu.org
 [brainblasted]: https://matrix.to/#/@brainblasted:disroot.org
 [Brendan]:  https://brendan.abolivier.bzh/
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
@@ -62,22 +69,27 @@
 [Fractal]: https://wiki.gnome.org/Apps/Fractal
 [gene]: https://github.com/ma1uta/gene
 [gomuks]: https://github.com/tulir/gomuks
+[Gridepo]: https://github.com/kamax-grid/gridepo
 [GSOC 2018]:  https://summerofcode.withgoogle.com/projects/?sp-search=matrix
 [gtad]: https://github.com/KitsuneRal/gtad
 [Half-Shot]:  https://matrix.to/#/@Half-Shot:half-shot.uk
 [hawkowl]: https://twitter.com/hawkieowl
+[IRC Connection Tracker]: https://github.com/Half-Shot/irc-conntrack/
 [jcgruenhage]: https://matrix.to/#/@jan.christian:gruenhage.xyz
 [jeon]: https://gitlab.com/ma1uta/jeon
+[jmsdk]: https://github.com/ma1uta/jmsdk
 [JonTheNiceGuy]: https://matrix.to/#/@JonTheNiceGuy:matrix.org
-[Julian]: https://matrix.to/#/@iamjsparber:matrix.org
 [Julian Sparber]: https://matrix.to/#/@iamjsparber:matrix.org
+[Julian]: https://matrix.to/#/@iamjsparber:matrix.org
 [kamax]:  https://kamax.io
 [kitsune]: https://matrix.to/#/@kitsune:matrix.org
 [koma]: https://github.com/koma-im/koma/
 [libQMatrixClient]: https://github.com/QMatrixClient/libqmatrixclient
 [ma1uta]: https://matrix.to/#/@ma1uta:matrix.org
 [martinkrafft]: https://twitter.com/martinkrafft
+[Mathijs]: https://matrix.to/#/@mathijs:matrix.vgorcum.com
 [Matrique]: https://gitlab.com/b0/matrique-go
+[Matrix Corporal]: https://github.com/devture/matrix-corporal
 [Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
 [Matrix Python SDK]: https://github.com/matrix-org/matrix-python-sdk
 [Matrix Spec Change Proposals]: https://matrix.org/docs/spec/proposals
@@ -85,6 +97,8 @@
 [matrix-appservice-bridge]: https://github.com/matrix-org/matrix-appservice-bridge
 [matrix-appservice-discord]:  https://github.com/Half-Shot/matrix-appservice-discord
 [matrix-appservice-irc]: https://github.com/matrix-org/matrix-appservice-irc
+[matrix-appservice-node]: https://github.com/matrix-org/matrix-appservice-node
+[matrix-appservice-slack]: https://github.com/matrix-org/matrix-appservice-slack
 [matrix-appservice-sms]: https://github.com/eeeeeta/matrix-appservice-sms/
 [matrix-appservice-voip]: https://github.com/kamax-io/matrix-appservice-voip
 [matrix-doc]: https://github.com/matrix-org/matrix-doc
@@ -97,6 +111,8 @@
 [matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk
 [matrix-search]: https://github.com/matrix-org/matrix-search/
 [matrixboard]: https://github.com/betz/matrixboard
+[mautrix-go]: https://github.com/tulir/mautrix-go
+[mautrix-python]: https://github.com/tulir/mautrix-python
 [mautrix-telegram]: https://github.com/tulir/mautrix-telegram
 [mautrix-whatsapp]: https://github.com/tulir/mautrix-whatsapp
 [Max]:  https://matrix.to/#/@max:kamax.io
@@ -133,7 +149,8 @@
 [Python SDK]: https://github.com/matrix-org/matrix-python-sdk
 [Quaternion]: https://github.com/QMatrixClient/Quaternion
 [radicus]: https://matrix.to/#/@radicus:matrix.org
-[Riot]: http://riot.im/
+[riot-web]: https://github.com/vector-im/riot-web
+[Riot]: https://riot.im/
 [Ruby Matrix SDK]: https://github.com/ananace/ruby-matrix-sdk
 [ruma-api-macros]: https://github.com/ruma/ruma-api-macros
 [ruma-client-api]: https://github.com/ruma/ruma-client-api
@@ -144,6 +161,8 @@
 [sideboat]: https://matrix.to/#/@sideboat:matrix.org
 [Slavi]: https://matrix.to/#/@slavi:devture.com
 [SolarDrew]: https://matrix.to/#/@SolarDrew:matrix.org
+[Spectral]: https://gitlab.com/b0/spectral
+[swedneck]: https://matrix.to/#/@swedneck:swedneck.xyz
 [t3chguy]: https://matrix.to/#/@x:riot.ovh
 [The Construct]: https://github.com/jevolk/charybdis
 [toml]: https://matrix.to/#/@tom:lant.uk
@@ -154,18 +173,8 @@
 [Ubuntu Touch]: https://ubports.com
 [uhoreg]: https://matrix.to/#/@uhoreg:matrix.org
 [uMatriks]: https://github.com/uMatriks/uMatriks
+[vadb]: https://matrix.to/#/@vabd:weu.informo.network
 [vurpo]: https://matrix.to/#/@vurpo:vurpo.fi
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
-[#spectral:encom.eu.org]: https://matrix.to/#/#spectral:encom.eu.org
-[Matrix Corporal]: https://github.com/devture/matrix-corporal
-[#quaternion:matrix.org]: https://matrix.to/#/#quaternion:matrix.org
-[jmsdk]: https://github.com/ma1uta/jmsdk
-[IRC Connection Tracker]: https://github.com/Half-Shot/irc-conntrack/
-[#open-science:matrix.vgorcum.com]: https://matrix.to/#/#open-science:matrix.vgorcum.com
-[#dsn-traveller:matrix.org]: https://matrix.to/#/#dsn-traveller:matrix.org
-[Mathijs]: https://matrix.to/#/@mathijs:matrix.vgorcum.com
-[matrix-appservice-slack]: https://github.com/matrix-org/matrix-appservice-slack
-[#irc-conntrack:half-shot.uk]: https://matrix.to/#/#irc-conntrack:half-shot.uk
-[Spectral]: https://gitlab.com/b0/spectral
