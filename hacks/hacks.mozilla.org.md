@@ -9,7 +9,11 @@ Matrix is an open standard for *interoperable*, *decentralised*, *real-time* com
 * Matrix is *interoperable* in that it can freely communicate with other platforms. Matrix messages are JSON, and easy to parse. Bridges are provided to enable communication with other platforms.
 * Matrix is *decentralised* - there is no central server. To communicate on Matrix, you connect your client to a single "homeserver" - this server then communicates with other homeservers. For every room you are in, your homeserver will maintain a copy of the history of that room. This means that no one homeserver is the host or owner of a room if there is more than one homeserver connected to it.
 
+## Why create another messaging platform?
+
 The initial goal is to fix the problem of fragmented IP communications: letting users message and call each other without having to care what app the other user is on - making it as easy as sending an email.
+
+In future, we want to see Matrix used as a generic HTTP messaging and data synchronisation system for the whole web, enabling IoT applications through a single unified, understandable interface.
 
 ## What does Matrix provide?
 
@@ -107,8 +111,7 @@ function handleEvent(event) {
 
 ## Learn More
 
-
-The best place to come and find out more about Matrix is on Matrix itself! The absolute quickest way to participate in Matrix is to use Riot, a popular web-based client. Head to <https://riot.im/app>, sign up for an account and join the `#matrix:matrix.org` room to introduce yourself.
+The best place to come and find out more about Matrix is on Matrix itself! The absolute quickest way to participate in Matrix is to use Riot, a popular web-based client. Head to <https://riot.im/app>, sign up for an account and join the [`#matrix:matrix.org`](https://matrix.to/#/#matrix:matrix.org) room to introduce yourself.
 
 [matrix.org](https://matrix.org) has many resources, including the [FAQ](https://matrix.org/docs/guides/faq) and [Guides](https://matrix.org/docs/guides/) sections.
 
