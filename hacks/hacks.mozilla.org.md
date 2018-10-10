@@ -1,6 +1,4 @@
-# Dweb: Matrix
-
-## Author info: Full name, photo of yourself, and 1-2 sentence bio
+# Dweb: Decentralised, Real-Time, Interoperable Communication with Matrix
 
 ## What is Matrix?
 
@@ -116,3 +114,7 @@ The best place to come and find out more about Matrix is on Matrix itself! The a
 [matrix.org](https://matrix.org) has many resources, including the [FAQ](https://matrix.org/docs/guides/faq) and [Guides](https://matrix.org/docs/guides/) sections.
 
 Finally, to get stuck straight into the code, take a look at the [Matrix Spec](https://matrix.org/docs/spec/), or get involved with the many [Open-Source projects](https://github.com/matrix-org).
+
+## About Ben Parsons
+
+Ben works as a Developer Advocate for [matrix.org](https://matrix.org).
