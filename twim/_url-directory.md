@@ -74,6 +74,7 @@
 [gtad]: https://github.com/KitsuneRal/gtad
 [Half-Shot]:  https://matrix.to/#/@Half-Shot:half-shot.uk
 [hawkowl]: https://twitter.com/hawkieowl
+[informo]: https://github.com/Informo
 [IRC Connection Tracker]: https://github.com/Half-Shot/irc-conntrack/
 [jcgruenhage]: https://matrix.to/#/@jan.christian:gruenhage.xyz
 [jeon]: https://gitlab.com/ma1uta/jeon
@@ -89,11 +90,15 @@
 [martinkrafft]: https://twitter.com/martinkrafft
 [Mathijs]: https://matrix.to/#/@mathijs:matrix.vgorcum.com
 [Matrique]: https://gitlab.com/b0/matrique-go
+[Matrix Console for Android]: https://github.com/matrix-org/matrix-android-console
 [Matrix Corporal]: https://github.com/devture/matrix-corporal
 [Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
 [Matrix Python SDK]: https://github.com/matrix-org/matrix-python-sdk
+[Matrix Ruby SDK]: https://github.com/ananace/ruby-matrix-sdk
 [Matrix Spec Change Proposals]: https://matrix.org/docs/spec/proposals
 [Matrix Synapse Docker]: https://hub.docker.com/r/matrixdotorg/synapse/
+[matrix-android-console]: https://github.com/matrix-org/matrix-android-console
+[matrix-android-sdk]: https://github.com/matrix-org/matrix-android-sdk
 [matrix-appservice-bridge]: https://github.com/matrix-org/matrix-appservice-bridge
 [matrix-appservice-discord]:  https://github.com/Half-Shot/matrix-appservice-discord
 [matrix-appservice-irc]: https://github.com/matrix-org/matrix-appservice-irc
@@ -110,6 +115,7 @@
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk
 [matrix-search]: https://github.com/matrix-org/matrix-search/
+[matrix-trello-bot]: https://github.com/turt2live/matrix-trello-bot
 [matrixboard]: https://github.com/betz/matrixboard
 [mautrix-go]: https://github.com/tulir/mautrix-go
 [mautrix-python]: https://github.com/tulir/mautrix-python
@@ -180,5 +186,3 @@
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
-[matrix-trello-bot]: https://github.com/turt2live/matrix-trello-bot
-[informo]: https://github.com/Informo
