@@ -129,6 +129,8 @@
 [MSC1485]: https://github.com/matrix-org/matrix-doc/issues/1485
 [MSC1497]: https://github.com/matrix-org/matrix-doc/issues/1497
 [MSC1501]: https://github.com/matrix-org/matrix-doc/issues/1501
+[MSC1693]: https://github.com/matrix-org/matrix-doc/pull/1693
+[MSC1695]: https://github.com/matrix-org/matrix-doc/pull/1695
 [MTRNord]: https://matrix.to/#/@MTRNord:matrix.ffslfl.net
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
@@ -178,3 +180,5 @@
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[matrix-trello-bot]: https://github.com/turt2live/matrix-trello-bot
+[informo]: https://github.com/Informo
