@@ -182,7 +182,12 @@
 [uhoreg]: https://matrix.to/#/@uhoreg:matrix.org
 [uMatriks]: https://github.com/uMatriks/uMatriks
 [vadb]: https://matrix.to/#/@vabd:weu.informo.network
+[vabd]: https://matrix.to/#/@vabd:weu.informo.network
 [vurpo]: https://matrix.to/#/@vurpo:vurpo.fi
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[+linux-gaming:matrix.org]: https://matrix.to/#/+linux-gaming:matrix.org
+[#general_linuxgaming:matrix.org]: https://riot.im/develop/#/room/#general_linuxgaming:matrix.org
+[maubot]: https://github.com/maubot/maubot
+[#maubot:maunium.net]: https://matrix.to/#/#maubot:maunium.net
