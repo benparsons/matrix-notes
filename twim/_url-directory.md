@@ -191,3 +191,21 @@
 [#general_linuxgaming:matrix.org]: https://riot.im/develop/#/room/#general_linuxgaming:matrix.org
 [maubot]: https://github.com/maubot/maubot
 [#maubot:maunium.net]: https://matrix.to/#/#maubot:maunium.net
+[Stefan]: https://matrix.to/#/@natrius:matrix.org
+[matrix-client-core]: https://gitlab.com/Matrixcoffee/matrix-client-core
+[debian-synapse]: https://tracker.debian.org/pkg/matrix-synapse
+[#matrix-spec-process:matrix.org]: https://matrix.to/#/#matrix-spec-process:matrix.org
+[Tobias Bernard]: https://matrix.to/#/@bertob:matrix.org
+[@nsfw:encom.eu.org]: https://matrix.to/#/@nsfw:encom.eu.org
+[#nsfw:encom.eu.org]: https://matrix.to/#/#nsfw:encom.eu.org
+[matrix-appservice-purple]: https://github.com/matrix-org/matrix-appservice-purple
+[Dandellion]: https://matrix.to/#/@dandellion:dodsorf.as
+[#matrix-puppet-bridge:matrix.org]: https://matrix.to/#/#matrix-puppet-bridge:matrix.org
+[Sorunome]: https://matrix.to/#/@sorunome:sorunome.de
+[matrix-puppet-slack]: https://github.com/matrix-hacks/matrix-puppet-slack
+[matrix-puppet-bridge]: https://github.com/matrix-hacks/matrix-puppet-bridge/
+[Brendan]: https://matrix.to/#/@brendan:abolivier.bzh
+[Nouts]: https://matrix.to/#/@nouts:matrix.org
+[druig]: https://matrix.to/#/@druig:matrix.org
+[mautrix-telegram]: https://github.com/tulir/mautrix-telegram
+[#purple-bridge:half-shot.uk]: https://matrix.to/#/#purple-bridge:half-shot.uk
