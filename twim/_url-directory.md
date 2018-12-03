@@ -216,3 +216,9 @@
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
+[derivmug]: https://matrix.to/#/@derivmug:matrix.org
+[Jason Robinson]: https://matrix.to/#/@jaywink:feneas.org
+[matrix-synapse-ldap3]: https://github.com/matrix-org/matrix-synapse-ldap3
+[@tvo6]: ttps://github.com/tvo6
+[#SimpleMatrix:matrix.ffslfl.net]: https://matrix.to/#/#SimpleMatrix:matrix.ffslfl.net
