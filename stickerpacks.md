@@ -1,4 +1,4 @@
-# Stickerpads instructions
+# Stickerpacks instructions
 
 ## Provide a folder of image files
 
