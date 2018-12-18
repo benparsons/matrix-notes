@@ -72,7 +72,7 @@ eliza.getResponse("Help me Eliza!")
 ### Using Matrix to make a modern Chatbot
 
 Matrix is an open standard for real-time communication over IP. It is often used
-to enable Instant Messaging. Matrix is Open Source, but it is also designed to
+to enable Instant Messaging. Matrix is not just  Open Source, it is also designed to
 be interoperable, which makes it easy to take existing projects and integrate
 them.
 
