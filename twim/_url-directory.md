@@ -60,7 +60,6 @@
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
 [Black Hat]: https://matrix.to/#/@bhat:encom.eu.org
 [brainblasted]: https://matrix.to/#/@brainblasted:disroot.org
-[Brendan]:  https://brendan.abolivier.bzh/
 [Brendan]: https://matrix.to/#/@brendan:abolivier.bzh
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
 [Coffee]: https://github.com/Matrixcoffee
@@ -164,7 +163,7 @@
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
 [mxhsd]: https://github.com/kamax-io/mxhsd
-[mxisd]: https://github.com/kamax-io/mxisd
+[mxisd]: https://github.com/kamax-matrix/mxisd
 [mxtoot]: https://github.com/ma1uta/mxtoot
 [neilalexander]: https://matrix.to/#/@neilalexander:matrix.org
 [neo]:  https://github.com/f0x52/neo
@@ -222,3 +221,7 @@
 [matrix-synapse-ldap3]: https://github.com/matrix-org/matrix-synapse-ldap3
 [@tvo6]: ttps://github.com/tvo6
 [#SimpleMatrix:matrix.ffslfl.net]: https://matrix.to/#/#SimpleMatrix:matrix.ffslfl.net
+[linuxgaming.life]: https://linuxgaming.life
+[Redecentralize]: https://redecentralize.org/
+[t2bot.io]: https://t2bot.io/
+[SimpleMatrix]: https://gitlab.com/Nordgedanken/SimpleMatrix
