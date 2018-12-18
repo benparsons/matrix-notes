@@ -90,15 +90,16 @@ follows:
 npm install matrix-bot-sdk
 ```
 
-Then, in our application code, we will instantiate a new client. Note that you
-can obtain an access token for the bot [using
+Then, in our application code, we will instantiate and start a new client. Note
+that you can obtain an access token for the bot [using
 Riot](https://t2bot.io/docs/access_tokens/).
 
-```
+```javascript
 const MatrixClient = require("matrix-bot-sdk").MatrixClient;
 const AutojoinRoomsMixin = require("matrix-bot-sdk").AutojoinRoomsMixin;
 const client = new MatrixClient("https://matrix.org", access_token);
 AutojoinRoomsMixin.setupOnClient(client);
+client.start().then(() => console.log("Client started!"));
 ```
 
 I also added the AutojoinRoomsMixin at this point, which instructs the bot to
