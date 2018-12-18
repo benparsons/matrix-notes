@@ -226,5 +226,10 @@ course, it is quite possible to run this software on a server, but having a
 separate box makes it more fun. The physicality of a Raspberry Pi means it gets
 more attention and understanding from people who see it.
 
+![Physical Pi](elizabot-pi.png)
+
+To learn more about Matrix development, take a look at the [Matrix Guides](https://matrix.org/docs/guides)
+page, and join us in the [#matrix-dev:matrix.org](https://matrix.to/#/#matrix-dev:matrix.org) room!
+
 [matrix-js-bot-sdk]: https://github.com/turt2live/matrix-js-bot-sdk
 [TravisR]: https://github.com/turt2live
