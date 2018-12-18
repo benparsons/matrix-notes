@@ -169,7 +169,7 @@ It looks like a lot of code, but in fact we can break down what is happening her
 5. Finally, if the response text we took from our Eliza is "final", we have
    Eliza leave the room. (The bot can always be re-invited!)
 
-That all the code needed to get a working version of the bot running.
+That all the code needed to get a working version of the bot running. If you look at <https://github.com/benparsons/elizabot>, you can find a simple implementation as described here in `simple.js`, and a more robust implementation in `index.js`.
 
 ## Deploying on a Raspberry Pi
 
@@ -217,3 +217,6 @@ Now, whenever you plug in your Pi, your bot will be launched and ready to go. Of
 course, it is quite possible to run this software on a server, but having a
 separate box makes it more fun. The physicality of a Raspberry Pi means it gets
 more attention and understanding from people who see it.
+
+[matrix-js-bot-sdk]: https://github.com/turt2live/matrix-js-bot-sdk
+[TravisR]: https://github.com/turt2live
