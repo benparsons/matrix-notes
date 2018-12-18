@@ -1,5 +1,8 @@
 # Chatbot software from the 1960s, and using Matrix to make it available in 2018
 
+In this article, we'll use Matrix, a Raspberry Pi and JavaScript to bring back
+chatbot software from the 1960s: ELIZA.
+
 ## What is ELIZA?
 
 ELIZA is a computer program written between 1964 and 1966, which imitates the
@@ -25,6 +28,8 @@ technology by applying their own experiences to their usage.
 In 2005, [Norbert Landsteiner](https://twitter.com/mass_werk) created a
 JavaScript program which he made available as *elizabot.js*, and made ELIZA
 available online through a web interface: <https://www.masswerk.at/elizabot/>.
+
+Now we'll make this available on Matrix.
 
 ## Making the bot
 
