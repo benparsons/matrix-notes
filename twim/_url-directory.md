@@ -225,3 +225,10 @@
 [Redecentralize]: https://redecentralize.org/
 [t2bot.io]: https://t2bot.io/
 [SimpleMatrix]: https://gitlab.com/Nordgedanken/SimpleMatrix
+[alphapapa]: https://matrix.to/#/@alphapapa:matrix.org
+[#matrix-35c3:matrix.org]: https://matrix.to/#/#matrix-35c3:matrix.org
+[35c3]: https://events.ccc.de/congress/2018/wiki/index.php/Main_Page
+[Aaron Raimist]: https://matrix.to/#/@aaron:raim.ist
+[matrix-js-bot-sdk]: https://github.com/turt2live/matrix-js-bot-sdk
+[Krille]: https://matrix.to/#/@krille:chat.regionetz.net
+[#matrix-client-el:matrix.org]: https://matrix.to/#/#matrix-client-el:matrix.org
