@@ -5,6 +5,7 @@
 [@slavi:devture.com]: https://matrix.to/#/@slavi:devture.com
 [@Sorunome]: https://github.com/Sorunome
 [@turt2live]: https://github.com/turt2live
+[@tvo6]: ttps://github.com/tvo6
 [&Adam]: https://matrix.to/#/@adam:thebeckmeyers.xyz
 [#:maunium.net]: https://matrix.to/#/#:maunium.net
 [#book-talk:disroot.org]: https://matrix.to/#/#book-talk:disroot.org
@@ -18,7 +19,9 @@
 [#irc-conntrack:half-shot.uk]: https://matrix.to/#/#irc-conntrack:half-shot.uk
 [#jeon:matrix.org]: https://matrix.to/#/#jeon:matrix.org
 [#lebistrot:matrix.org]: https://matrix.to/#/#lebistrot:matrix.org
+[#matrix-35c3:matrix.org]: https://matrix.to/#/#matrix-35c3:matrix.org
 [#matrix-appservice-voip:kamax.io]: https://matrix.to/#/#matrix-appservice-voip:kamax.io
+[#matrix-client-el:matrix.org]: https://matrix.to/#/#matrix-client-el:matrix.org
 [#matrix-clients:lain.haus]: https://matrix.to/#/#matrix-clients:lain.haus
 [#matrix-corporal:devture.com]: https://matrix.to/#/#matrix-corporal:devture.com
 [#matrix-dev:matrix.org]: https://matrix.to/#/#matrix-dev:matrix.org
@@ -37,6 +40,7 @@
 [#qmatrixclient:matrix.org]: https://matrix.to/#/#qmatrixclient:matrix.org
 [#quaternion:matrix.org]: https://matrix.to/#/#quaternion:matrix.org
 [#riot-themes:matrix.ffslfl.net]: https://matrix.to/#/#riot-themes:matrix.ffslfl.net
+[#SimpleMatrix:matrix.ffslfl.net]: https://matrix.to/#/#SimpleMatrix:matrix.ffslfl.net
 [#smsmatrix:matrix.org]: https://matrix.to/#/#smsmatrix:matrix.org
 [#spectral:encom.eu.org]: https://matrix.to/#/#spectral:encom.eu.org
 [#synapse-community:matrix.org]: https://matrix.to/#/#synapse-community:matrix.org
@@ -48,7 +52,10 @@
 [#whatsapp:maunium.net]: https://matrix.to/#/#whatsapp:maunium.net
 [+linux-gaming:matrix.org]: https://matrix.to/#/+linux-gaming:matrix.org
 [+matrix:matrix.org]: https://matrix.to/#/+matrix:matrix.org
+[35c3]: https://events.ccc.de/congress/2018/wiki/index.php/Main_Page
+[Aaron Raimist]: https://matrix.to/#/@aaron:raim.ist
 [Alexandre Franke]: @afranke:matrix.org
+[alphapapa]: https://matrix.to/#/@alphapapa:matrix.org
 [ananace]: https://github.com/ananace/
 [andrewsh]: https://matrix.to/#/@andrew:shadura.me
 [anoa]: https://matrix.to/#/@andrewm:amorgan.xyz
@@ -67,6 +74,7 @@
 [Dandellion]: https://matrix.to/#/@dandellion:dodsorf.as
 [debian-synapse]: https://tracker.debian.org/pkg/matrix-synapse
 [dendrite]: https://github.com/matrix-org/dendrite
+[derivmug]: https://matrix.to/#/@derivmug:matrix.org
 [Dimension]:  https://dimension.t2bot.io/
 [Discord Bridge]:  https://github.com/Half-Shot/matrix-appservice-discord
 [doorman]: https://github.com/FabricLabs/doorman
@@ -89,6 +97,7 @@
 [hawkowl]: https://twitter.com/hawkieowl
 [informo]: https://github.com/Informo
 [IRC Connection Tracker]: https://github.com/Half-Shot/irc-conntrack/
+[Jason Robinson]: https://matrix.to/#/@jaywink:feneas.org
 [jcgruenhage]: https://matrix.to/#/@jan.christian:gruenhage.xyz
 [jeon]: https://gitlab.com/ma1uta/jeon
 [jmsdk]: https://github.com/ma1uta/jmsdk
@@ -98,7 +107,9 @@
 [kamax]:  https://kamax.io
 [kitsune]: https://matrix.to/#/@kitsune:matrix.org
 [koma]: https://github.com/koma-im/koma/
+[Krille]: https://matrix.to/#/@krille:chat.regionetz.net
 [libQMatrixClient]: https://github.com/QMatrixClient/libqmatrixclient
+[linuxgaming.life]: https://linuxgaming.life
 [ma1uta]: https://matrix.to/#/@ma1uta:matrix.org
 [martinkrafft]: https://twitter.com/martinkrafft
 [Mathijs]: https://matrix.to/#/@mathijs:matrix.vgorcum.com
@@ -125,6 +136,7 @@
 [matrix-docker-ansible-deploy]: https://github.com/spantaleev/matrix-docker-ansible-deploy
 [matrix-ios-sdk]: https://github.com/matrix-org/matrix-ios-sdk
 [matrix-java-sdk]: https://github.com/kamax-io/matrix-java-sdk
+[matrix-js-bot-sdk]: https://github.com/turt2live/matrix-js-bot-sdk
 [matrix-js-sdk]: https://github.com/matrix-org/matrix-js-sdk
 [matrix-puppet-bridge]: https://github.com/matrix-hacks/matrix-puppet-bridge/
 [matrix-puppet-facebook]: https://github.com/matrix-hacks/matrix-puppet-facebook
@@ -132,6 +144,7 @@
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk
 [matrix-search]: https://github.com/matrix-org/matrix-search/
+[matrix-synapse-ldap3]: https://github.com/matrix-org/matrix-synapse-ldap3
 [matrix-trello-bot]: https://github.com/turt2live/matrix-trello-bot
 [matrixboard]: https://github.com/betz/matrixboard
 [maubot]: https://github.com/maubot/maubot
@@ -180,6 +193,7 @@
 [Python SDK]: https://github.com/matrix-org/matrix-python-sdk
 [Quaternion]: https://github.com/QMatrixClient/Quaternion
 [radicus]: https://matrix.to/#/@radicus:matrix.org
+[Redecentralize]: https://redecentralize.org/
 [riot-web]: https://github.com/vector-im/riot-web
 [Riot]: https://riot.im/
 [Ruby Matrix SDK]: https://github.com/ananace/ruby-matrix-sdk
@@ -190,6 +204,7 @@
 [Ruma]: https://github.com/ruma/ruma
 [Seaglass]: https://github.com/neilalexander/seaglass
 [sideboat]: https://matrix.to/#/@sideboat:matrix.org
+[SimpleMatrix]: https://gitlab.com/Nordgedanken/SimpleMatrix
 [Slavi]: https://matrix.to/#/@slavi:devture.com
 [SolarDrew]: https://matrix.to/#/@SolarDrew:matrix.org
 [Sorunome]: https://matrix.to/#/@sorunome:sorunome.de
@@ -198,6 +213,7 @@
 [swedneck]: https://matrix.to/#/@swedneck:swedneck.xyz
 [swedneck]: https://matrix.to/#/@swedneck:swedneck.xyz
 [synapse]: https://github.com/matrix-org/synapse/
+[t2bot.io]: https://t2bot.io/
 [t3chguy]: https://matrix.to/#/@x:riot.ovh
 [The Construct]: https://github.com/jevolk/charybdis
 [Tobias Bernard]: https://matrix.to/#/@bertob:matrix.org
@@ -214,21 +230,5 @@
 [vurpo]: https://matrix.to/#/@vurpo:vurpo.fi
 [wossat]: https://wossat.nz/
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
-[Zil0]: https://matrix.to/#/@Zil0:matrix.org
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
-[derivmug]: https://matrix.to/#/@derivmug:matrix.org
-[Jason Robinson]: https://matrix.to/#/@jaywink:feneas.org
-[matrix-synapse-ldap3]: https://github.com/matrix-org/matrix-synapse-ldap3
-[@tvo6]: ttps://github.com/tvo6
-[#SimpleMatrix:matrix.ffslfl.net]: https://matrix.to/#/#SimpleMatrix:matrix.ffslfl.net
-[linuxgaming.life]: https://linuxgaming.life
-[Redecentralize]: https://redecentralize.org/
-[t2bot.io]: https://t2bot.io/
-[SimpleMatrix]: https://gitlab.com/Nordgedanken/SimpleMatrix
-[alphapapa]: https://matrix.to/#/@alphapapa:matrix.org
-[#matrix-35c3:matrix.org]: https://matrix.to/#/#matrix-35c3:matrix.org
-[35c3]: https://events.ccc.de/congress/2018/wiki/index.php/Main_Page
-[Aaron Raimist]: https://matrix.to/#/@aaron:raim.ist
-[matrix-js-bot-sdk]: https://github.com/turt2live/matrix-js-bot-sdk
-[Krille]: https://matrix.to/#/@krille:chat.regionetz.net
-[#matrix-client-el:matrix.org]: https://matrix.to/#/#matrix-client-el:matrix.org
+[Zil0]: https://matrix.to/#/@Zil0:matrix.org
