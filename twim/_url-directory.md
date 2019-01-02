@@ -54,7 +54,7 @@
 [+matrix:matrix.org]: https://matrix.to/#/+matrix:matrix.org
 [35c3]: https://events.ccc.de/congress/2018/wiki/index.php/Main_Page
 [Aaron Raimist]: https://matrix.to/#/@aaron:raim.ist
-[Alexandre Franke]: @afranke:matrix.org
+[Alexandre Franke]: https://matrix.to/#/@afranke:matrix.org
 [alphapapa]: https://matrix.to/#/@alphapapa:matrix.org
 [ananace]: https://github.com/ananace/
 [andrewsh]: https://matrix.to/#/@andrew:shadura.me
@@ -232,3 +232,7 @@
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[Scylla]: https://github.com/DanilaFe/Scylla
+[t3chguy]: https://matrix.to/#/@x:riot.ovh
+[QMatrixClient]: https://github.com/QMatrixClient
+[matrix-client.el]: https://github.com/jgkamat/matrix-client-el
