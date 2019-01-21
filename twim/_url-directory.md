@@ -236,3 +236,5 @@
 [t3chguy]: https://matrix.to/#/@x:riot.ovh
 [QMatrixClient]: https://github.com/QMatrixClient
 [matrix-client.el]: https://github.com/jgkamat/matrix-client-el
+[#matrix-client.el:matrix.org]: https://matrix.to/#/#matrix-client.el:matrix.org
+[tom]: https://matrix.to/#/@root:thomasprofitt.com
