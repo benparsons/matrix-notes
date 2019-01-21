@@ -80,7 +80,7 @@ Matrix provides a decentralised architecture, in which servers connect to one
 another, but as a user your client connects to a single homeserver, as described
 in the diagram below.
 
-![Matrix Design](../hacks.mozilla.org-article/page1.png)
+![Matrix Design](matrix-diagram.png)
 
 However, for this project we only need to look at the Client-Server API, which
 is the way in which clients and servers communicate with one another. To make it
