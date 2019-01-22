@@ -1,4 +1,4 @@
-# Chatbot software from the 1960s, and using Matrix to make it available in 2018
+# Using Matrix to make Chatbot software from the 1960s available in 2018
 
 In this article, we'll use Matrix, a Raspberry Pi and JavaScript to bring back
 chatbot software from the 1960s: ELIZA.
@@ -141,6 +141,9 @@ Next, we'll accept messages from the user and provide a response:
 
 ```javascript
 client.on("room.message", (roomId, event) => {
+    if (event["sender"] === await client.getUserId()) return;
+    if (! event.content || ! event.content.body) return;
+
     elizas[roomId].eliza.getResponse(event.content.body)
         .then((response) => {
             var responseText = '';
@@ -167,14 +170,16 @@ It looks like a lot of code, but in fact we can break down what is happening her
 
 1. When an event is received in a room, we react to the event with a function
    that takes the `roomId` and `event` received as parameters.
-2. We use the `roomId` to access the specific `Eliza` instance, as previously
+2. If the user is our own, or the event does not contain a body, we must
+   return.
+3. We use the `roomId` to access the specific `Eliza` instance, as previously
    created.
-3. As above, we call `getResponse()` on the Eliza object, and we pass the
+4. As above, we call `getResponse()` on the Eliza object, and we pass the
    message string we just received.
-4. We handle the promise returned by `getResponse()` by extracting the response
+5. We handle the promise returned by `getResponse()` by extracting the response
    string into `responseText`, and use that string as a message to send back
    into the room as a response.
-5. Finally, if the response text we took from our Eliza is "final", we have
+6. Finally, if the response text we took from our Eliza is "final", we have
    Eliza leave the room. (The bot can always be re-invited!)
 
 That all the code needed to get a working version of the bot running. If you look at <https://github.com/benparsons/elizabot>, you can find a simple implementation as described here in `simple.js`, and a more robust implementation in `index.js`.
