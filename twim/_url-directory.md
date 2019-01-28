@@ -116,6 +116,7 @@
 [Matrique]: https://gitlab.com/b0/matrique-go
 [Matrix Console for Android]: https://github.com/matrix-org/matrix-android-console
 [Matrix Corporal]: https://github.com/devture/matrix-corporal
+[Matrix-Corporal]: https://github.com/devture/matrix-corporal
 [Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
 [Matrix Python SDK]: https://github.com/matrix-org/matrix-python-sdk
 [Matrix Ruby SDK]: https://github.com/ananace/ruby-matrix-sdk
@@ -172,6 +173,7 @@
 [MSC1695]: https://github.com/matrix-org/matrix-doc/pull/1695
 [MSC1721]: https://github.com/matrix-org/matrix-doc/pull/1721
 [MSC1730]: https://github.com/matrix-org/matrix-doc/pull/1730
+[MSC1711]: https://github.com/matrix-org/matrix-doc/pull/1711
 [MTRNord]: https://matrix.to/#/@MTRNord:matrix.ffslfl.net
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
@@ -179,7 +181,7 @@
 [mxisd]: https://github.com/kamax-matrix/mxisd
 [mxtoot]: https://github.com/ma1uta/mxtoot
 [neilalexander]: https://matrix.to/#/@neilalexander:matrix.org
-[neo]:  https://github.com/f0x52/neo
+[neo]:  https://git.lain.haus/f0x/iris
 [nheko]: https://github.com/mujx/nheko
 [Nico]: https://gitlab.com/beerfactory.org/
 [NixOS]: https://nixos.org/
@@ -238,3 +240,13 @@
 [matrix-client.el]: https://github.com/jgkamat/matrix-client-el
 [#matrix-client.el:matrix.org]: https://matrix.to/#/#matrix-client.el:matrix.org
 [tom]: https://matrix.to/#/@root:thomasprofitt.com
+[journal]: https://github.com/lukebarnard1/journal
+[gnuxie]: https://matrix.to/#/@gnu_ponut:matrix.org
+[cl-matrix]: https://gitlab.com/Gnuxie/cl-matrix
+[matrix-autoinvite]: https://gitlab.com/CromFr/matrix-autoinvite
+[#matrix-register-bot:msg-net.de]: https://matrix.to/#/#matrix-register-bot:msg-net.de
+[status.matrix.org]: https://status.matrix.org/
+[lukebarnard]: https://github.com/lukebarnard1/
+[krombel]: https://matrix.to/#/@krombel:msg-net.de
+[matrix-register-bot]: https://github.com/krombel/matrix-register-bot
+[Alejandro Domínguez]: https://matrix.to/#/@aledomu:matrix.org
