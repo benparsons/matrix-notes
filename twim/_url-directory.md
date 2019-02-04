@@ -14,25 +14,30 @@
 [#discuss:weu.informo.network]: https://matrix.to/#/#discuss:weu.informo.network
 [#dsn-traveller:dsn-traveller.dsn.scc.kit.edu]: https://matrix.to/#/#dsn-traveller:dsn-traveller.dsn.scc.kit.edu
 [#dsn-traveller:matrix.org]: https://matrix.to/#/#dsn-traveller:matrix.org
+[#fed-tester:lain.haus]: https://matrix.to/#/#fed-tester:lain.haus
 [#general_linuxgaming:matrix.org]: https://riot.im/develop/#/room/#general_linuxgaming:matrix.org
 [#gtad:matrix.org]: https://matrix.to/#/#gtad:matrix.org
 [#irc-conntrack:half-shot.uk]: https://matrix.to/#/#irc-conntrack:half-shot.uk
 [#jeon:matrix.org]: https://matrix.to/#/#jeon:matrix.org
 [#lebistrot:matrix.org]: https://matrix.to/#/#lebistrot:matrix.org
+[#libaqueous:encom.eu.org]: https://matrix.to/#/#libaqueous:encom.eu.org
 [#matrix-35c3:matrix.org]: https://matrix.to/#/#matrix-35c3:matrix.org
 [#matrix-appservice-voip:kamax.io]: https://matrix.to/#/#matrix-appservice-voip:kamax.io
 [#matrix-client-el:matrix.org]: https://matrix.to/#/#matrix-client-el:matrix.org
+[#matrix-client.el:matrix.org]: https://matrix.to/#/#matrix-client.el:matrix.org
 [#matrix-clients:lain.haus]: https://matrix.to/#/#matrix-clients:lain.haus
 [#matrix-corporal:devture.com]: https://matrix.to/#/#matrix-corporal:devture.com
 [#matrix-dev:matrix.org]: https://matrix.to/#/#matrix-dev:matrix.org
 [#matrix-dev]: https://matrix.to/#/#matrix-dev:matrix.org
 [#matrix-docker-ansible-deploy:devture.com]: https://matrix.to/#/#matrix-docker-ansible-deploy:devture.com
 [#matrix-puppet-bridge:matrix.org]: https://matrix.to/#/#matrix-puppet-bridge:matrix.org
+[#matrix-register-bot:msg-net.de]: https://matrix.to/#/#matrix-register-bot:msg-net.de
 [#matrix-spec-process:matrix.org]: https://matrix.to/#/#matrix-spec-process:matrix.org
 [#matrix-spec:matrix.org]:  https://matrix.to/#/#matrix-spec:matrix.org
 [#matrix-synapse-shared-secret-auth:devture.com]: https://matrix.to/#/#matrix-synapse-shared-secret-auth:devture.com
 [#maubot:maunium.net]: https://matrix.to/#/#maubot:maunium.net
 [#mxtoot:matrix.org]: https://matrix.to/#/#mxtoot:matrix.org
+[#nheko-reborn:matrix.org]: https://matrix.to/#/#nheko-reborn:matrix.org
 [#nsfw:encom.eu.org]: https://matrix.to/#/#nsfw:encom.eu.org
 [#open-science:matrix.vgorcum.com]: https://matrix.to/#/#open-science:matrix.vgorcum.com
 [#palaver:matrix.localtoast.de]: https://matrix.to/#/#palaver:matrix.localtoast.de
@@ -54,6 +59,7 @@
 [+matrix:matrix.org]: https://matrix.to/#/+matrix:matrix.org
 [35c3]: https://events.ccc.de/congress/2018/wiki/index.php/Main_Page
 [Aaron Raimist]: https://matrix.to/#/@aaron:raim.ist
+[Alejandro Domínguez]: https://matrix.to/#/@aledomu:matrix.org
 [Alexandre Franke]: https://matrix.to/#/@afranke:matrix.org
 [alphapapa]: https://matrix.to/#/@alphapapa:matrix.org
 [ananace]: https://github.com/ananace/
@@ -69,6 +75,7 @@
 [brainblasted]: https://matrix.to/#/@brainblasted:disroot.org
 [Brendan]: https://matrix.to/#/@brendan:abolivier.bzh
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
+[cl-matrix]: https://gitlab.com/Gnuxie/cl-matrix
 [Coffee]: https://github.com/Matrixcoffee
 [CromFr]: https://matrix.to/#/@CromFr:matrix.org
 [Dandellion]: https://matrix.to/#/@dandellion:dodsorf.as
@@ -89,6 +96,7 @@
 [Fractal Hackfest 2018]:  https://wiki.gnome.org/Hackfests/Fractal2018
 [Fractal]: https://wiki.gnome.org/Apps/Fractal
 [gene]: https://github.com/ma1uta/gene
+[gnuxie]: https://matrix.to/#/@gnu_ponut:matrix.org
 [gomuks]: https://github.com/tulir/gomuks
 [Gridepo]: https://github.com/kamax-grid/gridepo
 [GSOC 2018]:  https://summerofcode.withgoogle.com/projects/?sp-search=matrix
@@ -102,21 +110,23 @@
 [jeon]: https://gitlab.com/ma1uta/jeon
 [jmsdk]: https://github.com/ma1uta/jmsdk
 [JonTheNiceGuy]: https://matrix.to/#/@JonTheNiceGuy:matrix.org
+[journal]: https://github.com/lukebarnard1/journal
 [Julian Sparber]: https://matrix.to/#/@iamjsparber:matrix.org
 [Julian]: https://matrix.to/#/@iamjsparber:matrix.org
 [kamax]:  https://kamax.io
 [kitsune]: https://matrix.to/#/@kitsune:matrix.org
 [koma]: https://github.com/koma-im/koma/
 [Krille]: https://matrix.to/#/@krille:chat.regionetz.net
+[krombel]: https://matrix.to/#/@krombel:msg-net.de
 [libQMatrixClient]: https://github.com/QMatrixClient/libqmatrixclient
 [linuxgaming.life]: https://linuxgaming.life
+[lukebarnard]: https://github.com/lukebarnard1/
 [ma1uta]: https://matrix.to/#/@ma1uta:matrix.org
 [martinkrafft]: https://twitter.com/martinkrafft
 [Mathijs]: https://matrix.to/#/@mathijs:matrix.vgorcum.com
 [Matrique]: https://gitlab.com/b0/matrique-go
 [Matrix Console for Android]: https://github.com/matrix-org/matrix-android-console
 [Matrix Corporal]: https://github.com/devture/matrix-corporal
-[Matrix-Corporal]: https://github.com/devture/matrix-corporal
 [Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
 [Matrix Python SDK]: https://github.com/matrix-org/matrix-python-sdk
 [Matrix Ruby SDK]: https://github.com/ananace/ruby-matrix-sdk
@@ -132,7 +142,10 @@
 [matrix-appservice-slack]: https://github.com/matrix-org/matrix-appservice-slack
 [matrix-appservice-sms]: https://github.com/eeeeeta/matrix-appservice-sms/
 [matrix-appservice-voip]: https://github.com/kamax-io/matrix-appservice-voip
+[matrix-autoinvite]: https://gitlab.com/CromFr/matrix-autoinvite
 [matrix-client-core]: https://gitlab.com/Matrixcoffee/matrix-client-core
+[matrix-client.el]: https://github.com/jgkamat/matrix-client-el
+[Matrix-Corporal]: https://github.com/devture/matrix-corporal
 [matrix-doc]: https://github.com/matrix-org/matrix-doc
 [matrix-docker-ansible-deploy]: https://github.com/spantaleev/matrix-docker-ansible-deploy
 [matrix-ios-sdk]: https://github.com/matrix-org/matrix-ios-sdk
@@ -144,6 +157,7 @@
 [matrix-puppet-slack]: https://github.com/matrix-hacks/matrix-puppet-slack
 [matrix-python-sdk]: https://github.com/matrix-org/matrix-python-sdk
 [matrix-react-sdk]: https://github.com/matrix-org/matrix-react-sdk
+[matrix-register-bot]: https://github.com/krombel/matrix-register-bot
 [matrix-search]: https://github.com/matrix-org/matrix-search/
 [matrix-synapse-ldap3]: https://github.com/matrix-org/matrix-synapse-ldap3
 [matrix-trello-bot]: https://github.com/turt2live/matrix-trello-bot
@@ -171,9 +185,9 @@
 [MSC1501]: https://github.com/matrix-org/matrix-doc/issues/1501
 [MSC1693]: https://github.com/matrix-org/matrix-doc/pull/1693
 [MSC1695]: https://github.com/matrix-org/matrix-doc/pull/1695
+[MSC1711]: https://github.com/matrix-org/matrix-doc/pull/1711
 [MSC1721]: https://github.com/matrix-org/matrix-doc/pull/1721
 [MSC1730]: https://github.com/matrix-org/matrix-doc/pull/1730
-[MSC1711]: https://github.com/matrix-org/matrix-doc/pull/1711
 [MTRNord]: https://matrix.to/#/@MTRNord:matrix.ffslfl.net
 [mtxclient]: https://github.com/mujx/mtxclient
 [mujx]: https://matrix.to/#/@mujx:matrix.org
@@ -193,8 +207,10 @@
 [Plasma]: https://gitlab.com/beerfactory.org/plasma/
 [poljar]: https://github.com/poljar
 [Python SDK]: https://github.com/matrix-org/matrix-python-sdk
+[QMatrixClient]: https://github.com/QMatrixClient
 [Quaternion]: https://github.com/QMatrixClient/Quaternion
 [radicus]: https://matrix.to/#/@radicus:matrix.org
+[red_sky]: https://matrix.to/#/@red_sky:ocean.joedonofry.com
 [Redecentralize]: https://redecentralize.org/
 [riot-web]: https://github.com/vector-im/riot-web
 [Riot]: https://riot.im/
@@ -204,6 +220,7 @@
 [ruma-client]:  https://github.com/ruma/ruma-client
 [ruma-events]: https://github.com/ruma/ruma-events
 [Ruma]: https://github.com/ruma/ruma
+[Scylla]: https://github.com/DanilaFe/Scylla
 [Seaglass]: https://github.com/neilalexander/seaglass
 [sideboat]: https://matrix.to/#/@sideboat:matrix.org
 [SimpleMatrix]: https://gitlab.com/Nordgedanken/SimpleMatrix
@@ -211,14 +228,17 @@
 [SolarDrew]: https://matrix.to/#/@SolarDrew:matrix.org
 [Sorunome]: https://matrix.to/#/@sorunome:sorunome.de
 [Spectral]: https://gitlab.com/b0/spectral
+[status.matrix.org]: https://status.matrix.org/
 [Stefan]: https://matrix.to/#/@natrius:matrix.org
 [swedneck]: https://matrix.to/#/@swedneck:swedneck.xyz
 [swedneck]: https://matrix.to/#/@swedneck:swedneck.xyz
 [synapse]: https://github.com/matrix-org/synapse/
 [t2bot.io]: https://t2bot.io/
 [t3chguy]: https://matrix.to/#/@x:riot.ovh
+[t3chguy]: https://matrix.to/#/@x:riot.ovh
 [The Construct]: https://github.com/jevolk/charybdis
 [Tobias Bernard]: https://matrix.to/#/@bertob:matrix.org
+[tom]: https://matrix.to/#/@root:thomasprofitt.com
 [toml]: https://matrix.to/#/@tom:lant.uk
 [TravisR]:  https://github.com/turt2live
 [try-matrix-now]: https://matrix.org/blog/try-matrix-now
@@ -234,19 +254,3 @@
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
-[Scylla]: https://github.com/DanilaFe/Scylla
-[t3chguy]: https://matrix.to/#/@x:riot.ovh
-[QMatrixClient]: https://github.com/QMatrixClient
-[matrix-client.el]: https://github.com/jgkamat/matrix-client-el
-[#matrix-client.el:matrix.org]: https://matrix.to/#/#matrix-client.el:matrix.org
-[tom]: https://matrix.to/#/@root:thomasprofitt.com
-[journal]: https://github.com/lukebarnard1/journal
-[gnuxie]: https://matrix.to/#/@gnu_ponut:matrix.org
-[cl-matrix]: https://gitlab.com/Gnuxie/cl-matrix
-[matrix-autoinvite]: https://gitlab.com/CromFr/matrix-autoinvite
-[#matrix-register-bot:msg-net.de]: https://matrix.to/#/#matrix-register-bot:msg-net.de
-[status.matrix.org]: https://status.matrix.org/
-[lukebarnard]: https://github.com/lukebarnard1/
-[krombel]: https://matrix.to/#/@krombel:msg-net.de
-[matrix-register-bot]: https://github.com/krombel/matrix-register-bot
-[Alejandro Domínguez]: https://matrix.to/#/@aledomu:matrix.org
