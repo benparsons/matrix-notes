@@ -254,3 +254,15 @@
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[d3m3vilurr]: https://github.com/d3m3vilurr
+[matrix-media-repo]: https://github.com/turt2live/matrix-media-repo
+[Linda]: https://matrix.to/#/@lindalap:matrix.org
+[.net sdk]: https://github.com/Half-Shot/matrix-dotnet-sdk
+[Willem]: https://matrix.to/#/@willem:canarymod.net
+[tchap android]: https://github.com/dinsic-pim/tchap-android
+[matrix-puppet-hangouts]: https://github.com/matrix-hacks/matrix-puppet-hangouts/
+[#gsoc:matrix.org]: https://matrix.to/#/#gsoc:matrix.org
+[tijder]: https://matrix.to/#/@tijder:matrix.org
+[SMSMatrix]: https://github.com/tijder/SmsMatrix
+[#synase:matrx.org]: https://matrix.to/#/#synase:matrx.org
+[matrix-bifrost]: https://github.com/matrix-org/matrix-bifrost
