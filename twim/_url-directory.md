@@ -73,6 +73,7 @@
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
 [Black Hat]: https://matrix.to/#/@bhat:encom.eu.org
 [brainblasted]: https://matrix.to/#/@brainblasted:disroot.org
+[Chris from Fractal]: https://matrix.to/#/@brainblasted:disroot.org
 [Brendan]: https://matrix.to/#/@brendan:abolivier.bzh
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
 [cl-matrix]: https://gitlab.com/Gnuxie/cl-matrix
@@ -266,3 +267,13 @@
 [SMSMatrix]: https://github.com/tijder/SmsMatrix
 [#synase:matrx.org]: https://matrix.to/#/#synase:matrx.org
 [matrix-bifrost]: https://github.com/matrix-org/matrix-bifrost
+[matrix-tag-manager]: https://github.com/turt2live/matrix-tag-manager
+[yuforia]: https://matrix.to/#/@uforia:matrix.org
+[avecho]: https://github.com/koma-im/kotlin-matrix-userbots
+[kotlin-matrix-userbots]: https://github.com/koma-im/kotlin-matrix-userbots
+[koma-library]: https://github.com/koma-im/koma-library
+[ananace-matrix-synapse-k8s]: https://github.com/ananace/matrix-synapse
+[#dotnet:half-shot.uk]: https://matrix.to/#/#dotnet:half-shot.uk
+[Gridepo]: https://gitlab.com/kamax-io/grid/gridepo
+[poljar]: https://github.com/poljar
+[matrix-nio]: https://github.com/poljar/matrix-nio
