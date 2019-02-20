@@ -83,7 +83,7 @@
 [Cadair]: https://matrix.to/#/@cadair:cadair.com
 [Chris from Fractal]: https://matrix.to/#/@brainblasted:disroot.org
 [cl-matrix]: https://gitlab.com/Gnuxie/cl-matrix
-[Coffee]: https://github.com/Matrixcoffee
+[Coffee]: https://open.source.coffee/
 [CromFr]: https://matrix.to/#/@CromFr:matrix.org
 [d3m3vilurr]: https://github.com/d3m3vilurr
 [Dandellion]: https://matrix.to/#/@dandellion:dodsorf.as
@@ -277,3 +277,4 @@
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[mariogrip]: https://github.com/mariogrip
