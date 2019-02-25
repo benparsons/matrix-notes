@@ -40,17 +40,24 @@ Once installed, run AVD manager by choosing `Tools -> AVD Manager` from the menu
 
 Follow the steps to create a new virtual machine, in this example I have a Next 5X running Android 9, but almost any configuration is fine here. Make sure that you give the device access to the Play Store.
 
+![](avd.png)
+
 ## Install WhatsApp and sign-in
 
 Launch the Virtual Device, the open the Play Store and sign in. Now use the Play Store to install WhatsApp on the Virtual Device.
 
 You will be asked to verify your phone number, use your number on another device to complete this step.
 
+![](nexus5.png)
+
 ## Setup mautrix-whatsapp bridge
 
 Now that you have WhatsApp working in a VM, and Matrix working on your server, it's time to bridge them togther!
 
 Per the instructions at [mautrix-whatsapp/wiki], you must start a new chat with **@whatsappbot:*yourdomain*>**. Type `login` to begin the authentication process. mautrix-whatsapp operates by using the WhatsApp Web feature of WhatsApp - which means it uses a QR code that you must now scan on the device running WhatsApp - which in your case is the AVD. In order to scan the presented QR code, set your AVD camera to passthrough the camera device on your host machine - see the images below.
+
+![](camera1.png)
+![](camera2.png)
 
 Once this is complete, you can type `sync`, to start bridging contacts, and `sync --create` to automatically create room invites.
 
