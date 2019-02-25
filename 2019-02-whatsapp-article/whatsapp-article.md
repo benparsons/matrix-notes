@@ -38,7 +38,7 @@ The best way to run an Android Virtual Machine is to use the Android Studio tool
 
 Once installed, run AVD manager by choosing `Tools -> AVD Manager` from the menu.
 
-Follow the steps to create a new virtual machine, in this example I have a Next 5X running Android 9, but almost any configuration is fine here. Make sure that you give the device access to the Play Store.
+Follow the steps to create a new virtual machine, in this example I have a Nexus 5X running Android 9, but almost any configuration is fine here. Make sure that you give the device access to the Play Store.
 
 ![](avd.png)
 
