@@ -61,6 +61,10 @@ Per the instructions at [mautrix-whatsapp/wiki], you must start a new chat with 
 
 Once this is complete, you can type `sync`, to start bridging contacts, and `sync --create` to automatically create room invites.
 
+And that's it! You may need to take a little time to watch the sync happen, particularly if you have a very large number of chats on the WhatsApp side, but there is no further configuration needed.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/edSgP2dEZ1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [installing-synapse]: https://matrix.org/docs/guides/installing-synapse
 [mautrix-whatsapp]: https://github.com/tulir/mautrix-whatsapp
 [Synapse]: https://github.com/matrix-org/synapse
