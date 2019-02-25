@@ -54,7 +54,9 @@ You will be asked to verify your phone number, use your number on another device
 
 Now that you have WhatsApp working in a VM, and Matrix working on your server, it's time to bridge them togther!
 
-Per the instructions at [mautrix-whatsapp/wiki], you must start a new chat with **@whatsappbot:*yourdomain*>**. Type `login` to begin the authentication process. mautrix-whatsapp operates by using the WhatsApp Web feature of WhatsApp - which means it uses a QR code that you must now scan on the device running WhatsApp - which in your case is the AVD. In order to scan the presented QR code, set your AVD camera to passthrough the camera device on your host machine - see the images below.
+Per the instructions at [mautrix-whatsapp/wiki], you must start a new chat with **@whatsappbot:*yourdomain*>**. Type `login` to begin the authentication process.
+
+mautrix-whatsapp operates by using the WhatsApp Web feature of WhatsApp - which means it uses a QR code that you must now scan on the device running WhatsApp - which in your case is the AVD. In order to scan the presented QR code, set your AVD camera to passthrough the camera device on your host machine - see the images below.
 
 ![](camera1.png)
 ![](camera2.png)
