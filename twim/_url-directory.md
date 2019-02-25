@@ -278,3 +278,11 @@
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
 [mariogrip]: https://github.com/mariogrip
+[matrix-archive-keyring]: https://mentors.debian.net/package/matrix-archive-keyring
+[#synapse-netcore-workers:t2bot.io]: https://matrix.to/#/#synapse-netcore-workers:t2bot.io
+[continuum-desktop]: https://github.com/koma-im/continuum-desktop
+[#test:zemos.net]: https://matrix.to/#/#test:zemos.net
+[#zemos-test:matrix.org]: https://matrix.to/#/#zemos-test:matrix.org
+[#ruby-matrix-sdk:kittenface.studio]: https://matrix.to/#/#ruby-matrix-sdk:kittenface.studio
+[#koma-im:matrix.org]: https://matrix.to/#/#koma-im:matrix.org
+[joenas]: https://matrix.to/#/@joenas:gottsnack.net
