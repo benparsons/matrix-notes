@@ -4,17 +4,17 @@ Matrix is:
 
 > an open standard for *interoperable*, *decentralised*, *real-time communication*.
 
-In this article we'll look benefit from all three of these attributes:
+In this article we'll benefit from all three of these attributes:
 
 * *interoperable:* we'll see how Matrix can be made to interact with WhatsApp
 * *decentralised*: you can perform this on your own server while still enjoying the benefits of being connected to the rest of the Matrix federation
-* *real-time communication*: we'll see how to send an receive messages in real-time
+* *real-time communication*: we'll see how to send and receive messages in real-time
 
 ## Install your homeserver and install mautrix-whatsapp, the WhatsApp bridge
 
 Firstly, you need to have a Matrix homeserver installed. If you don't currently have one, take a look at the instructions at [Installing Synapse][installing-synapse], and also in the [Synapse README][Synapse].
 
-Next, install [mautrix-whatsapp] by following the instructions at [mautrix-whatsapp/wiki](https://github.com/tulir/mautrix-whatsapp/wiki).
+Next, install [mautrix-whatsapp] by following the instructions at [mautrix-whatsapp/wiki].
 
 If you are starting from scratch, I suggest you take a look at [matrix-docker-ansible-deploy], as this project will enable you to deploy Synapse, [mautrix-whatsapp] and other components easily.
 
@@ -44,13 +44,18 @@ Follow the steps to create a new virtual machine, in this example I have a Next 
 
 Launch the Virtual Device, the open the Play Store and sign in. Now use the Play Store to install WhatsApp on the Virtual Device.
 
-You will be asked to verify the number, use your number on another device to complete this step.
-
-## Use your phone number to log in to WhatsApp
+You will be asked to verify your phone number, use your number on another device to complete this step.
 
 ## Setup mautrix-whatsapp bridge
+
+Now that you have WhatsApp working in a VM, and Matrix working on your server, it's time to bridge them togther!
+
+Per the instructions at [mautrix-whatsapp/wiki], you must start a new chat with **@whatsappbot:*yourdomain*>**. Type `login` to begin the authentication process. mautrix-whatsapp operates by using the WhatsApp Web feature of WhatsApp - which means it uses a QR code that you must now scan on the device running WhatsApp - which in your case is the AVD. In order to scan the presented QR code, set your AVD camera to passthrough the camera device on your host machine - see the images below.
+
+Once this is complete, you can type `sync`, to start bridging contacts, and `sync --create` to automatically create room invites.
 
 [installing-synapse]: https://matrix.org/docs/guides/installing-synapse
 [mautrix-whatsapp]: https://github.com/tulir/mautrix-whatsapp
 [Synapse]: https://github.com/matrix-org/synapse
 [matrix-docker-ansible-deploy]: https://github.com/spantaleev/matrix-docker-ansible-deploy/
+[mautrix-whatsapp/wiki]: https://github.com/tulir/mautrix-whatsapp/wiki
