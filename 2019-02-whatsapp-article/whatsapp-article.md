@@ -10,7 +10,7 @@ In this article we'll benefit from all three of these attributes:
 * *decentralised*: you can perform this on your own server while still enjoying the benefits of being connected to the rest of the Matrix federation
 * *real-time communication*: we'll see how to send and receive messages in real-time
 
-## Install your homeserver and install mautrix-whatsapp, the WhatsApp bridge
+## Install your homeserver and install mautrix-whatsapp, the WhatsApp bridge
 
 Firstly, you need to have a Matrix homeserver installed. If you don't currently have one, take a look at the instructions at [Installing Synapse][installing-synapse], and also in the [Synapse README][Synapse].
 
@@ -32,7 +32,7 @@ ansible-playbook -i inventory/hosts setup.yml --tags=setup-all
 
 Either way, you will soon have a functioning Matrix Synapse homeserver and [mautrix-whatsapp] installed with it. Next, we will set up an Android VM.
 
-## Set up an Android VM
+## Set up an Android VM
 
 The best way to run an Android Virtual Machine is to use the Android Studio tools from Google. First, [install Android Studio](https://developer.android.com/studio/install), making sure to follow the post-install steps, as they will install additional tools we need, including AVD Manager.
 
@@ -42,7 +42,7 @@ Follow the steps to create a new virtual machine, in this example I have a Nexus
 
 ![](avd.png)
 
-## Install WhatsApp and sign-in
+## Install WhatsApp and sign-in
 
 Launch the Virtual Device, the open the Play Store and sign in. Now use the Play Store to install WhatsApp on the Virtual Device.
 
