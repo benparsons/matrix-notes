@@ -286,3 +286,4 @@
 [#ruby-matrix-sdk:kittenface.studio]: https://matrix.to/#/#ruby-matrix-sdk:kittenface.studio
 [#koma-im:matrix.org]: https://matrix.to/#/#koma-im:matrix.org
 [joenas]: https://matrix.to/#/@joenas:gottsnack.net
+[VaNilLa]: https://matrix.to/#/@daniel:riot.danilafe.com
