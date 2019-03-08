@@ -22,6 +22,7 @@
 [#gtad:matrix.org]: https://matrix.to/#/#gtad:matrix.org
 [#irc-conntrack:half-shot.uk]: https://matrix.to/#/#irc-conntrack:half-shot.uk
 [#jeon:matrix.org]: https://matrix.to/#/#jeon:matrix.org
+[#jeon-ru:matrix.org]: https://matrix.to/#/#jeon-ru:matrix.org
 [#lebistrot:matrix.org]: https://matrix.to/#/#lebistrot:matrix.org
 [#libaqueous:encom.eu.org]: https://matrix.to/#/#libaqueous:encom.eu.org
 [#matrix-35c3:matrix.org]: https://matrix.to/#/#matrix-35c3:matrix.org
@@ -142,6 +143,7 @@
 [Matrix plugin for Weechat]: https://matrix.org/docs/projects/client/weechat.html
 [Matrix Python SDK]: https://github.com/matrix-org/matrix-python-sdk
 [Matrix Ruby SDK]: https://github.com/ananace/ruby-matrix-sdk
+[Matrix Spec]: https://matrix.org/docs/spec
 [Matrix Spec Change Proposals]: https://matrix.org/docs/spec/proposals
 [Matrix Synapse Docker]: https://hub.docker.com/r/matrixdotorg/synapse/
 [matrix-android-console]: https://github.com/matrix-org/matrix-android-console
@@ -287,3 +289,15 @@
 [#koma-im:matrix.org]: https://matrix.to/#/#koma-im:matrix.org
 [joenas]: https://matrix.to/#/@joenas:gottsnack.net
 [VaNilLa]: https://matrix.to/#/@daniel:riot.danilafe.com
+[pztrn]: https://matrix.to/#/@pztrn:pztrn.name
+[#opensaps:pztrn.name]: https://matrix.to/#/#opensaps:pztrn.name
+[#miniVectorAndroid:matrix.org]: https://matrix.to/#/#miniVectorAndroid:matrix.org
+[@hrjet:matrix.org]: https://matrix.to/#/@hrjet:matrix.org
+[#bifrost:half-shot.uk]: https://matrix.to/#/#bifrost:half-shot.uk
+[opensaps]: https://gitlab.com/pztrn/opensaps
+[matrix-wug]: https://github.com/dali99/matrix-wug
+[Minivector]: https://github.com/LiMium/mini-vector-android
+[bubu]: https://matrix.to/#/@bubu:bubu1.eu
+[#ping:maunium.net]: https://matrix.to/#/#ping:maunium.net
+[#jeon:ru-matrix.org]: https://matrix.to/#/#jeon:ru-matrix.org
+[weechat-matrix]: https://github.com/poljar/weechat-matrix
