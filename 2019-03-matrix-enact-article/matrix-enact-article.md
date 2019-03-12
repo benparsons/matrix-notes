@@ -4,13 +4,13 @@ I created [matrix-enact] as a fun way to render Matrix rooms - it essentially "p
 
 This article will introduce two important concepts in Matrix, specifically in the Matrix Client-Server API: guest access and the `/context` endpoint, which gets messages before and after a given event.
 
+## Get Guest AT
+
+
+
 * get guest AT
 * introduce /context
 * loop until we have enough messages
 * use Web Audio API
 * utterance.onend
 * push the line onto react to render
-
-## Get Guest AT
-
-## 
