@@ -301,3 +301,9 @@
 [#ping:maunium.net]: https://matrix.to/#/#ping:maunium.net
 [#jeon:ru-matrix.org]: https://matrix.to/#/#jeon:ru-matrix.org
 [weechat-matrix]: https://github.com/poljar/weechat-matrix
+[Pattle]: https://git.pattle.im/pattle/android
+[#pattle:matrix.org]: https://matrix.to/#/#pattle:matrix.org
+[Cortex]: https://gitlab.com/b0/cortex/
+[#cortex:encom.eu.org]: https://matrix.to/#/#cortex:encom.eu.org
+[synapse-netcore-workers]: https://github.com/turt2live/synapse-netcore-workers
+[Wilko]: https://matrix.to/#/@wilko:matrix.org
