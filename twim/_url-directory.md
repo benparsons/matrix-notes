@@ -89,6 +89,7 @@
 [Arne]: https://matrix.to/#/@arne:matrix.localtoast.de
 [avecho]: https://github.com/koma-im/kotlin-matrix-userbots
 [benpa]: https://matrix.to/#/@benpa:matrix.org
+[@benpa:matrix.org]: https://matrix.to/#/@benpa:matrix.org
 [bettiah]: https://matrix.to/#/@bettiah:matrix.org
 [betz]: https://matrix.to/#/@betz:hackerspaces.be
 [Black Hat]: https://matrix.to/#/@bhat:encom.eu.org
@@ -307,3 +308,6 @@
 [Zeratax?utf8=✓]: https://matrix.to/#/@zeratax:dmnd.sh
 [Zerophone]: https://wiki.zerophone.org/index.php/Main_Page
 [Zil0]: https://matrix.to/#/@Zil0:matrix.org
+[Jonas Schürmann]: https://matrix.to/#/@me:jonas-schuermann.name
+[#NixOS:matrix.org]: https://matrix.to/#/#NixOS:matrix.org
+[#scylla:riot.danilafe.com]: https://matrix.to/#/#scylla:riot.danilafe.com
