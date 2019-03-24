@@ -6,7 +6,7 @@ Multiple components:
 * bot
 * map render
 
-## App
+## App
 
 Must log into an existing Matrix account
 
@@ -18,7 +18,7 @@ If the user has permission to post in to the room we're good.
 
 User hits 'go' and we post every minute (?) the `client_ts` and `m.location` to the room.
 
-## Bot
+## Bot
 
 Bot keeps a mapping of shortcodes against room_ids.
 
@@ -36,7 +36,7 @@ A single endpoint, takes a shortcode and room_id as params, these must match.
 
 API returns a (n) most recent locations for each member.
 
-## Map
+## Map
 
 OpenStreetMap/Leaflet.js
 
