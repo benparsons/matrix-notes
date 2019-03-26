@@ -311,3 +311,4 @@
 [Jonas Schürmann]: https://matrix.to/#/@me:jonas-schuermann.name
 [#NixOS:matrix.org]: https://matrix.to/#/#NixOS:matrix.org
 [#scylla:riot.danilafe.com]: https://matrix.to/#/#scylla:riot.danilafe.com
+[@adridg:matrix.org]: https://matrix.to/#/@adridg:matrix.org
