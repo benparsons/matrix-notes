@@ -17,7 +17,7 @@
 * How is the market for Ubuntu Touch apps?
   * Isn't it strange that there are so many (two!) Matrix clients?
 
-## FluffyChat
+## FluffyChat
 
 * what features have you done?
   * which were difficult?
