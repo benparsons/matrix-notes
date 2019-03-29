@@ -312,3 +312,8 @@
 [#NixOS:matrix.org]: https://matrix.to/#/#NixOS:matrix.org
 [#scylla:riot.danilafe.com]: https://matrix.to/#/#scylla:riot.danilafe.com
 [@adridg:matrix.org]: https://matrix.to/#/@adridg:matrix.org
+[federationtester]: https://matrix.org/federationtester
+[Notkea]: https://matrix.to/#/@pacien:pacien.net
+[#riot-web-announcements:matrix.org]: https://matrix.to/#/#riot-web-announcements:matrix.org
+[#libaqueous:encom.eu.org]: https://matrix.to/#/#libaqueous:encom.eu.org
+[pantalaimon]: https://github.com/matrix-org/pantalaimon
