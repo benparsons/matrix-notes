@@ -47,37 +47,75 @@ Looking at [this section of the Client-Server API](https://matrix.org/docs/spec/
 To get messages from this endpoint we need to provide a room id and the event id we want context for. Check out the comments in the code below to follow along.
 
 ```javascript
-// first we construct the url as per the CS API
-const url = `https://matrix.org/_matrix/client/r0/rooms/${encodeURIComponent(roomId)}/context/${encodeURIComponent(startEventId)}?limit=100&access_token=${this.state.accessToken}`;
+async loadScriptFromEventId(startEventId) {
+    // first we construct the url as per the CS API
+    const url = `https://matrix.org/_matrix/client/r0/rooms/${encodeURIComponent(roomId)}/context/${encodeURIComponent(startEventId)}?limit=100&access_token=${this.state.accessToken}`;
 
-axios.get(url).then(res => {
-    // make an array to store the events from the response
-    var newEvents = [];
+    axios.get(url).then(res => {
+        // make an array to store the events from the response
+        var newEvents = [];
 
-    // we only want the events that follow our start events
-    newEvents = newEvents.concat(res.data.events_after);
+        // we only want the events that follow our start events
+        newEvents = newEvents.concat(res.data.events_after);
 
-    // and we only want events that contain a body field, i.e. that are messages
-    newEvents = newEvents.filter(e => e.content.body);
+        // and we only want events that contain a body field, i.e. that are messages
+        newEvents = newEvents.filter(e => e.content.body);
 
-    // finally, since we're using React for this app,
-    // we store these messages in the state object
-    this.setState({events: this.state.events.concat(newEvents)});
-});
+        // finally, since we're using React for this app,
+        // we store these messages in the state object
+        this.setState({events: this.state.events.concat(newEvents)});
+    });
+}
 ```
 
 ## Loop until we have enough messages
 
-Notice the previous URL we hit when calling `/context`. We specified a `limit` value of 100. In fact, this is usually the limit enforced by the homeserver. This limit refers to the number of events, not the number of messages - remember that we are filtering them in the code above.
+Notice the previous URL we hit when calling `/context`. We specified a `limit` value of `100`. In fact, `100` is usually the limit enforced by the homeserver. This limit refers to the number of events, not the number of messages - remember that we are filtering them in the code above.
 
-If we say that we want our script to be 
+If we say that we want our script to be 50 lines long, but after filtering we are left with only 30 messages, what should we do? Get more events after the latest one, and append the new events to our script. Knowing that we have taken a value from the form to be stored in `state.messageCount`, and in the previous section we inserted message events into `state.events`, we can compare these two variables, and if needed, call `loadScriptFromEventId()` again with the last known event.
 
+```javascript
+if (this.state.messageCount > this.state.events.length) {
+    // get last known event
+    var lastEvent = res.data.events_after[res.data.events_after.length - 1];
+    this.loadScriptFromEventId(lastEvent.event_id);
+} else {
+    this.setState({events: this.state.events.slice(0, this.state.messageCount), statusMessage: "Done"});
+}
+```
 
+## Using the Web Audio API
 
-* use Web Audio API
+The [Web Audio API] is a massive topic, out of the scope of this article. We'll cover just enough to be able to show the "happy path" of performing Text-to-Speech (TTS) sequentially.
+
+To deliver a line as audio, the fundamental code is as follows:
+
+```javascript
+var utterance = new SpeechSynthesisUtterance();
+utterance.text = "some string";
+var someVoice = window.speechSynthesis.getVoices()[0];
+utterance.voice = someVoice;
+window.speechSynthesis.speak(utterance);
+```
+
+To find out when an utterance ends, attach a function to the onend event:
+
+```
+utterance.onend = function() {
+    // do something when the line ends
+};
+```
+
+Knowing that we can perform TTS on strings we provide, and that we can call a function when a line ends, from here it's easy to see how we can use the list of messages to "enact" the message history.
+
+## Using the Web Audio API with React
+
+We'll create a `nextLine()` function in our `App` component, and use this to insert lines associated with "Parts
+
 * utterance.onend
 * push the line onto react to render
 
 [Matrix Client-Server API]: https://matrix.org/docs/spec/client_server/latest.html
 [matrix-enact]: https://github.com/benparsons/matrix-enact
 [context]: https://matrix.org/docs/spec/client_server/latest.html#id161
+[Web Audio API]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
