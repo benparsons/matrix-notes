@@ -110,7 +110,14 @@ Knowing that we can perform TTS on strings we provide, and that we can call a fu
 
 ## Using the Web Audio API with React
 
-We'll create a `nextLine()` function in our `App` component, and use this to insert lines associated with "Parts
+We will:
+
+* assign each user a random voice from TTS voices available in the current browser
+* trigger each line sequentially and with the correct voice, thus giving the impression of a script being performed
+
+Let's create a `nextLine()` function in our `App` component, and use this to insert lines associated with "Parts", i.e. each part is a separate user with an assigned voice.
+
+
 
 * utterance.onend
 * push the line onto react to render
