@@ -115,12 +115,73 @@ We will:
 * assign each user a random voice from TTS voices available in the current browser
 * trigger each line sequentially and with the correct voice, thus giving the impression of a script being performed
 
-Let's create a `nextLine()` function in our `App` component, and use this to insert lines associated with "Parts", i.e. each part is a separate user with an assigned voice.
+Let's create a `nextLine()` function in our `App` component, and use this to insert lines associated with "Parts", meaning that each part is a separate user with an assigned voice.
 
+```javascript
+nextLine() {
+    var line = this.state.line;
+    if (! this.state.events[line]) return;
+    var newPart = this.state.events[line].sender;
+    if (! this.state.parts.find(p =>{return p.name === newPart;})) {
+        this.setState({
+        parts: this.state.parts.concat([{
+            name: newPart,
+            voice: voices[getRandomInt(0, voices.length)]
+        }])
+        })
+    }
+    this.setState({
+        script: this.state.script.concat(this.state.events[line]),
+        line: this.state.line + 1,
+        nextText: "Continue"
+    });
+}
+```
 
+By incrementing the `line` counter, we progress through the script, adding a line at a time to the correct `Part`.
 
-* utterance.onend
-* push the line onto react to render
+During rendering, the App renders an array of `Part` Components, which in turn render an array of lines, filtered for that particular Part:
+
+```javascript
+const lines = this.props.script.map((line, lineNumber) => {
+    line.lineNumber = lineNumber;
+    return line; 
+}).filter(l => l.sender === part.name);
+```
+
+Knowing that in React, the `constructor` for a Component is called only once, we perform the TTS process itself inside the constructor method:
+
+```javascript
+class Line extends Component {
+  constructor(props) {
+    super(props);
+    var utterance = new SpeechSynthesisUtterance();
+    var nextLine = this.props.nextLine;
+    utterance.text = this.props.lineText;
+    utterance.voice = this.props.part.voice;
+    synth.speak(utterance);
+  }
+}
+```
+
+Finally, we'll use what we already learned about the `onend` event to insert the next line:
+
+```javascript
+class Line extends Component {
+  constructor(props) {
+    super(props);
+    var utterance = new SpeechSynthesisUtterance();
+    var nextLine = this.props.nextLine;
+    utterance.onend = function(a) {
+      //console.log("ended: " + utterance.text);
+      nextLine();
+    };
+    utterance.text = this.props.lineText;
+    utterance.voice = this.props.part.voice;
+    synth.speak(utterance);
+  }
+}
+```
 
 [Matrix Client-Server API]: https://matrix.org/docs/spec/client_server/latest.html
 [matrix-enact]: https://github.com/benparsons/matrix-enact
