@@ -323,3 +323,5 @@
 [+list:calculate-linux.org]: https://matrix.to/#/+list:calculate-linux.org
 [libaqueous]: https://gitlab.com/b0/libaqueous
 [jj]: https://matrix.to/#/@TheJJ:matrix.org
+[bluefish]: https://gitlab.com/cy8aer/bluepill
+[Cy8aer]: https://matrix.to/#/@baer:g3la.de
