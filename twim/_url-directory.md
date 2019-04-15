@@ -101,6 +101,7 @@
 [cl-matrix]: https://gitlab.com/Gnuxie/cl-matrix
 [Coffee]: https://open.source.coffee/
 [continuum-desktop]: https://github.com/koma-im/continuum-desktop
+[continuum]: https://github.com/koma-im/continuum-desktop
 [Cortex]: https://gitlab.com/b0/cortex/
 [CromFr]: https://matrix.to/#/@CromFr:matrix.org
 [d3m3vilurr]: https://github.com/d3m3vilurr
@@ -285,6 +286,7 @@
 [t3chguy]: https://matrix.to/#/@x:riot.ovh
 [tchap android]: https://github.com/dinsic-pim/tchap-android
 [The Construct]: https://github.com/jevolk/charybdis
+[Construct]: https://github.com/jevolk/charybdis
 [tijder]: https://matrix.to/#/@tijder:matrix.org
 [Tobias Bernard]: https://matrix.to/#/@bertob:matrix.org
 [tom]: https://matrix.to/#/@root:thomasprofitt.com
@@ -325,3 +327,7 @@
 [jj]: https://matrix.to/#/@TheJJ:matrix.org
 [bluefish]: https://gitlab.com/cy8aer/bluepill
 [Cy8aer]: https://matrix.to/#/@baer:g3la.de
+[nepugia]: https://matrix.to/#/@lowee:matrix.org
+[metaolm]: https://gitlab.gnome.org/World/metaolm
+[#famedly:famedly.de]: https://matrix.to/#/#famedly:famedly.de
+[bluepill]: https://gitlab.com/cy8aer/bluepill
