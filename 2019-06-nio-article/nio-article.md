@@ -4,7 +4,7 @@ This article concerns [matrix-nio](https://github.com/poljar/matrix-nio), which 
 
 ## Instantiation and Login
 
-First create a new venv, and install matrix-nio via `pip`:
+First create a new venv, and install matrix-nio via `pip`. On the command line, run:
 
 ```unix
 python3 -m venv env
@@ -12,7 +12,7 @@ source env/bin/activate
 pip install matrix-nio
 ```
 
-Next we'll import everything we require for this tutorial:
+Next, create a new Python file, and open it for editing. We'll import everything we require for this tutorial:
 
 ```python
 from importlib import util
