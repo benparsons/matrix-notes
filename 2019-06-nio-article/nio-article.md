@@ -4,7 +4,7 @@ This article concerns [matrix-nio](https://github.com/poljar/matrix-nio), which 
 
 ## Instantiation and Login
 
-First createa new venv, and install matrix-nio via `pip`:
+First create a new venv, and install matrix-nio via `pip`:
 
 ```unix
 python3 -m venv env
