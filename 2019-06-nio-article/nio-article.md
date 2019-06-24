@@ -143,9 +143,7 @@ joins = sync_response.rooms.join
 for room_id in joins:
     for event in joins[room_id].timeline.events:
         if hasattr(event, 'body') and event.body.startswith(response_string):
-            print(event)
-            response_body = event.body.replace(response_string, "")
-            response_body = response_body.strip()
+            response_body = event.body.replace(response_string, "").strip()
             content = {
                "body": response_body,
                "msgtype": "m.text"
@@ -162,7 +160,7 @@ Finally, let's consider the importance of `next_batch` tokens. Whenever you rece
 ```python
 async def main():
     response = await async_client.login("%%YOUR-USERNAME-HERE%%", "")
-    print(response)
+
     while (True):
         sync_response = await async_client.sync(30000)
         print(sync_response.next_batch) # this is the token
@@ -173,7 +171,7 @@ Then we'll write the token to a file:
 ```python
 async def main():
     response = await async_client.login("%%YOUR-USERNAME-HERE%%", "")
-    print(response)
+
     while (True):
         sync_response = await async_client.sync(30000)
 
@@ -187,7 +185,6 @@ Once that token is written, we know we can re-use it for the first `/sync/` requ
 ```python
 async def main():
     response = await async_client.login("%%YOUR-USERNAME-HERE%%", "")
-    print(response)
 
     # we read the previously-written token...
     with open ("next_batch","r") as next_batch_token:
@@ -196,7 +193,6 @@ async def main():
 
     while (True):
         sync_response = await async_client.sync(30000)
-        print(sync_response.next_batch)
         with open("next_batch","w") as next_batch_token:
             next_batch_token.write(sync_response.next_batch)
 ```
