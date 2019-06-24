@@ -91,7 +91,7 @@ if len(sync_response.rooms.join) > 0:
             print(event)
 ```
 
-*Message events* are a specific type of event which contains an Instant Messenger message. A quick way to check this is to find the body field on the event:
+*Message events* are a specific type of event which contain an Instant Messenger message. A quick way to check this is to find the body field on the event:
 
 ```python
 for event in joins[room_id].timeline.events:
@@ -196,6 +196,8 @@ async def main():
         with open("next_batch","w") as next_batch_token:
             next_batch_token.write(sync_response.next_batch)
 ```
+
+## Conclusion
 
 With this, you can see that in very few lines, it's possible to write a working Matrix bot in Python, using [matrix-nio](https://github.com/poljar/matrix-nio).
 
