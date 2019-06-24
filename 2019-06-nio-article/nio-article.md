@@ -165,7 +165,7 @@ async def main():
     print(response)
     while (True):
         sync_response = await async_client.sync(30000)
-        print(sync_response.next_batch)
+        print(sync_response.next_batch) # this is the token
 ```
 
 Then we'll write the token to a file:
@@ -176,7 +176,8 @@ async def main():
     print(response)
     while (True):
         sync_response = await async_client.sync(30000)
-        print(sync_response.next_batch)
+
+        # we write the token to a file here
         with open("next_batch","w") as next_batch_token:
             next_batch_token.write(sync_response.next_batch)
 ```
@@ -188,7 +189,9 @@ async def main():
     response = await async_client.login("%%YOUR-USERNAME-HERE%%", "")
     print(response)
 
+    # we read the previously-written token...
     with open ("next_batch","r") as next_batch_token:
+        # ... and well async_client to use it
         async_client.next_batch = next_batch_token.read()
 
     while (True):
