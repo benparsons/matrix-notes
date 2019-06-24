@@ -2,7 +2,10 @@
 
 I created [matrix-enact] as a fun way to render Matrix rooms - it essentially "performs" the room history by progressively speaking each message event in chronological order. In this way, [matrix-enact] is effectively a simple, read-only Matrix client. Let's see how it was built.
 
-This article will introduce two important concepts in Matrix, specifically in the [Matrix Client-Server API]: guest access and the `/context` endpoint, which gets messages before and after a given event.
+This article will introduce two important concepts in Matrix, specifically in the [Matrix Client-Server API]:
+
+* guest access
+* the `/context` endpoint, which gets messages before and after a given event
 
 ## Not using the matrix-js-sdk
 
@@ -13,6 +16,7 @@ Although written in JavaScript (and Reactjs), this project does not use the [mat
 Matrix allows for [guest access](https://matrix.org/docs/spec/client_server/latest.html#guest-access) by providing an interface to register a new guest user and be immediately given an access token. To do this we call the `/register` endpoint with a query param `kind` set to `guest`. In matrix-enact, this looks like:
 
 ```javascript
+import axios from 'axios';
 var url = "https://matrix.org/_matrix/client/r0/register?kind=guest";
 const res = await axios.post(url, {});
 const { data } = await res;
@@ -184,7 +188,7 @@ class Line extends Component {
 
 In this way, nextLine() is called in a loop, meaning that the lines are added to React sequentially, and spoken aloud as they are added.
 
-## Conclusion
+## Conclusion
 
 This article covered a lot of ground:
 
