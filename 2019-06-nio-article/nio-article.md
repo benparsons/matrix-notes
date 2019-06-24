@@ -80,7 +80,7 @@ In this way, every time there is a response (i.e. new events) from the homeserve
 
 `sync_response` [can contain multitudes](https://matrix.org/docs/spec/client_server/latest#get-matrix-client-r0-sync), depending on the rooms this user is part of, or has been part of. `sync_response.rooms.join` contains updates for the rooms which the current user is "joined to" (meaning, is a member of.)
 
-Within for of these joined rooms, we are (perhaps!) most interested in the events on the timeline. These are stored in `timeline.events`, see below:
+Of these joined rooms, we are (perhaps!) most interested in the events on the timeline. These are stored in `timeline.events`, see below:
 
 ```python
 if len(sync_response.rooms.join) > 0:
