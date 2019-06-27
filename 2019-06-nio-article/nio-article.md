@@ -17,7 +17,7 @@ Next, create a new Python file, and open it for editing. We'll import everything
 ```python
 from importlib import util
 import asyncio
-from nio import (AsyncClient, SyncResponse)
+from nio import (AsyncClient, SyncResponse, RoomMessageText)
 ```
 
 We're importing asyncio so we can use the `AsyncClient` class from matrix-nio.
@@ -102,19 +102,11 @@ if len(sync_response.rooms.join) > 0:
             print(event)
 ```
 
-*Message events* are a specific type of event which contain an Instant Messenger message. A quick way to check this is to find the body field on the event:
+*Message events* are a specific type of event which contain an Instant Messenger message. We can check the type before proceeding:
 
 ```python
 for event in joins[room_id].timeline.events:
-    if hasattr(event, 'body'):
-        print (event.body)
-```
-
-Or, check the event type:
-
-```python
-for event in joins[room_id].timeline.events:
-    if event.source['type'] == "m.room.message":
+    if isinstance(event, RoomMessageText):
         print (event.body)
 ```
 
