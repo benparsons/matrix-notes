@@ -47,6 +47,17 @@ async def main():
 asyncio.run(main())
 ```
 
+Note that for versions of Python before 3.7 the asyncio syntax must be:
+
+```python
+async def main():
+    response = await async_client.login("%%YOUR-PASSWORD-HERE%%")
+    print(response)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
+
 The remainder of this tutorial assumes you are running everything from an `async` method.
 
 The response string should look like:
