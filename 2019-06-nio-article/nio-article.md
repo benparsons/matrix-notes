@@ -1,6 +1,6 @@
 # Usage of matrix-nio (Python Sans IO)
 
-This article concerns [matrix-nio](https://github.com/poljar/matrix-nio), and [asyncio](https://docs.python.org/3/library/asyncio.html). We'll build a simple "echo bot", meaning a bot which replies to messages with the text it has just read.
+This article concerns [matrix-nio](https://github.com/poljar/matrix-nio), and [asyncio](https://docs.python.org/3/library/asyncio.html). We'll build a simple "echo bot", meaning a bot which replies to messages with the text it has just read. Note that this article does not cover E2EE with matrix-nio.
 
 ## Instantiation and Login
 
