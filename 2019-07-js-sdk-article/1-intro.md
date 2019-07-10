@@ -1,5 +1,7 @@
 # Usage of matrix-js-bot-sdk
 
+This article concerns [matrix-js-bot-sdk], a TypeScript client SDK for Matrix. We'll build a simple "echo bot", meaning a bot which replies to messages with the text it has just read.
+
 ## Setup
 
 Let's make a new folder, and import our only npm dependency. The following examples are all meant to be run in a bash terminal.
