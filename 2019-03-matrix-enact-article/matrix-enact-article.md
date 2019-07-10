@@ -44,7 +44,7 @@ if (this.state.roomEntry[0] === "#") {
 
 We use the `/context` endpoint to get chronological history of a room timeline.
 
-Looking at [this section of the Client-Server API][context endpoint] we see:
+Looking at [this section of the Client-Server API][context] we see:
 
 > This API returns a number of events that happened just before and after the specified event. This allows clients to get the context surrounding an event.
 
@@ -193,7 +193,7 @@ In this way, nextLine() is called in a loop, meaning that the lines are added to
 This article covered a lot of ground:
 
 * Matrix Guess access
-* the [`/context/` API endpoint][context endpoint]
+* the [`/context/` API endpoint][context]
 * filtering content from Matrix events
 * passing these strings to the [Web Audio API]
 
@@ -201,7 +201,6 @@ To learn more about Matrix development, check out the [Matrix Documentation](htt
 
 [Matrix Client-Server API]: https://matrix.org/docs/spec/client_server/latest.html
 [matrix-enact]: https://github.com/benparsons/matrix-enact
-[context]: https://matrix.org/docs/spec/client_server/latest.html#id161
+[context]: https://matrix.org/docs/spec/client_server/latest#get-matrix-client-r0-rooms-roomid-context-eventid
 [Web Audio API]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
 [matrix-js-sdk]: https://github.com/matrix-org/matrix-js-sdk
-[context endpoint]: https://matrix.org/docs/spec/client_server/latest.html#id161
