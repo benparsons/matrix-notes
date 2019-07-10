@@ -2,43 +2,29 @@
 
 This article concerns [matrix-js-bot-sdk], a TypeScript client SDK for Matrix. We'll build a simple "echo bot", meaning a bot which replies to messages with the text it has just read.
 
+Note that although the SDK is written in TypeScript, we'll use JavaScript in our examples. If you'd prefer to use TypeScript, then do!
+
 ## Setup
 
 Let's make a new folder, and import our only npm dependency. The following examples are all meant to be run in a bash terminal.
 
 ```unix
-mkdir matrix-js-echo-bot && cd matrix-js-echo-bot
+mkdir matrix-js-echo-bot
+cd matrix-js-echo-bot
 npm install matrix-bot-sdk
 ```
 
-In this example, we're going to use TypeScript, since it is the language [matrix-js-bot-sdk] is written in. Full instructions are provided, but the code should be easily adaptable to JavaScript if you prefer.
-
-First let's install `tsc`, which compiles from TypeScript to JavaScript:
-
-```unix
-npm install -g tsc
-```
-
-Now, start tsc in watch-mode (`-w`), and leave it to compile our code:
-
-```unix
-tsc -w *.ts
-```
-
-Now, whenever we create a new TypeScript (`.ts`) file, it will be automatically watched and compiled to JavaScript.
-
-Create a new file `index.ts`, and let's get started.
+Create a new file named "index.js", and let's get started.
 
 ## Instantiation
 
-In our ts file, start by importing the minimum we'll need for this example:
+In our js file, start by importing the minimum we'll need for this example:
 
 ```javascript
-import {
-    MatrixClient,
-    SimpleFsStorageProvider,
-    AutojoinRoomsMixin
-} from "matrix-bot-sdk";
+const sdk = require("matrix-bot-sdk");
+const MatrixClient = sdk.MatrixClient;
+const SimpleFsStorageProvider = sdk.SimpleFsStorageProvider;
+const AutojoinRoomsMixin = sdk.AutojoinRoomsMixin;
 ```
 
 Create a new account for your bot on a homeserver, then get the `access_token`. The simplest way to do this is using Riot, [take a look at these instructions](https://t2bot.io/docs/access_tokens/). Set some variables to store the homeserver and `access_token`. This is all the authentication you need!
@@ -54,7 +40,7 @@ New we'll configure a storage provider - matrix-js-bot-sdk provides the `SimpleF
 const storage = new SimpleFsStorageProvider("bot.json");
 ```
 
-When the bot starts, the SDK will createa a new file called "hello-bot.json" to store the data it needs.
+When the bot starts, the SDK will create a a new file called "bot.json" to store the data it needs.
 
 Finally we're ready to start the client! As you'd expect, we'll use the variables we've already specified.
 
@@ -66,6 +52,12 @@ There is one more thing we need to do. We'll include a mixin which instructs the
 
 ```javascript
 AutojoinRoomsMixin.setupOnClient(client);
+```
+
+Finally, let's start the Client:
+
+```javascript
+client.start().then(() => console.log("Client started!"));
 ```
 
 If you're keeping up, your code should look something like:
@@ -83,9 +75,9 @@ const storage = new SimpleFsStorageProvider("bot.json");
 
 const client = new MatrixClient(homeserverUrl, accessToken, storage);
 AutojoinRoomsMixin.setupOnClient(client);
-```
 
-And if `tsc` is running, you should have a compiled JavaScript file ready to go.
+client.start().then(() => console.log("Client started!"));
+```
 
 Let's run it:
 
@@ -150,7 +142,7 @@ client.on("room.message", (roomId, event) => {
     console.log(`${roomId}: ${sender} says '${body}`);
 
     if (body.startsWith("!echo")) {
-        const replyText = body.replace("!echo", "").trim();
+        const replyText = body.substring("!echo".length).trim();
         client.sendMessage(roomId, {
             "msgtype": "m.notice",
             "body": replyText,
@@ -164,3 +156,23 @@ client.on("room.message", (roomId, event) => {
 It's extremely simple to listen to messages with [matrix-js-bot-sdk] create an echobot! There are many more features, you can see the MatrixClient class is [very well documented](https://github.com/turt2live/matrix-js-bot-sdk/blob/master/src/MatrixClient.ts). In the next in this series we'll explore Rich Replies, and take a look at the kick and ban functions for room administration.
 
 [matrix-js-bot-sdk]: https://github.com/turt2live/matrix-js-bot-sdk
+
+## PS, use TypeScript
+
+This SDK uses TypeScript, which provides a lot of benefits. In this example, we used JavaScript, but it's just as easy to use TypeScript and maybe preferable, since it is the language [matrix-js-bot-sdk] is written in.
+
+First let's install `tsc`, which compiles from TypeScript to JavaScript:
+
+```unix
+npm install -g tsc
+```
+
+Now, start tsc in watch-mode (`-w`), and leave it to compile our code:
+
+```unix
+tsc -w *.ts
+```
+
+Now, whenever we create a new TypeScript (`.ts`) file, it will be automatically watched and compiled to JavaScript.
+
+When you have your .js file(s), you can run them with `node <filename>` as normal.
