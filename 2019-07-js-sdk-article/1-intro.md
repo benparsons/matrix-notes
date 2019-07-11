@@ -164,13 +164,13 @@ This SDK uses TypeScript, which provides a lot of benefits. In this example, we 
 First let's install `tsc`, which compiles from TypeScript to JavaScript:
 
 ```unix
-npm install -g tsc
+npm install tsc
 ```
 
 Now, start tsc in watch-mode (`-w`), and leave it to compile our code:
 
 ```unix
-tsc -w *.ts
+npx tsc --watch *.ts
 ```
 
 Now, whenever we create a new TypeScript (`.ts`) file, it will be automatically watched and compiled to JavaScript.
